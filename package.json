@@ -1,0 +1,13 @@
+{
+  "name": "athomegrower-cloudflare-site",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Cloudflare Pages static website for AtHomeGrower.com with must-have and should-have gardening pages.",
+  "scripts": {
+    "preview": "python -m http.server 8787 -d public",
+    "deploy": "npx wrangler pages deploy public --project-name athomegrower"
+  },
+  "devDependencies": {
+    "wrangler": "latest"
+  }
+}
