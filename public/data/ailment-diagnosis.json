@@ -1,0 +1,1010 @@
+{
+  "version": "at-home-grower-diagnoser-v2",
+  "generatedAt": "2026-06-21T20:13:24.204Z",
+  "symptomGroups": [
+    {
+      "id": "leaves",
+      "label": "Leaf symptoms",
+      "symptoms": [
+        {
+          "id": "yellow-leaves",
+          "label": "Yellowing leaves",
+          "keywords": [
+            "yellowing",
+            "yellow leaves",
+            "pale leaves"
+          ],
+          "image": "/assets/images/ailments/yellow-leaves.svg"
+        },
+        {
+          "id": "yellow-lower-leaves",
+          "label": "Lower leaves yellow first",
+          "keywords": [
+            "older leaves yellow",
+            "bottom leaves yellow"
+          ],
+          "image": "/assets/images/ailments/yellow-lower-leaves.svg"
+        },
+        {
+          "id": "yellow-new-leaves",
+          "label": "New leaves yellow",
+          "keywords": [
+            "new growth yellow",
+            "pale new growth"
+          ],
+          "image": "/assets/images/ailments/yellow-new-leaves.svg"
+        },
+        {
+          "id": "green-veins",
+          "label": "Green veins with yellow tissue",
+          "keywords": [
+            "interveinal chlorosis",
+            "green veins"
+          ],
+          "image": "/assets/images/ailments/green-veins.svg"
+        },
+        {
+          "id": "brown-tips",
+          "label": "Brown leaf tips",
+          "keywords": [
+            "tips brown",
+            "brown tips",
+            "crispy tips"
+          ],
+          "image": "/assets/images/ailments/brown-tips.svg"
+        },
+        {
+          "id": "brown-crispy-edges",
+          "label": "Brown crispy edges",
+          "keywords": [
+            "crispy edges",
+            "leaf margins brown"
+          ],
+          "image": "/assets/images/ailments/brown-crispy-edges.svg"
+        },
+        {
+          "id": "brown-spots",
+          "label": "Brown spots on leaves",
+          "keywords": [
+            "spots on leaves",
+            "brown spots"
+          ],
+          "image": "/assets/images/ailments/brown-spots.svg"
+        },
+        {
+          "id": "black-spots",
+          "label": "Black or dark spots",
+          "keywords": [
+            "black spots",
+            "dark spots"
+          ],
+          "image": "/assets/images/ailments/black-spots.svg"
+        },
+        {
+          "id": "white-powder",
+          "label": "White powder on leaves",
+          "keywords": [
+            "powdery mildew",
+            "white powder"
+          ],
+          "image": "/assets/images/ailments/white-powder.svg"
+        },
+        {
+          "id": "leaf-curl",
+          "label": "Curling leaves",
+          "keywords": [
+            "curling",
+            "curled leaves"
+          ],
+          "image": "/assets/images/ailments/leaf-curl.svg"
+        },
+        {
+          "id": "leaf-drop",
+          "label": "Leaves dropping",
+          "keywords": [
+            "leaf drop",
+            "dropping leaves"
+          ],
+          "image": "/assets/images/ailments/leaf-drop.svg"
+        },
+        {
+          "id": "drooping",
+          "label": "Drooping or wilting",
+          "keywords": [
+            "wilting",
+            "drooping",
+            "limp leaves"
+          ],
+          "image": "/assets/images/ailments/drooping.svg"
+        },
+        {
+          "id": "webbing",
+          "label": "Fine webbing",
+          "keywords": [
+            "webbing",
+            "spider mites"
+          ],
+          "image": "/assets/images/ailments/webbing.svg"
+        },
+        {
+          "id": "sticky-residue",
+          "label": "Sticky residue",
+          "keywords": [
+            "sticky leaves",
+            "honeydew"
+          ],
+          "image": "/assets/images/ailments/sticky-residue.svg"
+        },
+        {
+          "id": "holes-chewed",
+          "label": "Holes or chewed leaves",
+          "keywords": [
+            "holes",
+            "chewed leaves"
+          ],
+          "image": "/assets/images/ailments/holes-chewed.svg"
+        },
+        {
+          "id": "stippled-leaves",
+          "label": "Tiny pale speckles",
+          "keywords": [
+            "stippled",
+            "speckled leaves"
+          ],
+          "image": "/assets/images/ailments/stippled-leaves.svg"
+        }
+      ]
+    },
+    {
+      "id": "soil",
+      "label": "Soil and root clues",
+      "symptoms": [
+        {
+          "id": "wet-soil",
+          "label": "Soil stays wet",
+          "keywords": [
+            "wet soil",
+            "soggy soil"
+          ],
+          "image": "/assets/images/ailments/wet-soil.svg"
+        },
+        {
+          "id": "dry-soil",
+          "label": "Soil is bone dry",
+          "keywords": [
+            "dry soil",
+            "hydrophobic"
+          ],
+          "image": "/assets/images/ailments/dry-soil.svg"
+        },
+        {
+          "id": "dries-fast",
+          "label": "Soil dries very fast",
+          "keywords": [
+            "dries fast",
+            "rootbound"
+          ],
+          "image": "/assets/images/ailments/dries-fast.svg"
+        },
+        {
+          "id": "sour-smell",
+          "label": "Sour or rotten smell",
+          "keywords": [
+            "rotten smell",
+            "sour soil"
+          ],
+          "image": "/assets/images/ailments/sour-smell.svg"
+        },
+        {
+          "id": "mushy-roots",
+          "label": "Mushy brown roots",
+          "keywords": [
+            "root rot",
+            "mushy roots"
+          ],
+          "image": "/assets/images/ailments/mushy-roots.svg"
+        },
+        {
+          "id": "roots-circling",
+          "label": "Roots circling pot",
+          "keywords": [
+            "rootbound",
+            "circling roots"
+          ],
+          "image": "/assets/images/ailments/roots-circling.svg"
+        },
+        {
+          "id": "soil-crust",
+          "label": "White crust on soil",
+          "keywords": [
+            "salt buildup",
+            "soil crust"
+          ],
+          "image": "/assets/images/ailments/soil-crust.svg"
+        },
+        {
+          "id": "gnats",
+          "label": "Tiny gnats around soil",
+          "keywords": [
+            "fungus gnats",
+            "gnats"
+          ],
+          "image": "/assets/images/ailments/gnats.svg"
+        },
+        {
+          "id": "recent-fertilizer",
+          "label": "Recently fertilized",
+          "keywords": [
+            "fertilizer burn",
+            "fed recently"
+          ],
+          "image": "/assets/images/ailments/recent-fertilizer.svg"
+        },
+        {
+          "id": "recently-repotted",
+          "label": "Recently repotted",
+          "keywords": [
+            "transplant shock",
+            "repotted"
+          ],
+          "image": "/assets/images/ailments/recently-repotted.svg"
+        }
+      ]
+    },
+    {
+      "id": "environment",
+      "label": "Environment clues",
+      "symptoms": [
+        {
+          "id": "low-light",
+          "label": "Low light area",
+          "keywords": [
+            "low light",
+            "dark corner"
+          ],
+          "image": "/assets/images/ailments/low-light.svg"
+        },
+        {
+          "id": "direct-sun",
+          "label": "Direct hot sun",
+          "keywords": [
+            "sun scorch",
+            "direct sun"
+          ],
+          "image": "/assets/images/ailments/direct-sun.svg"
+        },
+        {
+          "id": "hot-dry-air",
+          "label": "Hot dry air",
+          "keywords": [
+            "dry air",
+            "heat vent"
+          ],
+          "image": "/assets/images/ailments/hot-dry-air.svg"
+        },
+        {
+          "id": "cold-draft",
+          "label": "Cold draft",
+          "keywords": [
+            "cold damage",
+            "draft"
+          ],
+          "image": "/assets/images/ailments/cold-draft.svg"
+        },
+        {
+          "id": "poor-airflow",
+          "label": "Poor airflow",
+          "keywords": [
+            "stale air",
+            "crowded"
+          ],
+          "image": "/assets/images/ailments/poor-airflow.svg"
+        },
+        {
+          "id": "humid-air",
+          "label": "Humid air",
+          "keywords": [
+            "humidity",
+            "humid"
+          ],
+          "image": "/assets/images/ailments/humid-air.svg"
+        },
+        {
+          "id": "wet-leaves",
+          "label": "Leaves stay wet",
+          "keywords": [
+            "wet foliage",
+            "overhead watering"
+          ],
+          "image": "/assets/images/ailments/wet-leaves.svg"
+        },
+        {
+          "id": "slow-growth",
+          "label": "Slow or stalled growth",
+          "keywords": [
+            "stunted growth",
+            "slow growth"
+          ],
+          "image": "/assets/images/ailments/slow-growth.svg"
+        },
+        {
+          "id": "stretched-growth",
+          "label": "Long weak stretched growth",
+          "keywords": [
+            "leggy",
+            "stretching"
+          ],
+          "image": "/assets/images/ailments/stretched-growth.svg"
+        },
+        {
+          "id": "visible-pests",
+          "label": "Visible pests",
+          "keywords": [
+            "aphids",
+            "mealybugs",
+            "scale",
+            "thrips"
+          ],
+          "image": "/assets/images/ailments/visible-pests.svg"
+        }
+      ]
+    }
+  ],
+  "symptoms": {
+    "yellow-leaves": {
+      "id": "yellow-leaves",
+      "label": "Yellowing leaves",
+      "keywords": [
+        "yellowing",
+        "yellow leaves",
+        "pale leaves"
+      ],
+      "image": "/assets/images/ailments/yellow-leaves.svg"
+    },
+    "yellow-lower-leaves": {
+      "id": "yellow-lower-leaves",
+      "label": "Lower leaves yellow first",
+      "keywords": [
+        "older leaves yellow",
+        "bottom leaves yellow"
+      ],
+      "image": "/assets/images/ailments/yellow-lower-leaves.svg"
+    },
+    "yellow-new-leaves": {
+      "id": "yellow-new-leaves",
+      "label": "New leaves yellow",
+      "keywords": [
+        "new growth yellow",
+        "pale new growth"
+      ],
+      "image": "/assets/images/ailments/yellow-new-leaves.svg"
+    },
+    "green-veins": {
+      "id": "green-veins",
+      "label": "Green veins with yellow tissue",
+      "keywords": [
+        "interveinal chlorosis",
+        "green veins"
+      ],
+      "image": "/assets/images/ailments/green-veins.svg"
+    },
+    "brown-tips": {
+      "id": "brown-tips",
+      "label": "Brown leaf tips",
+      "keywords": [
+        "tips brown",
+        "brown tips",
+        "crispy tips"
+      ],
+      "image": "/assets/images/ailments/brown-tips.svg"
+    },
+    "brown-crispy-edges": {
+      "id": "brown-crispy-edges",
+      "label": "Brown crispy edges",
+      "keywords": [
+        "crispy edges",
+        "leaf margins brown"
+      ],
+      "image": "/assets/images/ailments/brown-crispy-edges.svg"
+    },
+    "brown-spots": {
+      "id": "brown-spots",
+      "label": "Brown spots on leaves",
+      "keywords": [
+        "spots on leaves",
+        "brown spots"
+      ],
+      "image": "/assets/images/ailments/brown-spots.svg"
+    },
+    "black-spots": {
+      "id": "black-spots",
+      "label": "Black or dark spots",
+      "keywords": [
+        "black spots",
+        "dark spots"
+      ],
+      "image": "/assets/images/ailments/black-spots.svg"
+    },
+    "white-powder": {
+      "id": "white-powder",
+      "label": "White powder on leaves",
+      "keywords": [
+        "powdery mildew",
+        "white powder"
+      ],
+      "image": "/assets/images/ailments/white-powder.svg"
+    },
+    "leaf-curl": {
+      "id": "leaf-curl",
+      "label": "Curling leaves",
+      "keywords": [
+        "curling",
+        "curled leaves"
+      ],
+      "image": "/assets/images/ailments/leaf-curl.svg"
+    },
+    "leaf-drop": {
+      "id": "leaf-drop",
+      "label": "Leaves dropping",
+      "keywords": [
+        "leaf drop",
+        "dropping leaves"
+      ],
+      "image": "/assets/images/ailments/leaf-drop.svg"
+    },
+    "drooping": {
+      "id": "drooping",
+      "label": "Drooping or wilting",
+      "keywords": [
+        "wilting",
+        "drooping",
+        "limp leaves"
+      ],
+      "image": "/assets/images/ailments/drooping.svg"
+    },
+    "webbing": {
+      "id": "webbing",
+      "label": "Fine webbing",
+      "keywords": [
+        "webbing",
+        "spider mites"
+      ],
+      "image": "/assets/images/ailments/webbing.svg"
+    },
+    "sticky-residue": {
+      "id": "sticky-residue",
+      "label": "Sticky residue",
+      "keywords": [
+        "sticky leaves",
+        "honeydew"
+      ],
+      "image": "/assets/images/ailments/sticky-residue.svg"
+    },
+    "holes-chewed": {
+      "id": "holes-chewed",
+      "label": "Holes or chewed leaves",
+      "keywords": [
+        "holes",
+        "chewed leaves"
+      ],
+      "image": "/assets/images/ailments/holes-chewed.svg"
+    },
+    "stippled-leaves": {
+      "id": "stippled-leaves",
+      "label": "Tiny pale speckles",
+      "keywords": [
+        "stippled",
+        "speckled leaves"
+      ],
+      "image": "/assets/images/ailments/stippled-leaves.svg"
+    },
+    "wet-soil": {
+      "id": "wet-soil",
+      "label": "Soil stays wet",
+      "keywords": [
+        "wet soil",
+        "soggy soil"
+      ],
+      "image": "/assets/images/ailments/wet-soil.svg"
+    },
+    "dry-soil": {
+      "id": "dry-soil",
+      "label": "Soil is bone dry",
+      "keywords": [
+        "dry soil",
+        "hydrophobic"
+      ],
+      "image": "/assets/images/ailments/dry-soil.svg"
+    },
+    "dries-fast": {
+      "id": "dries-fast",
+      "label": "Soil dries very fast",
+      "keywords": [
+        "dries fast",
+        "rootbound"
+      ],
+      "image": "/assets/images/ailments/dries-fast.svg"
+    },
+    "sour-smell": {
+      "id": "sour-smell",
+      "label": "Sour or rotten smell",
+      "keywords": [
+        "rotten smell",
+        "sour soil"
+      ],
+      "image": "/assets/images/ailments/sour-smell.svg"
+    },
+    "mushy-roots": {
+      "id": "mushy-roots",
+      "label": "Mushy brown roots",
+      "keywords": [
+        "root rot",
+        "mushy roots"
+      ],
+      "image": "/assets/images/ailments/mushy-roots.svg"
+    },
+    "roots-circling": {
+      "id": "roots-circling",
+      "label": "Roots circling pot",
+      "keywords": [
+        "rootbound",
+        "circling roots"
+      ],
+      "image": "/assets/images/ailments/roots-circling.svg"
+    },
+    "soil-crust": {
+      "id": "soil-crust",
+      "label": "White crust on soil",
+      "keywords": [
+        "salt buildup",
+        "soil crust"
+      ],
+      "image": "/assets/images/ailments/soil-crust.svg"
+    },
+    "gnats": {
+      "id": "gnats",
+      "label": "Tiny gnats around soil",
+      "keywords": [
+        "fungus gnats",
+        "gnats"
+      ],
+      "image": "/assets/images/ailments/gnats.svg"
+    },
+    "recent-fertilizer": {
+      "id": "recent-fertilizer",
+      "label": "Recently fertilized",
+      "keywords": [
+        "fertilizer burn",
+        "fed recently"
+      ],
+      "image": "/assets/images/ailments/recent-fertilizer.svg"
+    },
+    "recently-repotted": {
+      "id": "recently-repotted",
+      "label": "Recently repotted",
+      "keywords": [
+        "transplant shock",
+        "repotted"
+      ],
+      "image": "/assets/images/ailments/recently-repotted.svg"
+    },
+    "low-light": {
+      "id": "low-light",
+      "label": "Low light area",
+      "keywords": [
+        "low light",
+        "dark corner"
+      ],
+      "image": "/assets/images/ailments/low-light.svg"
+    },
+    "direct-sun": {
+      "id": "direct-sun",
+      "label": "Direct hot sun",
+      "keywords": [
+        "sun scorch",
+        "direct sun"
+      ],
+      "image": "/assets/images/ailments/direct-sun.svg"
+    },
+    "hot-dry-air": {
+      "id": "hot-dry-air",
+      "label": "Hot dry air",
+      "keywords": [
+        "dry air",
+        "heat vent"
+      ],
+      "image": "/assets/images/ailments/hot-dry-air.svg"
+    },
+    "cold-draft": {
+      "id": "cold-draft",
+      "label": "Cold draft",
+      "keywords": [
+        "cold damage",
+        "draft"
+      ],
+      "image": "/assets/images/ailments/cold-draft.svg"
+    },
+    "poor-airflow": {
+      "id": "poor-airflow",
+      "label": "Poor airflow",
+      "keywords": [
+        "stale air",
+        "crowded"
+      ],
+      "image": "/assets/images/ailments/poor-airflow.svg"
+    },
+    "humid-air": {
+      "id": "humid-air",
+      "label": "Humid air",
+      "keywords": [
+        "humidity",
+        "humid"
+      ],
+      "image": "/assets/images/ailments/humid-air.svg"
+    },
+    "wet-leaves": {
+      "id": "wet-leaves",
+      "label": "Leaves stay wet",
+      "keywords": [
+        "wet foliage",
+        "overhead watering"
+      ],
+      "image": "/assets/images/ailments/wet-leaves.svg"
+    },
+    "slow-growth": {
+      "id": "slow-growth",
+      "label": "Slow or stalled growth",
+      "keywords": [
+        "stunted growth",
+        "slow growth"
+      ],
+      "image": "/assets/images/ailments/slow-growth.svg"
+    },
+    "stretched-growth": {
+      "id": "stretched-growth",
+      "label": "Long weak stretched growth",
+      "keywords": [
+        "leggy",
+        "stretching"
+      ],
+      "image": "/assets/images/ailments/stretched-growth.svg"
+    },
+    "visible-pests": {
+      "id": "visible-pests",
+      "label": "Visible pests",
+      "keywords": [
+        "aphids",
+        "mealybugs",
+        "scale",
+        "thrips"
+      ],
+      "image": "/assets/images/ailments/visible-pests.svg"
+    }
+  },
+  "issues": [
+    {
+      "id": "overwatering-root-stress",
+      "title": "Overwatering / root stress",
+      "severity": "High",
+      "matchTags": [
+        "drooping",
+        "yellow-leaves",
+        "yellow-lower-leaves",
+        "wet-soil",
+        "sour-smell",
+        "mushy-roots",
+        "leaf-drop"
+      ],
+      "summary": "Roots are likely short on oxygen because the mix is staying wet too long.",
+      "nextSteps": [
+        "Pause watering until the correct soil depth dries.",
+        "Confirm the pot drains freely.",
+        "Inspect roots if the mix smells sour or leaves collapse.",
+        "Repot into a faster-draining mix if mushy roots are present."
+      ]
+    },
+    {
+      "id": "underwatering-drought-stress",
+      "title": "Underwatering / drought stress",
+      "severity": "Medium",
+      "matchTags": [
+        "drooping",
+        "dry-soil",
+        "brown-crispy-edges",
+        "leaf-curl",
+        "leaf-drop"
+      ],
+      "summary": "The plant may be drying past its comfort zone.",
+      "nextSteps": [
+        "Water thoroughly until excess drains out.",
+        "Rehydrate hydrophobic soil slowly if water runs off.",
+        "Set watering by soil feel and pot weight, not a fixed calendar."
+      ]
+    },
+    {
+      "id": "nitrogen-deficiency",
+      "title": "Nitrogen deficiency",
+      "severity": "Medium",
+      "matchTags": [
+        "yellow-leaves",
+        "yellow-lower-leaves",
+        "slow-growth"
+      ],
+      "summary": "Older leaves yellowing first with slow growth often points to low nitrogen or depleted mix.",
+      "nextSteps": [
+        "Feed with a balanced fertilizer during active growth.",
+        "Avoid feeding a waterlogged plant.",
+        "Refresh old potting mix when nutrients are exhausted."
+      ]
+    },
+    {
+      "id": "iron-chlorosis",
+      "title": "Iron chlorosis",
+      "severity": "Medium",
+      "matchTags": [
+        "yellow-new-leaves",
+        "green-veins",
+        "slow-growth"
+      ],
+      "summary": "New leaves yellowing while veins stay green can indicate iron availability problems.",
+      "nextSteps": [
+        "Check watering and drainage first.",
+        "Use fertilizer with micronutrients.",
+        "Reduce hard-water or salt buildup when possible."
+      ]
+    },
+    {
+      "id": "magnesium-deficiency",
+      "title": "Magnesium deficiency",
+      "severity": "Medium",
+      "matchTags": [
+        "yellow-leaves",
+        "green-veins",
+        "brown-spots",
+        "yellow-lower-leaves"
+      ],
+      "summary": "Interveinal yellowing on older leaves with spots can suggest magnesium deficiency or nutrient lockout.",
+      "nextSteps": [
+        "Correct watering before feeding.",
+        "Use a complete fertilizer with secondary nutrients.",
+        "Flush heavy salt buildup if present."
+      ]
+    },
+    {
+      "id": "potassium-deficiency",
+      "title": "Potassium deficiency",
+      "severity": "Medium",
+      "matchTags": [
+        "brown-crispy-edges",
+        "yellow-lower-leaves",
+        "brown-spots",
+        "slow-growth"
+      ],
+      "summary": "Older leaves with yellowing, brown edges, or spots can point to potassium deficiency or exhausted soil.",
+      "nextSteps": [
+        "Feed with a balanced fertilizer.",
+        "Remove badly damaged leaves after new growth improves.",
+        "Check for root stress, which can mimic deficiency."
+      ]
+    },
+    {
+      "id": "low-light-stress",
+      "title": "Low light stress",
+      "severity": "Low",
+      "matchTags": [
+        "low-light",
+        "stretched-growth",
+        "slow-growth",
+        "yellow-leaves",
+        "leaf-drop"
+      ],
+      "summary": "Weak stretched growth, pale leaves, and slow growth often mean the plant needs more usable light.",
+      "nextSteps": [
+        "Move gradually toward brighter indirect light.",
+        "Use a grow light in dark rooms.",
+        "Rotate the plant weekly for even growth."
+      ]
+    },
+    {
+      "id": "sun-scorch",
+      "title": "Sun scorch",
+      "severity": "Medium",
+      "matchTags": [
+        "direct-sun",
+        "brown-spots",
+        "brown-crispy-edges",
+        "yellow-leaves"
+      ],
+      "summary": "Hot direct sun can burn leaf tissue into brown, tan, or bleached patches.",
+      "nextSteps": [
+        "Move out of harsh afternoon sun.",
+        "Use a sheer curtain for bright indirect light.",
+        "Leave partly functional leaves until replacements grow."
+      ]
+    },
+    {
+      "id": "rootbound",
+      "title": "Rootbound plant",
+      "severity": "Medium",
+      "matchTags": [
+        "roots-circling",
+        "dries-fast",
+        "drooping",
+        "slow-growth",
+        "yellow-leaves"
+      ],
+      "summary": "A root-packed pot can dry too fast and limit nutrients.",
+      "nextSteps": [
+        "Move up one pot size.",
+        "Loosen circling roots gently.",
+        "Water thoroughly after repotting and keep conditions stable."
+      ]
+    },
+    {
+      "id": "fertilizer-burn-salt-buildup",
+      "title": "Fertilizer burn / salt buildup",
+      "severity": "Medium",
+      "matchTags": [
+        "brown-tips",
+        "soil-crust",
+        "recent-fertilizer",
+        "yellow-leaves"
+      ],
+      "summary": "Brown tips plus crusty soil or recent feeding can indicate excess salts.",
+      "nextSteps": [
+        "Flush the soil if the pot drains well.",
+        "Pause fertilizer until growth resumes.",
+        "Resume at half strength."
+      ]
+    },
+    {
+      "id": "spider-mites",
+      "title": "Spider mites",
+      "severity": "High",
+      "matchTags": [
+        "webbing",
+        "stippled-leaves",
+        "leaf-curl",
+        "hot-dry-air"
+      ],
+      "summary": "Fine webbing and pale speckled leaves are classic spider mite clues.",
+      "nextSteps": [
+        "Isolate the plant.",
+        "Rinse leaf undersides.",
+        "Treat repeatedly with insecticidal soap or a plant-safe mite control."
+      ]
+    },
+    {
+      "id": "fungus-gnats",
+      "title": "Fungus gnats",
+      "severity": "Low",
+      "matchTags": [
+        "gnats",
+        "wet-soil"
+      ],
+      "summary": "Tiny gnats around damp soil usually breed in wet potting mix.",
+      "nextSteps": [
+        "Dry the top layer more between waterings.",
+        "Use sticky traps for adults.",
+        "Use BTI or beneficial nematodes for larvae."
+      ]
+    },
+    {
+      "id": "powdery-mildew",
+      "title": "Powdery mildew",
+      "severity": "Medium",
+      "matchTags": [
+        "white-powder",
+        "poor-airflow",
+        "humid-air"
+      ],
+      "summary": "White powdery patches with humidity and poor airflow suggest powdery mildew.",
+      "nextSteps": [
+        "Improve airflow.",
+        "Avoid wetting leaves late in the day.",
+        "Remove badly affected leaves and treat if needed."
+      ]
+    },
+    {
+      "id": "leaf-spot-disease",
+      "title": "Leaf spot disease",
+      "severity": "Medium",
+      "matchTags": [
+        "black-spots",
+        "brown-spots",
+        "yellow-leaves",
+        "wet-leaves",
+        "poor-airflow"
+      ],
+      "summary": "Dark or brown spots with wet leaves and poor airflow can indicate fungal or bacterial leaf spot.",
+      "nextSteps": [
+        "Remove badly spotted leaves.",
+        "Keep foliage dry when watering.",
+        "Increase airflow and avoid crowding."
+      ]
+    },
+    {
+      "id": "cold-damage",
+      "title": "Cold damage",
+      "severity": "Medium",
+      "matchTags": [
+        "cold-draft",
+        "leaf-drop",
+        "black-spots",
+        "drooping"
+      ],
+      "summary": "Cold drafts can cause sudden drooping, dark damage, or leaf drop.",
+      "nextSteps": [
+        "Move away from drafty doors or windows.",
+        "Keep tropical plants above their minimum temperature.",
+        "Wait before pruning until damage is clear."
+      ]
+    },
+    {
+      "id": "heat-stress",
+      "title": "Heat stress",
+      "severity": "Medium",
+      "matchTags": [
+        "hot-dry-air",
+        "drooping",
+        "brown-crispy-edges",
+        "leaf-curl"
+      ],
+      "summary": "Hot dry air can make leaves curl, droop, and crisp.",
+      "nextSteps": [
+        "Move away from heat vents.",
+        "Water based on soil dryness.",
+        "Raise humidity for tropical plants."
+      ]
+    },
+    {
+      "id": "transplant-shock",
+      "title": "Transplant shock",
+      "severity": "Low",
+      "matchTags": [
+        "recently-repotted",
+        "drooping",
+        "leaf-drop",
+        "yellow-leaves"
+      ],
+      "summary": "A recently repotted plant may droop or shed leaves while roots adjust.",
+      "nextSteps": [
+        "Keep light bright but indirect.",
+        "Avoid fertilizing immediately.",
+        "Keep watering steady and avoid overcorrecting."
+      ]
+    },
+    {
+      "id": "chewing-pests",
+      "title": "Chewing pests",
+      "severity": "Medium",
+      "matchTags": [
+        "holes-chewed",
+        "visible-pests"
+      ],
+      "summary": "Visible pests plus holes or ragged edges point to chewing insects.",
+      "nextSteps": [
+        "Inspect leaf undersides and stems.",
+        "Remove pests manually when possible.",
+        "Treat based on the pest you identify."
+      ]
+    },
+    {
+      "id": "sap-sucking-pests",
+      "title": "Sap-sucking pests",
+      "severity": "High",
+      "matchTags": [
+        "sticky-residue",
+        "yellow-leaves",
+        "visible-pests",
+        "leaf-curl"
+      ],
+      "summary": "Sticky residue with yellowing or curling often points to aphids, scale, mealybugs, or similar pests.",
+      "nextSteps": [
+        "Isolate the plant.",
+        "Inspect stems, nodes, and leaf undersides.",
+        "Remove visible pests and treat repeatedly."
+      ]
+    }
+  ]
+}

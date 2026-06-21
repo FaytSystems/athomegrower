@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" role="img" aria-labelledby="title desc">
+<title id="title">Long weak stretched growth</title>
+<desc id="desc">Example plant symptom illustration.</desc>
+<rect width="760" height="500" rx="32" fill="#f6fbf1"/>
+<path d="M384 438c-114-37-183-115-205-235-15-83 32-135 111-96 36 18 64 50 94 96 31-46 58-78 94-96 79-39 126 13 111 96-22 120-91 198-205 235z" fill="#4f8a44"/>
+<path d="M384 438c-7-89-4-183 0-282" fill="none" stroke="#2e6536" stroke-width="11" stroke-linecap="round"/>
+
+
+
+
+<text x="380" y="68" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#1f2c1d">Long weak stretched growth</text>
+</svg>

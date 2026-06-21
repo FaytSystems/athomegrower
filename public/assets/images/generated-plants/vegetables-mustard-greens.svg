@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+<title id="title">Mustard Greens</title>
+<desc id="desc">Generated AtHomeGrower plant illustration.</desc>
+<rect width="800" height="520" rx="36" fill="#f8fbf4"/>
+<rect x="28" y="28" width="744" height="464" rx="28" fill="hsl(284 52% 76%)" opacity=".45"/>
+<path d="M98 418c74-68 160-94 260-79 129 20 223-27 318-138 35 126 0 216-105 270H99z" fill="#f5dc9f" opacity=".5"/>
+<ellipse cx="398" cy="430" rx="184" ry="32" fill="#233021" opacity=".14"/>
+<path d="M302 347h196l-26 104H328z" fill="#78513a"/>
+<path d="M287 327h226v42H287z" fill="#93664a"/>
+<path d="M402 333c-10-118-7-194 10-246" fill="none" stroke="hsl(107 44% 34%)" stroke-width="16" stroke-linecap="round"/>
+<path d="M392 263c-84-82-155-93-212-33 74 49 143 59 212 33z" fill="hsl(107 44% 34%)"/>
+<path d="M407 253c90-76 164-81 221-15-76 41-146 46-221 15z" fill="hsl(107 44% 34%)" opacity=".92"/>
+<path d="M399 202c-80-78-83-142-13-192 42 72 46 136 13 192z" fill="hsl(107 44% 34%)" opacity=".86"/>
+<path d="M407 316c58-69 119-84 184-45-54 56-113 72-184 45z" fill="hsl(107 44% 34%)" opacity=".8"/>
+<path d="M386 313c-68-50-132-50-190-2 66 35 129 36 190 2z" fill="hsl(107 44% 34%)" opacity=".78"/>
+<circle cx="323" cy="219" r="24" fill="#d86a34"/><circle cx="445" cy="233" r="21" fill="#bc3f4a"/><circle cx="392" cy="173" r="18" fill="#efa434"/>
+<text x="400" y="80" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#1f2c1d">Mustard Greens</text>
+<text x="400" y="118" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#52614b">Vegetable</text>
+</svg>

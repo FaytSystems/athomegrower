@@ -1,0 +1,470 @@
+:root {
+  --leaf: #31572c;
+  --leaf-2: #4f772d;
+  --sage: #90a955;
+  --mint: #ecf7e5;
+  --cream: #f7faf3;
+  --clay: #bb6b3d;
+  --soil: #473524;
+  --ink: #1e2a1f;
+  --muted: #66765f;
+  --card: #ffffff;
+  --line: #dfe9d8;
+  --danger: #9b3d24;
+  --gold: #a77927;
+  --shadow: 0 18px 50px rgba(32, 55, 31, 0.14);
+  --radius: 8px;
+  --max: 1220px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(144, 169, 85, 0.16), transparent 34rem),
+    radial-gradient(circle at bottom right, rgba(53, 107, 140, 0.12), transparent 30rem),
+    linear-gradient(180deg, #f7faf3, #eef6ec 44%, #f6f8f3);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+a { color: inherit; }
+img { display: block; max-width: 100%; }
+.skip-link {
+  left: 1rem; opacity: 0; padding: 0.75rem 1rem; position: fixed; top: 1rem;
+  transform: translateY(-150%); z-index: 100; background: var(--leaf); color: white; border-radius: 999px;
+}
+.skip-link:focus { opacity: 1; transform: translateY(0); }
+.site-header {
+  position: sticky; top: 0; z-index: 20; background: rgba(255, 249, 237, 0.9);
+  backdrop-filter: blur(16px); border-bottom: 1px solid rgba(49, 87, 44, 0.12);
+}
+.nav { align-items: center; display: flex; gap: 1rem; justify-content: space-between; margin: 0 auto; max-width: var(--max); padding: .85rem 1rem; }
+.brand { align-items: center; display: inline-flex; gap: .65rem; font-weight: 900; letter-spacing: 0; text-decoration: none; white-space: nowrap; }
+.brand-mark { align-items: center; background: linear-gradient(135deg, var(--leaf), #356b8c); border-radius: 8px; color: white; display: inline-flex; font-size: .9rem; font-weight: 900; height: 42px; justify-content: center; width: 42px; box-shadow: 0 10px 25px rgba(49, 87, 44, .22); }
+.nav-links { align-items: center; display: flex; flex-wrap: wrap; gap: .34rem; justify-content: flex-end; }
+.nav-links a { border-radius: 999px; color: var(--muted); font-size: .92rem; font-weight: 750; padding: .55rem .68rem; text-decoration: none; }
+.nav-links a:hover, .nav-links a[aria-current="page"] { background: rgba(144, 169, 85, .18); color: var(--leaf); }
+.hero { display: grid; gap: 2.25rem; grid-template-columns: 1.08fr .92fr; margin: 0 auto; max-width: var(--max); padding: 4.6rem 1rem 3rem; align-items: center; }
+.hero-card { background: rgba(255, 255, 255, .72); border: 1px solid rgba(49, 87, 44, .12); border-radius: calc(var(--radius) + 14px); box-shadow: var(--shadow); padding: 1rem; overflow: hidden; }
+.hero-card img { border-radius: calc(var(--radius) + 4px); width: 100%; aspect-ratio: 16/10; object-fit: cover; }
+.eyebrow, .pill, .status-chip {
+  align-items: center; background: rgba(144, 169, 85, .18); border: 1px solid rgba(49, 87, 44, .14);
+  border-radius: 999px; color: var(--leaf); display: inline-flex; font-size: .82rem; font-weight: 850; gap: .5rem; letter-spacing: 0; padding: .45rem .8rem;
+}
+.eyebrow { text-transform: uppercase; letter-spacing: 0; }
+.status-chip.must { background: rgba(49,87,44,.12); color: var(--leaf); }
+.status-chip.should { background: rgba(167,121,39,.15); color: var(--gold); }
+h1, h2, h3 { color: var(--leaf); font-family: Georgia, "Times New Roman", serif; line-height: 1.05; letter-spacing: 0; margin: 0; }
+h1 { font-size: 4.7rem; margin-top: 1rem; }
+h2 { font-size: 2.65rem; }
+h3 { font-size: 1.35rem; }
+.lede { color: var(--muted); font-size: 1.18rem; margin: 1.2rem 0 0; max-width: 72ch; }
+.actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.7rem; }
+.button { align-items: center; background: var(--leaf); border: 2px solid var(--leaf); border-radius: 999px; box-shadow: 0 12px 26px rgba(49,87,44,.22); color: white; display: inline-flex; font-weight: 850; justify-content: center; padding: .85rem 1.15rem; text-decoration: none; }
+.button:hover { background: var(--leaf-2); }
+.button.secondary { background: transparent; box-shadow: none; color: var(--leaf); }
+main { overflow: hidden; }
+.section { margin: 0 auto; max-width: var(--max); padding: 3rem 1rem; }
+.section-header { align-items: end; display: grid; gap: 1rem; grid-template-columns: 1fr auto; margin-bottom: 1.5rem; }
+.section-header p { color: var(--muted); margin: 0; max-width: 72ch; }
+.grid { display: grid; gap: 1rem; }
+.grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.card { background: rgba(255,255,255,.9); border: 1px solid rgba(49,87,44,.13); border-radius: var(--radius); box-shadow: 0 8px 30px rgba(32,55,31,.08); overflow: hidden; }
+.card-body { padding: 1.2rem; }
+.card p { color: var(--muted); margin: .5rem 0 0; }
+.card ul { color: var(--muted); margin: .75rem 0 0; padding-left: 1.1rem; }
+.card li + li { margin-top: .35rem; }
+.image-card img { aspect-ratio: 16/10; object-fit: cover; width: 100%; }
+.pill-row, .filters { display: flex; flex-wrap: wrap; gap: .55rem; }
+.pill { font-size: .84rem; padding: .35rem .62rem; }
+.filter-button { background: rgba(144,169,85,.16); border: 1px solid rgba(49,87,44,.14); border-radius: 999px; color: var(--leaf); cursor: pointer; font: inherit; font-weight: 800; padding: .55rem .8rem; }
+.filter-button.is-active, .filter-button:hover { background: var(--leaf); color: #fff; }
+.search-box { background: white; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); font: inherit; min-width: min(100%, 340px); padding: .8rem 1rem; }
+.callout { background: linear-gradient(135deg, rgba(49,87,44,.94), rgba(79,119,45,.9)); border-radius: calc(var(--radius) + 10px); box-shadow: var(--shadow); color: white; display: grid; gap: 1rem; grid-template-columns: 1fr auto; padding: clamp(1.2rem, 4vw, 2rem); }
+.callout h2, .callout p { color: white; }
+.callout p { margin: .45rem 0 0; opacity: .9; }
+.fact-list { display: grid; gap: .75rem; margin-top: 1rem; }
+.fact { align-items: start; display: grid; gap: .8rem; grid-template-columns: 2.1rem 1fr; }
+.fact-icon { align-items: center; background: rgba(144,169,85,.18); border-radius: 999px; display: inline-flex; height: 2.1rem; justify-content: center; width: 2.1rem; }
+.table-wrap { overflow-x: auto; }
+.care-table { border-collapse: collapse; min-width: 760px; width: 100%; }
+.care-table th, .care-table td { border-bottom: 1px solid var(--line); padding: .9rem; text-align: left; vertical-align: top; }
+.care-table th { color: var(--leaf); font-size: .82rem; letter-spacing: 0; text-transform: uppercase; }
+.page-hero { margin: 0 auto; max-width: var(--max); padding: 4rem 1rem 2rem; }
+.notice { background: rgba(187,107,61,.12); border: 1px solid rgba(187,107,61,.22); border-radius: var(--radius); color: #70411f; padding: 1rem; }
+.source-note { font-size: .82rem; }
+.annotated-photo { background: #edf4e6; position: relative; overflow: hidden; }
+.annotated-photo img { width: 100%; aspect-ratio: 16/10; object-fit: cover; }
+.arrow-dot { position: absolute; width: 18px; height: 18px; border-radius: 50%; background: #fff; border: 4px solid #d84315; transform: translate(-50%, -50%); box-shadow: 0 0 0 5px rgba(216,67,21,.25); }
+.arrow-label { position: absolute; transform: translate(18px, -50%); max-width: 210px; background: rgba(216,67,21,.94); color: white; border-radius: 999px; font-size: .78rem; font-weight: 900; padding: .42rem .62rem; box-shadow: 0 10px 25px rgba(0,0,0,.18); }
+.arrow-label::before { content: ""; position: absolute; left: -18px; top: 50%; width: 18px; height: 3px; background: #d84315; transform: translateY(-50%); }
+.photo-frame { position: relative; }
+.photo-credit { background: rgba(30,42,31,.74); border-radius: 999px; bottom: .65rem; color: white; font-size: .72rem; font-weight: 750; line-height: 1.2; max-width: calc(100% - 1.3rem); padding: .35rem .55rem; position: absolute; right: .65rem; }
+.photo-credit a { color: white; text-decoration: underline; text-underline-offset: 2px; }
+.credit-list { display: grid; gap: .75rem; margin-top: 1rem; }
+.credit-item { background: rgba(255,255,255,.84); border: 1px solid rgba(49,87,44,.13); border-radius: 18px; padding: .9rem 1rem; }
+.module-list { display: grid; gap: 1rem; }
+.module { display: grid; gap: 1rem; grid-template-columns: 180px 1fr auto; align-items: center; padding: 1rem; }
+.module strong { color: var(--leaf); }
+.stat-strip {
+  display: grid;
+  gap: .75rem;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+.stat-strip div,
+.plant-facts-strip div,
+.sticky-panel,
+.diagnosis-panel {
+  background: rgba(255,255,255,.88);
+  border: 1px solid rgba(49,87,44,.12);
+  border-radius: 8px;
+  box-shadow: 0 8px 26px rgba(32,55,31,.07);
+}
+.stat-strip div { padding: 1rem; }
+.stat-strip strong { color: var(--leaf); display: block; font-size: 1.65rem; line-height: 1; }
+.stat-strip span,
+.plant-facts-strip span {
+  color: var(--muted);
+  display: block;
+  font-size: .82rem;
+  font-weight: 800;
+  margin-top: .35rem;
+  text-transform: uppercase;
+}
+.filter-panel {
+  display: grid;
+  gap: .85rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 1rem;
+}
+.filter-group {
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(49,87,44,.12);
+  border-radius: 8px;
+  padding: .85rem;
+}
+.filter-group h3,
+.symptom-group h3,
+.card h2,
+.diagnosis-panel h2,
+.sticky-panel h2 {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: 1.25;
+}
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin-top: .7rem;
+}
+.result-meta {
+  color: var(--muted);
+  font-size: .92rem;
+  font-weight: 850;
+  margin: .8rem 0 1rem;
+}
+.plant-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.plant-card {
+  background: rgba(255,255,255,.92);
+  border: 1px solid rgba(49,87,44,.13);
+  border-radius: 8px;
+  box-shadow: 0 8px 28px rgba(32,55,31,.08);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+.plant-card-media {
+  aspect-ratio: 4 / 3;
+  background: #e8f1e1;
+  display: block;
+  overflow: hidden;
+}
+.plant-card-media img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.plant-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: .75rem;
+  padding: 1rem;
+}
+.plant-card h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.45rem;
+  line-height: 1.12;
+}
+.plant-card h3 a,
+.text-link {
+  color: var(--leaf);
+  font-weight: 900;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+.plant-card p,
+.botanical-small {
+  color: var(--muted);
+  margin: 0;
+}
+.botanical-small {
+  font-size: .92rem;
+  font-style: italic;
+}
+.mini-facts {
+  display: grid;
+  gap: .55rem;
+  margin: 0;
+}
+.mini-facts div {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: .4rem;
+  grid-template-columns: 72px 1fr;
+  padding-top: .55rem;
+}
+.mini-facts dt {
+  color: var(--leaf);
+  font-size: .78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.mini-facts dd {
+  color: var(--muted);
+  margin: 0;
+}
+.empty-state {
+  background: rgba(255,255,255,.84);
+  border: 1px dashed rgba(49,87,44,.25);
+  border-radius: 8px;
+  grid-column: 1 / -1;
+  padding: 1.2rem;
+}
+.split-tool,
+.diagnoser-layout,
+.plant-detail-grid {
+  align-items: start;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr) 340px;
+}
+.tool-main,
+.diagnoser-main {
+  min-width: 0;
+}
+.tool-side,
+.diagnosis-panel {
+  min-width: 0;
+}
+.sticky-panel,
+.diagnosis-panel {
+  padding: 1rem;
+  position: sticky;
+  top: 6.2rem;
+}
+.summary-count {
+  align-items: baseline;
+  display: flex;
+  gap: .5rem;
+  margin: .75rem 0;
+}
+.summary-count strong {
+  color: var(--leaf);
+  font-size: 2.2rem;
+  line-height: 1;
+}
+.tag-cloud,
+.selected-symptoms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin-top: .85rem;
+}
+.tag-cloud span,
+.selected-symptoms span {
+  background: rgba(53,107,140,.12);
+  border: 1px solid rgba(53,107,140,.18);
+  border-radius: 999px;
+  color: #274f67;
+  font-size: .82rem;
+  font-weight: 850;
+  padding: .35rem .55rem;
+}
+.plant-detail-hero {
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 520px);
+  margin: 0 auto;
+  max-width: var(--max);
+  padding: 4rem 1rem 2rem;
+}
+.plant-detail-media {
+  background: rgba(255,255,255,.82);
+  border: 1px solid rgba(49,87,44,.12);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.plant-detail-media img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  width: 100%;
+}
+.botanical {
+  color: var(--muted);
+  font-size: 1.1rem;
+  font-style: italic;
+  margin: .7rem 0 0;
+}
+.plant-facts-strip {
+  display: grid;
+  gap: .75rem;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.plant-facts-strip div {
+  padding: 1rem;
+}
+.plant-facts-strip strong {
+  color: var(--leaf);
+  display: block;
+  line-height: 1.25;
+  margin-top: .2rem;
+}
+.care-note {
+  border-top: 1px solid var(--line);
+  padding: .9rem 0 0;
+}
+.care-note + .care-note {
+  margin-top: .9rem;
+}
+.care-note strong {
+  color: var(--leaf);
+}
+.care-note p {
+  margin: .25rem 0 0;
+}
+.compact-card h3 {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: .92rem;
+  margin-top: .75rem;
+}
+.symptom-group + .symptom-group {
+  margin-top: 1.25rem;
+}
+.symptom-grid {
+  display: grid;
+  gap: .8rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: .8rem;
+}
+.symptom-card {
+  background: rgba(255,255,255,.9);
+  border: 1px solid rgba(49,87,44,.14);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(32,55,31,.07);
+  color: var(--ink);
+  cursor: pointer;
+  display: grid;
+  font: inherit;
+  font-weight: 850;
+  gap: .65rem;
+  grid-template-rows: auto 1fr;
+  min-height: 190px;
+  padding: .65rem;
+  text-align: left;
+}
+.symptom-card img {
+  aspect-ratio: 16 / 10;
+  border-radius: 6px;
+  object-fit: cover;
+  width: 100%;
+}
+.symptom-card span {
+  align-self: start;
+  line-height: 1.25;
+}
+.symptom-card:hover,
+.symptom-card.is-active {
+  border-color: var(--leaf);
+  box-shadow: 0 0 0 3px rgba(49,87,44,.16), 0 8px 24px rgba(32,55,31,.09);
+}
+.symptom-card.is-active {
+  background: #eef7e9;
+}
+.diagnosis-card {
+  border-top: 1px solid var(--line);
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.diagnosis-card h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  margin-top: .65rem;
+}
+.diagnosis-card h4 {
+  color: var(--leaf);
+  font-size: .86rem;
+  margin: .9rem 0 .25rem;
+  text-transform: uppercase;
+}
+.diagnosis-card p,
+.diagnosis-card ul {
+  color: var(--muted);
+  margin: .25rem 0 0;
+}
+.diagnosis-heading {
+  align-items: center;
+  display: flex;
+  gap: .55rem;
+  justify-content: space-between;
+}
+.top-match {
+  background: rgba(144,169,85,.1);
+  border: 1px solid rgba(49,87,44,.14);
+  border-radius: 8px;
+  padding: 1rem;
+}
+.tool-card .button {
+  margin-top: 1rem;
+}
+.footer { border-top: 1px solid rgba(49,87,44,.12); color: var(--muted); margin-top: 2rem; padding: 2rem 1rem; }
+.footer-inner { align-items: center; display: flex; gap: 1rem; justify-content: space-between; margin: 0 auto; max-width: var(--max); }
+.footer a { color: var(--leaf); font-weight: 800; }
+@media (max-width: 980px) {
+  h1 { font-size: 3.35rem; }
+  h2 { font-size: 2.1rem; }
+  .hero, .grid.three, .grid.two, .grid.four, .section-header, .callout, .module, .filter-panel, .split-tool, .diagnoser-layout, .plant-detail-grid, .plant-detail-hero { grid-template-columns: 1fr; }
+  .hero { padding-top: 3rem; }
+  .nav { align-items: flex-start; flex-direction: column; }
+  .nav-links { justify-content: flex-start; }
+  .plant-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .symptom-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .stat-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .plant-facts-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sticky-panel, .diagnosis-panel { position: static; }
+  .footer-inner { align-items: flex-start; flex-direction: column; }
+}
+@media (max-width: 560px) {
+  h1 { font-size: 2.45rem; }
+  h2 { font-size: 1.75rem; }
+  .nav-links a { padding: .5rem .62rem; }
+  .section { padding: 2.2rem 1rem; }
+  .card-body { padding: 1rem; }
+  .plant-grid, .symptom-grid, .stat-strip, .plant-facts-strip { grid-template-columns: 1fr; }
+  .mini-facts div { grid-template-columns: 1fr; }
+  .filter-group { padding: .75rem; }
+  .plant-detail-hero { padding-top: 2.6rem; }
+  .arrow-label { font-size: .7rem; max-width: 150px; }
+}
