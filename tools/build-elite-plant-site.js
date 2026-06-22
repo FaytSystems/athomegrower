@@ -289,8 +289,9 @@ function publicFileFromUrl(url) {
 }
 
 function ensurePlantImage(plant) {
+  const incomingImage = plant.image || "";
   const existing = publicFileFromUrl(plant.image);
-  if (existing && fs.existsSync(existing)) return plant.image;
+  if (existing && fs.existsSync(existing) && !/\.svg$/i.test(incomingImage)) return plant.image;
   const generatedRealDir = path.join(publicDir, "assets", "images", "generated-real");
   const realFileName = `${plant.plantTypeCategory}-${plant.slug}.webp`;
   const realUrl = `/assets/images/generated-real/${realFileName}`;
@@ -298,6 +299,49 @@ function ensurePlantImage(plant) {
   const genericRealUrl = "/assets/images/generated-real/source-generic-potted-plant.png";
   if (fs.existsSync(publicFileFromUrl(genericRealUrl))) return genericRealUrl;
   return genericRealUrl;
+}
+
+function petLabel(status) {
+  const key = slugify(status);
+  if (key.includes("pet-friendly")) return "Pet-friendly";
+  if (key.includes("toxic")) return "Toxic / keep away";
+  return "Check pets";
+}
+
+function petTagKind(status) {
+  const key = slugify(status);
+  if (key.includes("pet-friendly")) return "pet-safe";
+  if (key.includes("toxic")) return "toxic";
+  return "pet-check";
+}
+
+function lightTagLabel(value) {
+  const text = cleanText(value) || "Match light";
+  const key = text.toLowerCase();
+  if (key.includes("full sun") && (key.includes("part shade") || key.includes("partial shade"))) return "Sun / part shade";
+  if (key.includes("full sun")) return "Full sun";
+  if (key.includes("bright indirect")) return "Bright indirect";
+  if (key.includes("direct sun")) return "Direct sun";
+  if (key.includes("low light")) return "Low light";
+  if (key.includes("medium")) return "Medium light";
+  if (key.includes("part shade") || key.includes("partial shade")) return "Part shade";
+  if (key.includes("shade")) return "Shade";
+  return text.length > 32 ? `${text.slice(0, 29).trim()}...` : text;
+}
+
+function careTagLabel(value) {
+  const key = slugify(value);
+  if (key.includes("easy") || key.includes("beginner")) return "Easy grow";
+  if (key.includes("advanced") || key.includes("difficult") || key.includes("hard")) return "Advanced grow";
+  return "Moderate grow";
+}
+
+function cardTags(plant) {
+  return [
+    { kind: petTagKind(plant.petStatus), label: petLabel(plant.petStatus) },
+    { kind: "light", label: lightTagLabel(plant.lightText) },
+    { kind: "difficulty", label: careTagLabel(plant.careLevel) },
+  ];
 }
 
 function pageShell({ title, description, current = "", body, script = "/assets/app.js" }) {
@@ -359,10 +403,13 @@ function siteFooter() {
 }
 
 function plantCardStatic(plant) {
+  const tags = cardTags(plant)
+    .map((tag) => `<span class="card-tag ${attr(tag.kind)}">${html(tag.label)}</span>`)
+    .join("");
   return `<article class="plant-card" data-search-card data-category="${attr(plant.plantTypeCategory)}">
     <a class="plant-card-media" href="${attr(plant.factsUrl)}"><img src="${attr(plant.image)}" alt="${attr(plant.alt)}" loading="lazy"></a>
     <div class="plant-card-body">
-      <div class="pill-row"><span class="pill">${html(plant.categoryLabel)}</span><span class="pill">${html(plant.careLevel)}</span></div>
+      <div class="card-tags">${tags}</div>
       <h3><a href="${attr(plant.factsUrl)}">${html(plant.name)}</a></h3>
       <p>${html(plant.description)}</p>
       <dl class="mini-facts">
@@ -374,13 +421,6 @@ function plantCardStatic(plant) {
       <a class="text-link" href="${attr(plant.factsUrl)}">Open plant profile</a>
     </div>
   </article>`;
-}
-
-function petLabel(status) {
-  const key = slugify(status);
-  if (key.includes("pet-friendly")) return "Pet-friendly";
-  if (key.includes("toxic")) return "Toxic / keep away";
-  return "Check before use";
 }
 
 function plantDetailPage(plant, allPlants) {

@@ -124,7 +124,43 @@
     const key = slug(status);
     if (key.includes("pet-friendly")) return "Pet-friendly";
     if (key.includes("toxic")) return "Toxic / keep away";
-    return "Check before use";
+    return "Check pets";
+  }
+
+  function petTagKind(status) {
+    const key = slug(status);
+    if (key.includes("pet-friendly")) return "pet-safe";
+    if (key.includes("toxic")) return "toxic";
+    return "pet-check";
+  }
+
+  function lightTagLabel(value) {
+    const text = String(value || "Match light").trim();
+    const key = text.toLowerCase();
+    if (key.includes("full sun") && (key.includes("part shade") || key.includes("partial shade"))) return "Sun / part shade";
+    if (key.includes("full sun")) return "Full sun";
+    if (key.includes("bright indirect")) return "Bright indirect";
+    if (key.includes("direct sun")) return "Direct sun";
+    if (key.includes("low light")) return "Low light";
+    if (key.includes("medium")) return "Medium light";
+    if (key.includes("part shade") || key.includes("partial shade")) return "Part shade";
+    if (key.includes("shade")) return "Shade";
+    return text.length > 32 ? `${text.slice(0, 29).trim()}...` : text;
+  }
+
+  function careTagLabel(value) {
+    const key = slug(value);
+    if (key.includes("easy") || key.includes("beginner")) return "Easy grow";
+    if (key.includes("advanced") || key.includes("difficult") || key.includes("hard")) return "Advanced grow";
+    return "Moderate grow";
+  }
+
+  function cardTags(plant) {
+    return [
+      { kind: petTagKind(plant.petStatus), label: petLabel(plant.petStatus) },
+      { kind: "light", label: lightTagLabel(plant.lightText) },
+      { kind: "difficulty", label: careTagLabel(plant.careLevel) },
+    ];
   }
 
   function plantFacet(plant, facet) {
@@ -179,18 +215,14 @@
   }
 
   function plantCard(plant) {
-    const tags = [
-      categoryLabels[plant.plantTypeCategory] || plant.categoryLabel,
-      petLabel(plant.petStatus),
-      plant.careLevel,
-    ].filter(Boolean);
+    const tags = cardTags(plant);
 
     return `<article class="plant-card" data-plant-card>
       <a class="plant-card-media" href="${plant.factsUrl}">
         <img src="${plant.image}" alt="${escapeHtml(plant.alt || plant.name)}" loading="lazy">
       </a>
       <div class="plant-card-body">
-        <div class="pill-row">${tags.map((tag) => `<span class="pill">${escapeHtml(tag)}</span>`).join("")}</div>
+        <div class="card-tags">${tags.map((tag) => `<span class="card-tag ${tag.kind}">${escapeHtml(tag.label)}</span>`).join("")}</div>
         <h3><a href="${plant.factsUrl}">${escapeHtml(plant.name)}</a></h3>
         ${plant.botanicalName ? `<p class="botanical-small">${escapeHtml(plant.botanicalName)}</p>` : ""}
         <p>${escapeHtml(plant.description)}</p>
