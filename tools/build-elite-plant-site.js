@@ -283,63 +283,21 @@ function addPlant(map, raw, fallbackCategory = "") {
   map.set(key, merged);
 }
 
-function colorFrom(value, saturation = 58, lightness = 42) {
-  let hash = 0;
-  for (const char of value) hash = (hash * 31 + char.charCodeAt(0)) >>> 0;
-  return `hsl(${hash % 360} ${saturation}% ${lightness}%)`;
-}
-
 function publicFileFromUrl(url) {
   if (!url || !url.startsWith("/")) return "";
   return path.join(publicDir, ...url.slice(1).split("/"));
 }
 
-function plantSvg(plant) {
-  const main = colorFrom(plant.slug, 44, 34);
-  const light = colorFrom(`${plant.slug}-light`, 52, 76);
-  const accent = categoryMeta[plant.plantTypeCategory]?.accent || "#d8e9af";
-  const label = html(plant.name);
-  const type = html(categoryMeta[plant.plantTypeCategory]?.shortLabel || plant.plantType);
-  const fruit = plant.plantTypeCategory === "fruits" || plant.plantTypeCategory === "vegetables";
-  const herb = plant.plantTypeCategory === "herbs";
-  const toxic = plant.plantTypeCategory === "toxic";
-  const pot = toxic ? "#6f3f33" : "#78513a";
-  const dots = fruit
-    ? `<circle cx="323" cy="219" r="24" fill="#d86a34"/><circle cx="445" cy="233" r="21" fill="#bc3f4a"/><circle cx="392" cy="173" r="18" fill="#efa434"/>`
-    : "";
-  const flowers = herb
-    ? `<circle cx="318" cy="190" r="14" fill="#f3cf62"/><circle cx="468" cy="190" r="14" fill="#f3cf62"/>`
-    : "";
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
-<title id="title">${label}</title>
-<desc id="desc">Generated AtHomeGrower plant illustration.</desc>
-<rect width="800" height="520" rx="36" fill="#f8fbf4"/>
-<rect x="28" y="28" width="744" height="464" rx="28" fill="${light}" opacity=".45"/>
-<path d="M98 418c74-68 160-94 260-79 129 20 223-27 318-138 35 126 0 216-105 270H99z" fill="${accent}" opacity=".5"/>
-<ellipse cx="398" cy="430" rx="184" ry="32" fill="#233021" opacity=".14"/>
-<path d="M302 347h196l-26 104H328z" fill="${pot}"/>
-<path d="M287 327h226v42H287z" fill="#93664a"/>
-<path d="M402 333c-10-118-7-194 10-246" fill="none" stroke="${main}" stroke-width="16" stroke-linecap="round"/>
-<path d="M392 263c-84-82-155-93-212-33 74 49 143 59 212 33z" fill="${main}"/>
-<path d="M407 253c90-76 164-81 221-15-76 41-146 46-221 15z" fill="${main}" opacity=".92"/>
-<path d="M399 202c-80-78-83-142-13-192 42 72 46 136 13 192z" fill="${main}" opacity=".86"/>
-<path d="M407 316c58-69 119-84 184-45-54 56-113 72-184 45z" fill="${main}" opacity=".8"/>
-<path d="M386 313c-68-50-132-50-190-2 66 35 129 36 190 2z" fill="${main}" opacity=".78"/>
-${dots}${flowers}
-<text x="400" y="80" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#1f2c1d">${label}</text>
-<text x="400" y="118" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#52614b">${type}</text>
-</svg>`;
-}
-
 function ensurePlantImage(plant) {
   const existing = publicFileFromUrl(plant.image);
   if (existing && fs.existsSync(existing)) return plant.image;
-  const generatedDir = path.join(publicDir, "assets", "images", "generated-plants");
-  ensureDir(generatedDir);
-  const fileName = `${plant.plantTypeCategory}-${plant.slug}.svg`;
-  const url = `/assets/images/generated-plants/${fileName}`;
-  fs.writeFileSync(path.join(generatedDir, fileName), plantSvg(plant));
-  return url;
+  const generatedRealDir = path.join(publicDir, "assets", "images", "generated-real");
+  const realFileName = `${plant.plantTypeCategory}-${plant.slug}.webp`;
+  const realUrl = `/assets/images/generated-real/${realFileName}`;
+  if (fs.existsSync(path.join(generatedRealDir, realFileName))) return realUrl;
+  const genericRealUrl = "/assets/images/generated-real/source-generic-potted-plant.png";
+  if (fs.existsSync(publicFileFromUrl(genericRealUrl))) return genericRealUrl;
+  return genericRealUrl;
 }
 
 function pageShell({ title, description, current = "", body, script = "/assets/app.js" }) {
