@@ -58,6 +58,8 @@ function nav(current = "") {
     ["Additives", "/organic-additives.html", "additives"],
     ["How-To", "/how-to.html", "how-to"],
     ["Tools", "/tools.html", "tools"],
+    ["Store", "/store.html", "store"],
+    ["Advertise", "/advertise.html", "advertise"],
     ["Search", "/search.html", "search"],
   ];
   return `<header class="site-header">
@@ -77,7 +79,7 @@ function footer() {
   return `<footer class="footer">
   <div class="footer-inner">
     <p>&copy; <span data-current-year></span> AtHomeGrower.com - Indoor/outdoor plant care for real homes.</p>
-    <p><a href="/about/editorial-policy.html">Editorial policy</a> - <a href="/image-credits.html">Image credits</a> - <a href="#top">Back to top</a></p>
+    <p><a href="/store.html">Store</a> - <a href="/affiliate-disclosure.html">Affiliate disclosure</a> - <a href="/advertise.html">Advertise</a> - <a href="/about/editorial-policy.html">Editorial policy</a> - <a href="/image-credits.html">Image credits</a> - <a href="#top">Back to top</a></p>
   </div>
 </footer>`;
 }
@@ -107,6 +109,7 @@ function imageCreditsPage() {
     ? `<section class="section">
   <div class="section-header">
     <div><h2>Plant photo credits</h2><p>These real plant photos were selected from Wikimedia Commons files that list public-domain, CC0, CC BY, or CC BY-SA reuse terms. Each local copy was cropped/resized into WebP for card display.</p></div>
+    <a class="button secondary" href="/photo-sourcing-policy.html">Photo sourcing policy</a>
   </div>
   <div class="credit-list">${plantCredits.map(plantCreditItem).join("")}</div>
 </section>`
@@ -141,8 +144,57 @@ ${footer()}
 `;
 }
 
+function photoSourcingPolicyPage() {
+  const providers = [
+    ["Wikimedia Commons", "Used now for local plant-card photos with explicit public-domain, CC0, CC BY, or CC BY-SA metadata.", "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia"],
+    ["Openverse", "Approved as a discovery source only when the item-level license and source page verify commercial reuse and adaptation rights.", "https://api.openverse.org/v1/"],
+    ["iNaturalist", "Approved only for individual photos whose license is CC0, CC BY, or CC BY-SA; NonCommercial, NoDerivatives, and all-rights-reserved images are rejected.", "https://api.inaturalist.org/v1/docs/"],
+    ["Flickr", "Approved through the Flickr API license metadata when the photo license is public domain, CC0, CC BY, or CC BY-SA.", "https://www.flickr.com/services/api/flickr.photos.licenses.getInfo.html"],
+    ["GBIF occurrence media", "Approved only when occurrence/media records provide usable rights metadata and the source page can be credited.", "https://techdocs.gbif.org/en/openapi/v1/occurrence"],
+  ];
+  return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photo Sourcing Policy | AtHomeGrower.com</title>
+  <meta name="description" content="Legal photo sourcing rules for AtHomeGrower plant images.">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body id="top"><a class="skip-link" href="#main">Skip to content</a>
+${nav("image-credits")}
+<main id="main"><section class="page-hero">
+  <span class="eyebrow">Photo sourcing policy</span>
+  <h1>More databases, same legal filter.</h1>
+  <p class="lede">AtHomeGrower can use additional photo databases, but citation alone is not permission. Every imported image must pass license, source, attribution, and modification checks before it appears on a plant card.</p>
+</section>
+<section class="section">
+  <div class="grid two">
+    <article class="card"><div class="card-body">
+      <h2>Accepted</h2>
+      <p>Public domain, CC0, CC BY, and CC BY-SA photos with a traceable source page, author/credit where available, license label, license URL when provided, and local modification notes.</p>
+    </div></article>
+    <article class="card"><div class="card-body">
+      <h2>Rejected</h2>
+      <p>All-rights-reserved, fair-use-only, unclear-license, NonCommercial, NoDerivatives, missing-source, social-media repost, and marketplace product images unless a separate approved API or written license permits use.</p>
+    </div></article>
+  </div>
+</section>
+<section class="section">
+  <div class="section-header"><div><h2>Approved source paths</h2><p>These are allowed as provider pipelines only when each individual image passes the accepted-license rule.</p></div></div>
+  <div class="credit-list">
+    ${providers.map(([name, note, url]) => `<div class="credit-item"><strong>${html(name)}</strong><br>${html(note)}<br><a href="${attr(url)}" target="_blank" rel="noopener">Provider documentation</a></div>`).join("")}
+  </div>
+</section></main>
+${footer()}
+<script src="/assets/app.js"></script>
+</body></html>
+`;
+}
+
 function writeImageCreditsPage() {
   fs.writeFileSync(path.join(publicDir, "image-credits.html"), imageCreditsPage());
+  fs.writeFileSync(path.join(publicDir, "photo-sourcing-policy.html"), photoSourcingPolicyPage());
 }
 
 if (require.main === module) {
@@ -150,4 +202,4 @@ if (require.main === module) {
   console.log(JSON.stringify({ plantCredits: readPlantCredits().length, output: "public/image-credits.html" }, null, 2));
 }
 
-module.exports = { writeImageCreditsPage, imageCreditsPage };
+module.exports = { writeImageCreditsPage, imageCreditsPage, photoSourcingPolicyPage };

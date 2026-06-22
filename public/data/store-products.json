@@ -1,0 +1,938 @@
+{
+  "version": "recovered-affiliate-store-v1",
+  "generatedAt": "2026-06-22T05:53:42.969Z",
+  "disclosure": "As an Amazon Associate, AtHomeGrower may earn from qualifying purchases. Product price, availability, ratings, seller, shipping, and details can change.",
+  "categories": [
+    {
+      "id": "seeds",
+      "label": "Seeds",
+      "title": "Seed Store Picks",
+      "eyebrow": "Seed section",
+      "description": "Heirloom vegetable seed kits, culinary seed mixes, survival-style garden packs, and seed vault options for raised beds, patios, and backyard food gardens.",
+      "ctaLabel": "Check planting calendar",
+      "ctaHref": "/tools.html",
+      "pageUrl": "/store/seeds.html",
+      "products": [
+        {
+          "id": "seeds-1",
+          "categoryId": "seeds",
+          "kicker": "Heirloom vegetable seeds",
+          "name": "KM Farms Heirloom Vegetable Seed Variety Pack",
+          "bestFor": "Beginner vegetable beds, survival garden planning, and broad seed variety.",
+          "whyItFits": "A broad vegetable seed kit works well as the top seed-store pick for new food gardeners who want many crop options in one purchase.",
+          "caution": "Compare seed count, varieties, germination info, packaging, seller details, shipping date, and current reviews on Amazon.",
+          "affiliateUrl": "https://www.amazon.com/KM-Farms-Weatherproof-Sustainable-Self-Sufficient/dp/B0C7WNK7KF?dib=eyJ2IjoiMSJ9.3E8HZYP9QntL3kD6iO7VQTusxt4seil6-pk-sUiD_hm_ONSaAJ0zLKKeNLr2ecyzpcVz2VZDEkYBsdKRdCqWiPgSPGO3ri858PQCvego7WyQxr3eKoIxPcnzHaXJgMQCBlEeYUfYz5yFbDVE06SvFZMkobH0RY-6T1KU23rLmKIOvhYI09kMVnPgwqHsH-ufD3FtJLgqYV_Xc2Ww8DosYSg1ENzvaSGy3ntCSu1RAcfBrEt8-c3nsHVbI9u5FMJvGo25qRXC5YNLWZ2u6YuvqfflUrXPuMHW-XA2lBZenSU.cf8hjPeeyVBfOeaOO4yxvdR4ewweUQqwLsReBHl9Pvk&dib_tag=se&keywords=heirloom+vegetable+seed+variety+pack&qid=1780613217&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll2&tag=theeveryt0b85-20&linkId=be37814e96b2ca17ea783379c66a3789&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "seeds-2",
+          "categoryId": "seeds",
+          "kicker": "Vegetable seed kit",
+          "name": "Heirloom Vegetable Seed Variety Pack",
+          "bestFor": "Home gardeners comparing simple vegetable seed bundles.",
+          "whyItFits": "Good for the seed section as a general vegetable variety-pack option.",
+          "caution": "Compare seed count, varieties, germination info, packaging, seller details, shipping date, and current reviews on Amazon.",
+          "affiliateUrl": "https://www.amazon.com/gp/aw/d/B08TB3T43F?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=7b88dd476e0705edb991dcd8c92c7253&hsa_cr_id=8840210990101&qid=1780613241&sr=1-1-9e67e56a-6f64-441f-a281-df67fc737124&pd_rd_w=Q1OFu&content-id=amzn1.sym.2fb72bc8-96ef-420d-b08f-c04b69f36507%3Aamzn1.sym.2fb72bc8-96ef-420d-b08f-c04b69f36507&pf_rd_p=2fb72bc8-96ef-420d-b08f-c04b69f36507&pf_rd_r=6YHN0JMGKFW6YBWVX06Q&pd_rd_wg=pug4A&pd_rd_r=59fe227c-ddc7-4304-a2b2-810a59e27769&th=1&linkCode=ll2&tag=theeveryt0b85-20&linkId=74bc28716129836d6a58367b5ba78778&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "seeds-3",
+          "categoryId": "seeds",
+          "kicker": "Vegetable seed kit",
+          "name": "Heirloom Garden Seed Pack",
+          "bestFor": "Beginner gardeners building a broad seed drawer.",
+          "whyItFits": "Useful as an alternate seed-kit card for shoppers who want to compare seed count, varieties, and packaging.",
+          "caution": "Compare seed count, varieties, germination info, packaging, seller details, shipping date, and current reviews on Amazon.",
+          "affiliateUrl": "https://www.amazon.com/gp/aw/d/B09RKKGGRS?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=7b88dd476e0705edb991dcd8c92c7253&hsa_cr_id=8840210990101&qid=1780613241&sr=1-2-9e67e56a-6f64-441f-a281-df67fc737124&pd_rd_w=Q1OFu&content-id=amzn1.sym.2fb72bc8-96ef-420d-b08f-c04b69f36507%3Aamzn1.sym.2fb72bc8-96ef-420d-b08f-c04b69f36507&pf_rd_p=2fb72bc8-96ef-420d-b08f-c04b69f36507&pf_rd_r=6YHN0JMGKFW6YBWVX06Q&pd_rd_wg=pug4A&pd_rd_r=59fe227c-ddc7-4304-a2b2-810a59e27769&th=1&linkCode=ll2&tag=theeveryt0b85-20&linkId=d2c1686dad6e3aca07e6804c553f5474&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "seeds-4",
+          "categoryId": "seeds",
+          "kicker": "Heirloom vegetable seeds",
+          "name": "Assorted Valley Greene Heirloom Vegetable Seeds",
+          "bestFor": "Raised beds, backyard vegetable gardens, and beginner seed collections.",
+          "whyItFits": "A named heirloom vegetable option for users who want a classic mixed seed pack.",
+          "caution": "Compare seed count, varieties, germination info, packaging, seller details, shipping date, and current reviews on Amazon.",
+          "affiliateUrl": "https://www.amazon.com/Assorted-Valley-Greene-Heirloom-Vegetable/dp/B079THC8SR?dib=eyJ2IjoiMSJ9.2iblCAEfe3B5LLqCWQLZWWlIeThav6rtXrm5gfyvikwd8vEM5pW-8lSNWL1Bxn5MUbIzoKZyqPxShMhhFAHHSe4sS2MNh3sqRKxYLPVSH39CHY0vGshNnFaani_IIqPB1iAiU_CgBBWTP4oilWZt6qnYbIoFOmVzKXrASumr_jO2XRR7Ss8zmRD2-7Yd26bOdVlgLp_6vM1Xd2Msj6paEcQAobh3nii_vjjysylfqMqVdCv5mDctxyaroXLE7afdIw7NT9aNJwkovlrU85Kd2FuZ14gjRMD93bo59sZviBU.kGegxrv-Cl3_HHzBs0yfLrR8TQ-i5x5RtCpwW9iQHRA&dib_tag=se&keywords=heirloom+vegetable+seed+variety+pack&qid=1780613241&refinements=p_n_g-1002748467111%3A205120561011%7C23561836011%7C23561838011&rnid=23561827011&sr=8-11&linkCode=ll2&tag=theeveryt0b85-20&linkId=7f9fde8c7f1006f914a03d42c7e37280&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "seeds-5",
+          "categoryId": "seeds",
+          "kicker": "Survival / storage seed kit",
+          "name": "Heaven's Harvest Survival Vegetable Heirloom Seeds",
+          "bestFor": "Self-sufficient garden planning and longer-term seed storage.",
+          "whyItFits": "A survival-style vegetable seed card gives the store section a preparedness option.",
+          "caution": "Compare seed count, varieties, germination info, packaging, seller details, shipping date, and current reviews on Amazon.",
+          "affiliateUrl": "https://www.amazon.com/Heavens-Survival-Vegetable-Heirloom-Planting/dp/B0BTMZMKG4?dib=eyJ2IjoiMSJ9.2iblCAEfe3B5LLqCWQLZWWlIeThav6rtXrm5gfyvikwd8vEM5pW-8lSNWL1Bxn5MUbIzoKZyqPxShMhhFAHHSe4sS2MNh3sqRKxYLPVSH39CHY0vGshNnFaani_IIqPB1iAiU_CgBBWTP4oilWZt6qnYbIoFOmVzKXrASumr_jO2XRR7Ss8zmRD2-7Yd26bOdVlgLp_6vM1Xd2Msj6paEcQAobh3nii_vjjysylfqMqVdCv5mDctxyaroXLE7afdIw7NT9aNJwkovlrU85Kd2FuZ14gjRMD93bo59sZviBU.kGegxrv-Cl3_HHzBs0yfLrR8TQ-i5x5RtCpwW9iQHRA&dib_tag=se&keywords=heirloom%2Bvegetable%2Bseed%2Bvariety%2Bpack&qid=1780613241&refinements=p_n_g-1002748467111%3A205120561011%7C23561836011%7C23561838011&rnid=23561827011&sr=8-13-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&linkCode=ll2&tag=theeveryt0b85-20&linkId=270d51cfc89075a2e2a6306057a18e0f&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "seeds-6",
+          "categoryId": "seeds",
+          "kicker": "Vegetable and herb seeds",
+          "name": "Culinary Vegetable & Herb Seeds Variety Pack",
+          "bestFor": "Kitchen gardeners who want herbs and vegetables from one seed pack.",
+          "whyItFits": "A mixed culinary seed option fits the herb garden and beginner kitchen garden pages.",
+          "caution": "Compare seed count, varieties, germination info, packaging, seller details, shipping date, and current reviews on Amazon.",
+          "affiliateUrl": "https://www.amazon.com/Culinary-Vegetable-Herb-Seeds-Variety/dp/B0GJ724GRC?dib=eyJ2IjoiMSJ9.2iblCAEfe3B5LLqCWQLZWWlIeThav6rtXrm5gfyvikwd8vEM5pW-8lSNWL1Bxn5MUbIzoKZyqPxShMhhFAHHSe4sS2MNh3sqRKxYLPVSH39CHY0vGshNnFaani_IIqPB1iAiU_CgBBWTP4oilWZt6qnYbIoFOmVzKXrASumr_jO2XRR7Ss8zmRD2-7Yd26bOdVlgLp_6vM1Xd2Msj6paEcQAobh3nii_vjjysylfqMqVdCv5mDctxyaroXLE7afdIw7NT9aNJwkovlrU85Kd2FuZ14gjRMD93bo59sZviBU.kGegxrv-Cl3_HHzBs0yfLrR8TQ-i5x5RtCpwW9iQHRA&dib_tag=se&keywords=heirloom+vegetable+seed+variety+pack&qid=1780613241&refinements=p_n_g-1002748467111%3A205120561011%7C23561836011%7C23561838011&rnid=23561827011&sr=8-24&linkCode=ll2&tag=theeveryt0b85-20&linkId=7403c110cab793e213050c6a33523e75&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "seeds-7",
+          "categoryId": "seeds",
+          "kicker": "Open-pollinated seed vault",
+          "name": "Heirloom Seed Vault Kit",
+          "bestFor": "Longer-term planning, emergency garden kits, and self-sufficient gardeners.",
+          "whyItFits": "A seed-vault style kit belongs in the store for users who want open-pollinated varieties and storage-friendly packaging.",
+          "caution": "Compare seed count, varieties, germination info, packaging, seller details, shipping date, and current reviews on Amazon.",
+          "affiliateUrl": "https://www.amazon.com/Heirloom-Seed-Vault-Kit-Open-Pollinated/dp/B07BZDMH6Y?dib=eyJ2IjoiMSJ9.2iblCAEfe3B5LLqCWQLZWWlIeThav6rtXrm5gfyvikwd8vEM5pW-8lSNWL1Bxn5MUbIzoKZyqPxShMhhFAHHSe4sS2MNh3sqRKxYLPVSH39CHY0vGshNnFaani_IIqPB1iAiU_CgBBWTP4oilWZt6qnYbIoFOmVzKXrASumr_jO2XRR7Ss8zmRD2-7Yd26bOdVlgLp_6vM1Xd2Msj6paEcQAobh3nii_vjjysylfqMqVdCv5mDctxyaroXLE7afdIw7NT9aNJwkovlrU85Kd2FuZ14gjRMD93bo59sZviBU.kGegxrv-Cl3_HHzBs0yfLrR8TQ-i5x5RtCpwW9iQHRA&dib_tag=se&keywords=heirloom%2Bvegetable%2Bseed%2Bvariety%2Bpack&qid=1780613241&refinements=p_n_g-1002748467111%3A205120561011%7C23561836011%7C23561838011&rnid=23561827011&sr=8-26&th=1&linkCode=ll2&tag=theeveryt0b85-20&linkId=90f818ab5de68ef5ae8ee728dda614e5&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "Tools",
+      "title": "Tool Store Picks",
+      "eyebrow": "Tool section",
+      "description": "Planting, pruning, trimming, weeding, cultivating, carrying supplies, and making garden work more comfortable.",
+      "ctaLabel": "Open tools guide",
+      "ctaHref": "/tools.html",
+      "pageUrl": "/store/tools.html",
+      "products": [
+        {
+          "id": "tools-1",
+          "categoryId": "tools",
+          "kicker": "Starter hand-tool set",
+          "name": "Fiskars 3-Piece Vegetable Garden Tool Set",
+          "bestFor": "New gardeners who want a trowel, cultivator, and basic vegetable-garden hand tools in one set.",
+          "whyItFits": "A practical store card for beginner vegetable beds, raised beds, and container gardens.",
+          "caution": "Check current Amazon price, package details, seller, shipping, reviews, size, and whether the tool fits your hand strength and garden size.",
+          "affiliateUrl": "https://www.amazon.com/Fiskars-Vegetable-Cultivator-Outdoor-Gardening/dp/B0D88VCMJD?crid=1SS5ED17ZDC40&dib=eyJ2IjoiMSJ9.9JAZrA-IJtKYik3jpuWyiN67CN0EeyaMCBqKhL_o5fAfLL4HunYw0gqRRLmTup_Ackejpw7F2Q6EFdGrenSRHUwxL3YehqJ-sk_LtnG5Rq03K-IYLs06FrNjiXl2VM9UHnjeNzKKGIaQf1qES-p53iaBzteHtH8YTcJUxCD4mHfbzCsGQtA-P7FXiERbvulCoANL6eMvaIkf8MYQIMjU-sjeB1fGXK_p4Cg8xgfkPjScjY6EEipMGKJ-z2SjwY0xgJ_V_KVlrwcqbSE29QHbumsbRlNB2Y6E7nRxlPXJYBY.nSsDjHBhfTXzbPNUxgqY_AzGLDXjg2a2aF-2D5n2w2U&dib_tag=se&keywords=gardening+tools&qid=1780613486&refinements=p_123%3A235962%2Cp_n_condition-type%3A6358196011&rnid=6358194011&sprefix=gardening+tool%2Caps%2C202&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll2&tag=athomegrower-20&linkId=73a7ad8e3ea70a0de1dfca1b4f3f50c3&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "tools-2",
+          "categoryId": "tools",
+          "kicker": "Transplanting tool",
+          "name": "Fiskars Cast Aluminum Transplanter",
+          "bestFor": "Planting seedlings, annuals, herbs, and small vegetable transplants.",
+          "whyItFits": "A transplanter is useful when moving young plants from trays into containers, beds, or garden rows.",
+          "caution": "Check current Amazon price, package details, seller, shipping, reviews, size, and whether the tool fits your hand strength and garden size.",
+          "affiliateUrl": "https://www.amazon.com/Fiskars-Cast-Aluminum-Resistance-Heavy-Duty-Transplanter/dp/B01MUXL5V8?crid=1SS5ED17ZDC40&dib=eyJ2IjoiMSJ9.9JAZrA-IJtKYik3jpuWyiN67CN0EeyaMCBqKhL_o5fAfLL4HunYw0gqRRLmTup_Ackejpw7F2Q6EFdGrenSRHUwxL3YehqJ-sk_LtnG5Rq03K-IYLs06FrNjiXl2VM9UHnjeNzKKGIaQf1qES-p53iaBzteHtH8YTcJUxCD4mHfbzCsGQtA-P7FXiERbvulCoANL6eMvaIkf8MYQIMjU-sjeB1fGXK_p4Cg8xgfkPjScjY6EEipMGKJ-z2SjwY0xgJ_V_KVlrwcqbSE29QHbumsbRlNB2Y6E7nRxlPXJYBY.nSsDjHBhfTXzbPNUxgqY_AzGLDXjg2a2aF-2D5n2w2U&dib_tag=se&keywords=gardening%2Btools&qid=1780613486&refinements=p_123%3A235962%2Cp_n_condition-type%3A6358196011&rnid=6358194011&sprefix=gardening%2Btool%2Caps%2C202&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=athomegrower-20&linkId=c010c0c441136e44296314967c31b307&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "tools-3",
+          "categoryId": "tools",
+          "kicker": "Hand pruners",
+          "name": "Fiskars Bypass Pruning Shears",
+          "bestFor": "Trimming stems, deadheading flowers, pruning herbs, and cutting small branches.",
+          "whyItFits": "Bypass pruners are one of the most useful tools for both indoor and outdoor gardeners.",
+          "caution": "Check current Amazon price, package details, seller, shipping, reviews, size, and whether the tool fits your hand strength and garden size.",
+          "affiliateUrl": "https://www.amazon.com/Capacity-Clippers-Gardening-Scissors-Resistant/dp/B00002N66H?crid=1SS5ED17ZDC40&dib=eyJ2IjoiMSJ9.9JAZrA-IJtKYik3jpuWyiN67CN0EeyaMCBqKhL_o5fAfLL4HunYw0gqRRLmTup_Ackejpw7F2Q6EFdGrenSRHUwxL3YehqJ-sk_LtnG5Rq03K-IYLs06FrNjiXl2VM9UHnjeNzKKGIaQf1qES-p53iaBzteHtH8YTcJUxCD4mHfbzCsGQtA-P7FXiERbvulCoANL6eMvaIkf8MYQIMjU-sjeB1fGXK_p4Cg8xgfkPjScjY6EEipMGKJ-z2SjwY0xgJ_V_KVlrwcqbSE29QHbumsbRlNB2Y6E7nRxlPXJYBY.nSsDjHBhfTXzbPNUxgqY_AzGLDXjg2a2aF-2D5n2w2U&dib_tag=se&keywords=gardening%2Btools&qid=1780613486&refinements=p_123%3A235962%2Cp_n_condition-type%3A6358196011&rnid=6358194011&sprefix=gardening%2Btool%2Caps%2C202&sr=8-7&th=1&linkCode=ll2&tag=athomegrower-20&linkId=3f7719ea57b07dd98df86d97ac7704c7&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "tools-4",
+          "categoryId": "tools",
+          "kicker": "Hand trowel",
+          "name": "Fiskars Ergo Garden Trowel",
+          "bestFor": "Digging small holes, potting plants, moving soil, and planting herbs or flowers.",
+          "whyItFits": "A hand trowel is a first-tool essential for nearly every home gardener.",
+          "caution": "Check current Amazon price, package details, seller, shipping, reviews, size, and whether the tool fits your hand strength and garden size.",
+          "affiliateUrl": "https://www.amazon.com/Fiskars-384220-1001-Ergo-Trowel/dp/B004S0PGPM?crid=1SS5ED17ZDC40&dib=eyJ2IjoiMSJ9.9JAZrA-IJtKYik3jpuWyiN67CN0EeyaMCBqKhL_o5fAfLL4HunYw0gqRRLmTup_Ackejpw7F2Q6EFdGrenSRHUwxL3YehqJ-sk_LtnG5Rq03K-IYLs06FrNjiXl2VM9UHnjeNzKKGIaQf1qES-p53iaBzteHtH8YTcJUxCD4mHfbzCsGQtA-P7FXiERbvulCoANL6eMvaIkf8MYQIMjU-sjeB1fGXK_p4Cg8xgfkPjScjY6EEipMGKJ-z2SjwY0xgJ_V_KVlrwcqbSE29QHbumsbRlNB2Y6E7nRxlPXJYBY.nSsDjHBhfTXzbPNUxgqY_AzGLDXjg2a2aF-2D5n2w2U&dib_tag=se&keywords=gardening%2Btools&qid=1780613486&refinements=p_123%3A235962%2Cp_n_condition-type%3A6358196011&rnid=6358194011&sprefix=gardening%2Btool%2Caps%2C202&sr=8-9&th=1&linkCode=ll2&tag=athomegrower-20&linkId=2251aedf7d0fbbea1e69df5d7696071f&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "tools-5",
+          "categoryId": "tools",
+          "kicker": "Precision snips",
+          "name": "Fiskars Micro-Tip Pruning Snips",
+          "bestFor": "Herbs, seedling work, deadheading, houseplant grooming, and tight precision cuts.",
+          "whyItFits": "Micro-tip snips are helpful for indoor plant collections, herbs, and small-space gardening.",
+          "caution": "Check current Amazon price, package details, seller, shipping, reviews, size, and whether the tool fits your hand strength and garden size.",
+          "affiliateUrl": "https://www.amazon.com/Fiskars-Micro-Tip-Pruning-Snips/dp/B07N7963CH?crid=1SS5ED17ZDC40&dib=eyJ2IjoiMSJ9.9JAZrA-IJtKYik3jpuWyiN67CN0EeyaMCBqKhL_o5fAfLL4HunYw0gqRRLmTup_Ackejpw7F2Q6EFdGrenSRHUwxL3YehqJ-sk_LtnG5Rq03K-IYLs06FrNjiXl2VM9UHnjeNzKKGIaQf1qES-p53iaBzteHtH8YTcJUxCD4mHfbzCsGQtA-P7FXiERbvulCoANL6eMvaIkf8MYQIMjU-sjeB1fGXK_p4Cg8xgfkPjScjY6EEipMGKJ-z2SjwY0xgJ_V_KVlrwcqbSE29QHbumsbRlNB2Y6E7nRxlPXJYBY.nSsDjHBhfTXzbPNUxgqY_AzGLDXjg2a2aF-2D5n2w2U&dib_tag=se&keywords=gardening%2Btools&qid=1780613486&refinements=p_123%3A235962%2Cp_n_condition-type%3A6358196011&rnid=6358194011&sprefix=gardening%2Btool%2Caps%2C202&sr=8-11&th=1&linkCode=ll2&tag=athomegrower-20&linkId=990919b8b383c075338491993768711f&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "tools-6",
+          "categoryId": "tools",
+          "kicker": "Precision garden shears",
+          "name": "Fiskars Shaper Shears",
+          "bestFor": "Light shaping, trimming, and plant grooming.",
+          "whyItFits": "A good fit for gardeners shaping herbs, small shrubs, and ornamental plants.",
+          "caution": "Check current Amazon price, package details, seller, shipping, reviews, size, and whether the tool fits your hand strength and garden size.",
+          "affiliateUrl": "https://www.amazon.com/Fiskars-Shaper-Shears-Precision-Gardening/dp/B0F8544Z4T?crid=1SS5ED17ZDC40&dib=eyJ2IjoiMSJ9.9JAZrA-IJtKYik3jpuWyiN67CN0EeyaMCBqKhL_o5fAfLL4HunYw0gqRRLmTup_Ackejpw7F2Q6EFdGrenSRHUwxL3YehqJ-sk_LtnG5Rq03K-IYLs06FrNjiXl2VM9UHnjeNzKKGIaQf1qES-p53iaBzteHtH8YTcJUxCD4mHfbzCsGQtA-P7FXiERbvulCoANL6eMvaIkf8MYQIMjU-sjeB1fGXK_p4Cg8xgfkPjScjY6EEipMGKJ-z2SjwY0xgJ_V_KVlrwcqbSE29QHbumsbRlNB2Y6E7nRxlPXJYBY.nSsDjHBhfTXzbPNUxgqY_AzGLDXjg2a2aF-2D5n2w2U&dib_tag=se&keywords=gardening%2Btools&qid=1780613486&refinements=p_123%3A235962%2Cp_n_condition-type%3A6358196011&rnid=6358194011&sprefix=gardening%2Btool%2Caps%2C202&sr=8-14-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&linkCode=ll2&tag=athomegrower-20&linkId=39dd6a72caaf8c32e18d0900b02b3335&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "tools-7",
+          "categoryId": "tools",
+          "kicker": "Lopper",
+          "name": "Fiskars PowerGear2 32-Inch Lopper",
+          "bestFor": "Outdoor shrubs, woody stems, and small branches too thick for hand pruners.",
+          "whyItFits": "Adds a heavier outdoor pruning option to the tool store for established gardens.",
+          "caution": "Check current Amazon price, package details, seller, shipping, reviews, size, and whether the tool fits your hand strength and garden size.",
+          "affiliateUrl": "https://www.amazon.com/Fiskars-32-Inch-PowerGear2-Lopper/dp/B00QMWETPM?crid=1SS5ED17ZDC40&dib=eyJ2IjoiMSJ9.9JAZrA-IJtKYik3jpuWyiN67CN0EeyaMCBqKhL_o5fAfLL4HunYw0gqRRLmTup_Ackejpw7F2Q6EFdGrenSRHUwxL3YehqJ-sk_LtnG5Rq03K-IYLs06FrNjiXl2VM9UHnjeNzKKGIaQf1qES-p53iaBzteHtH8YTcJUxCD4mHfbzCsGQtA-P7FXiERbvulCoANL6eMvaIkf8MYQIMjU-sjeB1fGXK_p4Cg8xgfkPjScjY6EEipMGKJ-z2SjwY0xgJ_V_KVlrwcqbSE29QHbumsbRlNB2Y6E7nRxlPXJYBY.nSsDjHBhfTXzbPNUxgqY_AzGLDXjg2a2aF-2D5n2w2U&dib_tag=se&keywords=gardening%2Btools&qid=1780613486&refinements=p_123%3A235962%2Cp_n_condition-type%3A6358196011&rnid=6358194011&sprefix=gardening%2Btool%2Caps%2C202&sr=8-15-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&linkCode=ll2&tag=athomegrower-20&linkId=7999d384fd34e9a7662298bbfce98281&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "tools-8",
+          "categoryId": "tools",
+          "kicker": "Extendable hedge / garden shears",
+          "name": "Fiskars Extendable Power-Lever Garden Shears",
+          "bestFor": "Shaping hedges, edging soft growth, and reaching wider plant material.",
+          "whyItFits": "Good for homeowners maintaining shrubs and ornamental edges.",
+          "caution": "Check current Amazon price, package details, seller, shipping, reviews, size, and whether the tool fits your hand strength and garden size.",
+          "affiliateUrl": "https://www.amazon.com/Fiskars-91696935J-25-33-Power-Lever-Extendable/dp/B001KVZTSG?crid=1SS5ED17ZDC40&dib=eyJ2IjoiMSJ9.9JAZrA-IJtKYik3jpuWyiN67CN0EeyaMCBqKhL_o5fAfLL4HunYw0gqRRLmTup_Ackejpw7F2Q6EFdGrenSRHUwxL3YehqJ-sk_LtnG5Rq03K-IYLs06FrNjiXl2VM9UHnjeNzKKGIaQf1qES-p53iaBzteHtH8YTcJUxCD4mHfbzCsGQtA-P7FXiERbvulCoANL6eMvaIkf8MYQIMjU-sjeB1fGXK_p4Cg8xgfkPjScjY6EEipMGKJ-z2SjwY0xgJ_V_KVlrwcqbSE29QHbumsbRlNB2Y6E7nRxlPXJYBY.nSsDjHBhfTXzbPNUxgqY_AzGLDXjg2a2aF-2D5n2w2U&dib_tag=se&keywords=gardening%2Btools&qid=1780613486&refinements=p_123%3A235962%2Cp_n_condition-type%3A6358196011&rnid=6358194011&sprefix=gardening%2Btool%2Caps%2C202&sr=8-16&th=1&linkCode=ll2&tag=athomegrower-20&linkId=b0d535a8449cd06ab015668602783f14&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "tools-9",
+          "categoryId": "tools",
+          "kicker": "Garden knife / multi-tool",
+          "name": "Fiskars Multi-Purpose Garden Knife",
+          "bestFor": "Planting, weeding, cutting roots, dividing plants, and general garden tasks.",
+          "whyItFits": "A multi-purpose garden knife can replace several small tools for experienced gardeners.",
+          "caution": "Check current Amazon price, package details, seller, shipping, reviews, size, and whether the tool fits your hand strength and garden size.",
+          "affiliateUrl": "https://www.amazon.com/Fiskars-Multi-Purpose-Gardening-Planting-Cultivating/dp/B000F95CZY?crid=1SS5ED17ZDC40&dib=eyJ2IjoiMSJ9.9JAZrA-IJtKYik3jpuWyiN67CN0EeyaMCBqKhL_o5fAfLL4HunYw0gqRRLmTup_Ackejpw7F2Q6EFdGrenSRHUwxL3YehqJ-sk_LtnG5Rq03K-IYLs06FrNjiXl2VM9UHnjeNzKKGIaQf1qES-p53iaBzteHtH8YTcJUxCD4mHfbzCsGQtA-P7FXiERbvulCoANL6eMvaIkf8MYQIMjU-sjeB1fGXK_p4Cg8xgfkPjScjY6EEipMGKJ-z2SjwY0xgJ_V_KVlrwcqbSE29QHbumsbRlNB2Y6E7nRxlPXJYBY.nSsDjHBhfTXzbPNUxgqY_AzGLDXjg2a2aF-2D5n2w2U&dib_tag=se&keywords=gardening+tools&qid=1780613486&refinements=p_123%3A235962%2Cp_n_condition-type%3A6358196011&rnid=6358194011&sprefix=gardening+tool%2Caps%2C202&sr=8-17&linkCode=ll2&tag=athomegrower-20&linkId=a69028b2034e612daae4460109be35ce&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "tools-10",
+          "categoryId": "tools",
+          "kicker": "Weeder",
+          "name": "Fiskars Ergo Scratch Garden Weeder",
+          "bestFor": "Removing weeds and loosening soil around beds and containers.",
+          "whyItFits": "A dedicated weeder is useful for low-chemical garden maintenance.",
+          "caution": "Check current Amazon price, package details, seller, shipping, reviews, size, and whether the tool fits your hand strength and garden size.",
+          "affiliateUrl": "https://www.amazon.com/Fiskars-Ergo-Scratch-Garden-Weeder/dp/B004S0PGN4?crid=1SS5ED17ZDC40&dib=eyJ2IjoiMSJ9.9JAZrA-IJtKYik3jpuWyiN67CN0EeyaMCBqKhL_o5fAfLL4HunYw0gqRRLmTup_Ackejpw7F2Q6EFdGrenSRHUwxL3YehqJ-sk_LtnG5Rq03K-IYLs06FrNjiXl2VM9UHnjeNzKKGIaQf1qES-p53iaBzteHtH8YTcJUxCD4mHfbzCsGQtA-P7FXiERbvulCoANL6eMvaIkf8MYQIMjU-sjeB1fGXK_p4Cg8xgfkPjScjY6EEipMGKJ-z2SjwY0xgJ_V_KVlrwcqbSE29QHbumsbRlNB2Y6E7nRxlPXJYBY.nSsDjHBhfTXzbPNUxgqY_AzGLDXjg2a2aF-2D5n2w2U&dib_tag=se&keywords=gardening%2Btools&qid=1780613486&refinements=p_123%3A235962%2Cp_n_condition-type%3A6358196011&rnid=6358194011&sprefix=gardening%2Btool%2Caps%2C202&sr=8-18&th=1&linkCode=ll2&tag=athomegrower-20&linkId=e648041e6844ac5f87938d2176323f74&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "tools-11",
+          "categoryId": "tools",
+          "kicker": "Heavy-duty pruning tool",
+          "name": "Fiskars PowerGear Super Pruner/Lopper",
+          "bestFor": "Outdoor pruning jobs where regular hand pruners are not enough.",
+          "whyItFits": "A heavier cutting option fits mature landscapes, shrubs, and woody growth.",
+          "caution": "Check current Amazon price, package details, seller, shipping, reviews, size, and whether the tool fits your hand strength and garden size.",
+          "affiliateUrl": "https://www.amazon.com/Fiskars-PowerGear-Super-Pruner-Lopper/dp/B00004SD73?content-id=amzn1.sym.bc198c47-3993-46e6-a9c8-1108e3d40383%3Aamzn1.sym.bc198c47-3993-46e6-a9c8-1108e3d40383&crid=1SS5ED17ZDC40&cv_ct_cx=gardening%2Btools&keywords=gardening%2Btools&pd_rd_i=B00004SD73&pd_rd_r=362962ff-a2c5-4638-bccd-8a7e932088f7&pd_rd_w=0gWDw&pd_rd_wg=MZldQ&pf_rd_p=bc198c47-3993-46e6-a9c8-1108e3d40383&pf_rd_r=6V0N7MCBGYMNJ6G544J6&qid=1780613486&refinements=p_123%3A235962%2Cp_n_condition-type%3A6358196011&rnid=6358194011&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=gardening%2Btool%2Caps%2C202&sr=1-2-72da3c38-bbeb-4ec6-a5c8-94f3516831b3-spons&aref=7iIufQygF8&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=athomegrower-20&linkId=17c5297cfb3e8e2a7f403688f8cc9f30&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "tools-12",
+          "categoryId": "tools",
+          "kicker": "Outdoor wood tool",
+          "name": "Fiskars Lightweight Splitter / Axe",
+          "bestFor": "Outdoor property cleanup and splitting small wood pieces.",
+          "whyItFits": "This is more of an outdoor property-maintenance item than a plant-care tool, so it is placed as an advanced/outdoor option.",
+          "caution": "Check current Amazon price, package details, seller, shipping, reviews, size, and whether the tool fits your hand strength and garden size.",
+          "affiliateUrl": "https://www.amazon.com/Fiskars-Lightweight-Splitter-Proprietary-Shock-Absorbing/dp/B0002YTO7E?content-id=amzn1.sym.bc198c47-3993-46e6-a9c8-1108e3d40383%3Aamzn1.sym.bc198c47-3993-46e6-a9c8-1108e3d40383&crid=1SS5ED17ZDC40&cv_ct_cx=gardening%2Btools&keywords=gardening%2Btools&pd_rd_i=B0002YTO7E&pd_rd_r=362962ff-a2c5-4638-bccd-8a7e932088f7&pd_rd_w=0gWDw&pd_rd_wg=MZldQ&pf_rd_p=bc198c47-3993-46e6-a9c8-1108e3d40383&pf_rd_r=6V0N7MCBGYMNJ6G544J6&qid=1780613486&refinements=p_123%3A235962%2Cp_n_condition-type%3A6358196011&rnid=6358194011&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=gardening%2Btool%2Caps%2C202&sr=1-3-72da3c38-bbeb-4ec6-a5c8-94f3516831b3-spons&aref=EjLoqwUgFI&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=athomegrower-20&linkId=c3b2cf61a4bec36fb1d254a4b671da3e&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "tools-13",
+          "categoryId": "tools",
+          "kicker": "Lightweight hand trowel",
+          "name": "Fiskars FiberComp Trowel",
+          "bestFor": "Light potting, container gardening, and beginner planting.",
+          "whyItFits": "A lower-weight trowel option is useful for small containers and casual plant care.",
+          "caution": "Check current Amazon price, package details, seller, shipping, reviews, size, and whether the tool fits your hand strength and garden size.",
+          "affiliateUrl": "https://www.amazon.com/Fiskars-79786931J-FiberComp-Trowel/dp/B0002YVDSW?crid=1SS5ED17ZDC40&dib=eyJ2IjoiMSJ9.9JAZrA-IJtKYik3jpuWyiN67CN0EeyaMCBqKhL_o5fAfLL4HunYw0gqRRLmTup_Ackejpw7F2Q6EFdGrenSRHUwxL3YehqJ-sk_LtnG5Rq03K-IYLs06FrNjiXl2VM9UHnjeNzKKGIaQf1qES-p53iaBzteHtH8YTcJUxCD4mHfbzCsGQtA-P7FXiERbvulCoANL6eMvaIkf8MYQIMjU-sjeB1fGXK_p4Cg8xgfkPjScjY6EEipMGKJ-z2SjwY0xgJ_V_KVlrwcqbSE29QHbumsbRlNB2Y6E7nRxlPXJYBY.nSsDjHBhfTXzbPNUxgqY_AzGLDXjg2a2aF-2D5n2w2U&dib_tag=se&keywords=gardening%2Btools&qid=1780613486&refinements=p_123%3A235962%2Cp_n_condition-type%3A6358196011&rnid=6358194011&sprefix=gardening%2Btool%2Caps%2C202&sr=8-19&th=1&linkCode=ll2&tag=athomegrower-20&linkId=43fa55505cab0d703a3adc604f9cfc9b&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "tools-14",
+          "categoryId": "tools",
+          "kicker": "Heavy-duty shears",
+          "name": "Fiskars PowerArc Shears",
+          "bestFor": "Cutting tougher plant material and general outdoor cutting tasks.",
+          "whyItFits": "A heavier shears option supports outdoor maintenance and larger garden cleanup.",
+          "caution": "Check current Amazon price, package details, seller, shipping, reviews, size, and whether the tool fits your hand strength and garden size.",
+          "affiliateUrl": "https://www.amazon.com/Fiskars-PowerArc-Shears-10-Inch/dp/B01MU7C7MZ?crid=1SS5ED17ZDC40&dib=eyJ2IjoiMSJ9.9JAZrA-IJtKYik3jpuWyiN67CN0EeyaMCBqKhL_o5fAfLL4HunYw0gqRRLmTup_Ackejpw7F2Q6EFdGrenSRHUwxL3YehqJ-sk_LtnG5Rq03K-IYLs06FrNjiXl2VM9UHnjeNzKKGIaQf1qES-p53iaBzteHtH8YTcJUxCD4mHfbzCsGQtA-P7FXiERbvulCoANL6eMvaIkf8MYQIMjU-sjeB1fGXK_p4Cg8xgfkPjScjY6EEipMGKJ-z2SjwY0xgJ_V_KVlrwcqbSE29QHbumsbRlNB2Y6E7nRxlPXJYBY.nSsDjHBhfTXzbPNUxgqY_AzGLDXjg2a2aF-2D5n2w2U&dib_tag=se&keywords=gardening%2Btools&qid=1780613486&refinements=p_123%3A235962%2Cp_n_condition-type%3A6358196011&rnid=6358194011&sprefix=gardening%2Btool%2Caps%2C202&sr=8-20-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&linkCode=ll2&tag=athomegrower-20&linkId=ae3627165f8278764db4613fdd52ce00&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "tools-15",
+          "categoryId": "tools",
+          "kicker": "Indoor plant accessory",
+          "name": "Fiskars Indoor Plant Cutting Holders",
+          "bestFor": "Indoor propagation, cuttings, and houseplant hobbyists.",
+          "whyItFits": "A houseplant-focused accessory helps connect the store to indoor plant care and propagation content.",
+          "caution": "Check current Amazon price, package details, seller, shipping, reviews, size, and whether the tool fits your hand strength and garden size.",
+          "affiliateUrl": "https://www.amazon.com/Fiskars-Indoor-Plant-Cutting-Holders/dp/B0F87TT86G?crid=1SS5ED17ZDC40&dib=eyJ2IjoiMSJ9.9JAZrA-IJtKYik3jpuWyiN67CN0EeyaMCBqKhL_o5fAfLL4HunYw0gqRRLmTup_Ackejpw7F2Q6EFdGrenSRHUwxL3YehqJ-sk_LtnG5Rq03K-IYLs06FrNjiXl2VM9UHnjeNzKKGIaQf1qES-p53iaBzteHtH8YTcJUxCD4mHfbzCsGQtA-P7FXiERbvulCoANL6eMvaIkf8MYQIMjU-sjeB1fGXK_p4Cg8xgfkPjScjY6EEipMGKJ-z2SjwY0xgJ_V_KVlrwcqbSE29QHbumsbRlNB2Y6E7nRxlPXJYBY.nSsDjHBhfTXzbPNUxgqY_AzGLDXjg2a2aF-2D5n2w2U&dib_tag=se&keywords=gardening+tools&qid=1780613486&refinements=p_123%3A235962%2Cp_n_condition-type%3A6358196011&rnid=6358194011&sprefix=gardening+tool%2Caps%2C202&sr=8-23&linkCode=ll2&tag=athomegrower-20&linkId=bd1f2327fca1cef7de31802559192e26&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "tools-16",
+          "categoryId": "tools",
+          "kicker": "Garden scissors",
+          "name": "Fiskars SoftGrip Garden Scissors",
+          "bestFor": "Light harvesting, trimming herbs, cutting twine, and indoor plant cleanup.",
+          "whyItFits": "A small scissors option is useful for kitchens, herbs, seed starting, and houseplants.",
+          "caution": "Check current Amazon price, package details, seller, shipping, reviews, size, and whether the tool fits your hand strength and garden size.",
+          "affiliateUrl": "https://www.amazon.com/Fiskars-Scissors-Handheld-SoftGrip-Dishwasher/dp/B07FV7TZVH?crid=1SS5ED17ZDC40&dib=eyJ2IjoiMSJ9.9JAZrA-IJtKYik3jpuWyiN67CN0EeyaMCBqKhL_o5fAfLL4HunYw0gqRRLmTup_Ackejpw7F2Q6EFdGrenSRHUwxL3YehqJ-sk_LtnG5Rq03K-IYLs06FrNjiXl2VM9UHnjeNzKKGIaQf1qES-p53iaBzteHtH8YTcJUxCD4mHfbzCsGQtA-P7FXiERbvulCoANL6eMvaIkf8MYQIMjU-sjeB1fGXK_p4Cg8xgfkPjScjY6EEipMGKJ-z2SjwY0xgJ_V_KVlrwcqbSE29QHbumsbRlNB2Y6E7nRxlPXJYBY.nSsDjHBhfTXzbPNUxgqY_AzGLDXjg2a2aF-2D5n2w2U&dib_tag=se&keywords=gardening+tools&qid=1780613486&refinements=p_123%3A235962%2Cp_n_condition-type%3A6358196011&rnid=6358194011&sprefix=gardening+tool%2Caps%2C202&sr=8-30&linkCode=ll2&tag=athomegrower-20&linkId=f2878010369f2911f2aa825361bdd253&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "tools-17",
+          "categoryId": "tools",
+          "kicker": "Weeding and planting tool",
+          "name": "Fiskars Multi-Purpose Garden Tool",
+          "bestFor": "Weeding, planting, cultivating, and general bed work.",
+          "whyItFits": "A multi-purpose tool fits gardeners who want fewer tools but more flexibility.",
+          "caution": "Check current Amazon price, package details, seller, shipping, reviews, size, and whether the tool fits your hand strength and garden size.",
+          "affiliateUrl": "https://www.amazon.com/Fiskars-Multi-Purpose-Gardening-Weeding-Planting/dp/B08S7LSTKW?crid=1SS5ED17ZDC40&dib=eyJ2IjoiMSJ9.9JAZrA-IJtKYik3jpuWyiN67CN0EeyaMCBqKhL_o5fAfLL4HunYw0gqRRLmTup_Ackejpw7F2Q6EFdGrenSRHUwxL3YehqJ-sk_LtnG5Rq03K-IYLs06FrNjiXl2VM9UHnjeNzKKGIaQf1qES-p53iaBzteHtH8YTcJUxCD4mHfbzCsGQtA-P7FXiERbvulCoANL6eMvaIkf8MYQIMjU-sjeB1fGXK_p4Cg8xgfkPjScjY6EEipMGKJ-z2SjwY0xgJ_V_KVlrwcqbSE29QHbumsbRlNB2Y6E7nRxlPXJYBY.nSsDjHBhfTXzbPNUxgqY_AzGLDXjg2a2aF-2D5n2w2U&dib_tag=se&keywords=gardening%2Btools&qid=1780613486&refinements=p_123%3A235962%2Cp_n_condition-type%3A6358196011&rnid=6358194011&sprefix=gardening%2Btool%2Caps%2C202&sr=8-32&th=1&linkCode=ll2&tag=athomegrower-20&linkId=9b00375f630076f25d95f68b38e936bc&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "tools-18",
+          "categoryId": "tools",
+          "kicker": "Comfort tool",
+          "name": "Fiskars Ultralight Kneeling Cushion",
+          "bestFor": "Weeding, planting, pruning low plants, and reducing knee strain.",
+          "whyItFits": "Comfort tools help middle-class home gardeners work longer without turning simple maintenance into pain.",
+          "caution": "Check current Amazon price, package details, seller, shipping, reviews, size, and whether the tool fits your hand strength and garden size.",
+          "affiliateUrl": "https://www.amazon.com/Fiskars-94216974J-Ultralight-Kneeling-Cushion/dp/B0002YTVJA?crid=1SS5ED17ZDC40&dib=eyJ2IjoiMSJ9.9JAZrA-IJtKYik3jpuWyiN67CN0EeyaMCBqKhL_o5fAfLL4HunYw0gqRRLmTup_Ackejpw7F2Q6EFdGrenSRHUwxL3YehqJ-sk_LtnG5Rq03K-IYLs06FrNjiXl2VM9UHnjeNzKKGIaQf1qES-p53iaBzteHtH8YTcJUxCD4mHfbzCsGQtA-P7FXiERbvulCoANL6eMvaIkf8MYQIMjU-sjeB1fGXK_p4Cg8xgfkPjScjY6EEipMGKJ-z2SjwY0xgJ_V_KVlrwcqbSE29QHbumsbRlNB2Y6E7nRxlPXJYBY.nSsDjHBhfTXzbPNUxgqY_AzGLDXjg2a2aF-2D5n2w2U&dib_tag=se&keywords=gardening%2Btools&qid=1780613486&refinements=p_123%3A235962%2Cp_n_condition-type%3A6358196011&rnid=6358194011&sprefix=gardening%2Btool%2Caps%2C202&sr=8-33&th=1&linkCode=ll2&tag=athomegrower-20&linkId=532bdf285cbf262391a6fd933b94042c&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "tools-19",
+          "categoryId": "tools",
+          "kicker": "Grass and edging shears",
+          "name": "Fiskars ShearEase Grass Shears",
+          "bestFor": "Trimming grass edges, small landscape cleanup, and tight hand-detail work.",
+          "whyItFits": "A specialized edge-trimming option for outdoor gardeners maintaining beds and borders.",
+          "caution": "Check current Amazon price, package details, seller, shipping, reviews, size, and whether the tool fits your hand strength and garden size.",
+          "affiliateUrl": "https://www.amazon.com/Fiskars-ShearEase-Grass-Shears-360-Degree/dp/B0000950PZ?crid=1SS5ED17ZDC40&dib=eyJ2IjoiMSJ9.9JAZrA-IJtKYik3jpuWyiN67CN0EeyaMCBqKhL_o5fAfLL4HunYw0gqRRLmTup_Ackejpw7F2Q6EFdGrenSRHUwxL3YehqJ-sk_LtnG5Rq03K-IYLs06FrNjiXl2VM9UHnjeNzKKGIaQf1qES-p53iaBzteHtH8YTcJUxCD4mHfbzCsGQtA-P7FXiERbvulCoANL6eMvaIkf8MYQIMjU-sjeB1fGXK_p4Cg8xgfkPjScjY6EEipMGKJ-z2SjwY0xgJ_V_KVlrwcqbSE29QHbumsbRlNB2Y6E7nRxlPXJYBY.nSsDjHBhfTXzbPNUxgqY_AzGLDXjg2a2aF-2D5n2w2U&dib_tag=se&keywords=gardening%2Btools&qid=1780613486&refinements=p_123%3A235962%2Cp_n_condition-type%3A6358196011&rnid=6358194011&sprefix=gardening%2Btool%2Caps%2C202&sr=8-36&th=1&linkCode=ll2&tag=athomegrower-20&linkId=8bb99f68c420cb71690215d72b571db8&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "tools-20",
+          "categoryId": "tools",
+          "kicker": "Tool storage and carry bucket",
+          "name": "Fiskars Garden Bucket / Garden Caddy",
+          "bestFor": "Carrying tools, gloves, seed packets, labels, and small garden supplies.",
+          "whyItFits": "A caddy-style product helps gardeners keep tools together and move easily between beds, patios, and potting benches.",
+          "caution": "Check current Amazon price, package details, seller, shipping, reviews, size, and whether the tool fits your hand strength and garden size.",
+          "affiliateUrl": "https://www.amazon.com/Fiskars-Garden-Bucket-included-394240-1002/dp/B00005YX30?crid=1SS5ED17ZDC40&dib=eyJ2IjoiMSJ9.9JAZrA-IJtKYik3jpuWyiN67CN0EeyaMCBqKhL_o5fAfLL4HunYw0gqRRLmTup_Ackejpw7F2Q6EFdGrenSRHUwxL3YehqJ-sk_LtnG5Rq03K-IYLs06FrNjiXl2VM9UHnjeNzKKGIaQf1qES-p53iaBzteHtH8YTcJUxCD4mHfbzCsGQtA-P7FXiERbvulCoANL6eMvaIkf8MYQIMjU-sjeB1fGXK_p4Cg8xgfkPjScjY6EEipMGKJ-z2SjwY0xgJ_V_KVlrwcqbSE29QHbumsbRlNB2Y6E7nRxlPXJYBY.nSsDjHBhfTXzbPNUxgqY_AzGLDXjg2a2aF-2D5n2w2U&dib_tag=se&keywords=gardening+tools&qid=1780613486&refinements=p_123%3A235962%2Cp_n_condition-type%3A6358196011&rnid=6358194011&sprefix=gardening+tool%2Caps%2C202&sr=8-43&linkCode=ll2&tag=athomegrower-20&linkId=6b947c9934e5f8907ac2a406f08e2fad&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        }
+      ]
+    },
+    {
+      "id": "seed-starting",
+      "label": "Seed Starting",
+      "title": "Seed Starting Store Picks",
+      "eyebrow": "Seed starting section",
+      "description": "Trays, starter cells, seed-starting mix, labels, humidity domes, and beginner supplies for stronger starts.",
+      "ctaLabel": "Open beginner guide",
+      "ctaHref": "/how-to.html",
+      "pageUrl": "/store/seed-starting.html",
+      "products": [
+        {
+          "id": "seed-starting-1",
+          "categoryId": "seed-starting",
+          "kicker": "Organic seed-starting mix",
+          "name": "Coast of Maine Organic Seed Starter / Sprout Island",
+          "bestFor": "Seed trays, microgreens, herbs, vegetable starts, and gentle early root growth.",
+          "whyItFits": "Seed-starting mix is usually finer and lighter than regular potting mix, making it better for germination and tiny roots.",
+          "caution": "Check current Amazon price, package size, ingredients, seller, shipping, reviews, and whether the mix fits your plant or seed-starting method.",
+          "affiliateUrl": "https://www.amazon.com/dp/B07TBH5ZWN?tag=athomegrower-20&linkCode=ll2",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "seed-starting-2",
+          "categoryId": "seed-starting",
+          "kicker": "Organic seed-starting mix",
+          "name": "Organic Mechanics Seed Starter",
+          "bestFor": "Seed germination, small trays, herbs, and vegetables started indoors.",
+          "whyItFits": "A seed-specific mix supports the seed-starting section and beginner herb/vegetable pages.",
+          "caution": "Check current Amazon price, package size, ingredients, seller, shipping, reviews, and whether the mix fits your plant or seed-starting method.",
+          "affiliateUrl": "https://www.amazon.com/dp/B07D7FQJ91?tag=athomegrower-20&linkCode=ll2",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "seed-starting-3",
+          "categoryId": "seed-starting",
+          "kicker": "Seedling mix",
+          "name": "Sun Gro Seedling Mix",
+          "bestFor": "Seedling trays, transplant production, and early-stage plant starts.",
+          "whyItFits": "A seedling mix option gives visitors another choice when comparing texture, bag size, and ingredient style.",
+          "caution": "Check current Amazon price, package size, ingredients, seller, shipping, reviews, and whether the mix fits your plant or seed-starting method.",
+          "affiliateUrl": "https://www.amazon.com/dp/B00QV52VLE?tag=athomegrower-20&linkCode=ll2",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "seed-starting-4",
+          "categoryId": "seed-starting",
+          "kicker": "Seed-starting mix",
+          "name": "Coast of Maine Seed Starter",
+          "bestFor": "Vegetable, herb, flower, and microgreen starts.",
+          "whyItFits": "A second Coast of Maine seed-starting option helps compare package sizing and product variations.",
+          "caution": "Check current Amazon price, package size, ingredients, seller, shipping, reviews, and whether the mix fits your plant or seed-starting method.",
+          "affiliateUrl": "https://www.amazon.com/dp/B09XFTFZ9Q?tag=athomegrower-20&linkCode=ll2",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "seed-starting-5",
+          "categoryId": "seed-starting",
+          "kicker": "Organic seed-starting mix",
+          "name": "Premier Horticulture Organic Seed Starting Mix",
+          "bestFor": "Seed germination and early-stage seedling care.",
+          "whyItFits": "A seed-starting option for gardeners comparing organic or OMRI-style growing media.",
+          "caution": "Check current Amazon price, package size, ingredients, seller, shipping, reviews, and whether the mix fits your plant or seed-starting method.",
+          "affiliateUrl": "https://www.amazon.com/dp/B018N7ZC8G?tag=athomegrower-20&linkCode=ll2",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "seed-starting-6",
+          "categoryId": "seed-starting",
+          "kicker": "Organic potting mix",
+          "name": "Burpee Premium Organic Potting Mix",
+          "bestFor": "Potting up seedlings after germination, containers, herbs, and small vegetables.",
+          "whyItFits": "A potting mix belongs near seed-starting because seedlings eventually need a richer growing mix after the earliest stage.",
+          "caution": "Check current Amazon price, package size, ingredients, seller, shipping, reviews, and whether the mix fits your plant or seed-starting method.",
+          "affiliateUrl": "https://www.amazon.com/dp/B08MHMNLZ8?tag=athomegrower-20&linkCode=ll2",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "seed-starting-7",
+          "categoryId": "seed-starting",
+          "kicker": "Seed tray kit",
+          "name": "Seed Starting Trays with Humidity Domes",
+          "bestFor": "Indoor seed starting, humidity control, and small-space germination.",
+          "whyItFits": "Trays and domes are the core hardware for starting seeds indoors.",
+          "caution": "Check current Amazon price, package size, ingredients, seller, shipping, reviews, and whether the mix fits your plant or seed-starting method.",
+          "affiliateUrl": "https://www.amazon.com/dp/B0CM6VZBNZ?tag=athomegrower-20&linkCode=ll2",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "seed-starting-8",
+          "categoryId": "seed-starting",
+          "kicker": "Seed-starting supply",
+          "name": "Seed Starting Supply Kit B0GL7RX9C9",
+          "bestFor": "Seed starting accessories and indoor germination setup.",
+          "whyItFits": "This supplied Amazon link was added as a seed-starting supply card. Confirm product details on Amazon before buying.",
+          "caution": "Check current Amazon price, package size, ingredients, seller, shipping, reviews, and whether the mix fits your plant or seed-starting method.",
+          "affiliateUrl": "https://www.amazon.com/dp/B0GL7RX9C9?tag=athomegrower-20&linkCode=ll2",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "seed-starting-9",
+          "categoryId": "seed-starting",
+          "kicker": "Seed-starting supply",
+          "name": "Seed Starting Supply Kit B0GL86852T",
+          "bestFor": "Indoor seed-starting accessories and germination setup.",
+          "whyItFits": "This product card keeps the supplied affiliate link in the seed-starting store while avoiding hardcoded changing product details.",
+          "caution": "Check current Amazon price, package size, ingredients, seller, shipping, reviews, and whether the mix fits your plant or seed-starting method.",
+          "affiliateUrl": "https://www.amazon.com/dp/B0GL86852T?tag=athomegrower-20&linkCode=ll2",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "seed-starting-10",
+          "categoryId": "seed-starting",
+          "kicker": "Seed-starting supply",
+          "name": "Seed Starting Supply Kit B0GL82GRNT",
+          "bestFor": "Seed-starting accessories, propagation, and indoor growing setup.",
+          "whyItFits": "This supplied Amazon link is included once; duplicate copies were removed from the store page.",
+          "caution": "Check current Amazon price, package size, ingredients, seller, shipping, reviews, and whether the mix fits your plant or seed-starting method.",
+          "affiliateUrl": "https://www.amazon.com/dp/B0GL82GRNT?tag=athomegrower-20&linkCode=ll2",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "seed-starting-11",
+          "categoryId": "seed-starting",
+          "kicker": "Seed-starting supply",
+          "name": "Seed Starting Supply Kit B0BRLGWJN4",
+          "bestFor": "Indoor seed germination and propagation setup.",
+          "whyItFits": "A supplied affiliate link for the seed-starting supplies section; visitors should confirm current Amazon details.",
+          "caution": "Check current Amazon price, package size, ingredients, seller, shipping, reviews, and whether the mix fits your plant or seed-starting method.",
+          "affiliateUrl": "https://www.amazon.com/dp/B0BRLGWJN4?tag=athomegrower-20&linkCode=ll2",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "seed-starting-12",
+          "categoryId": "seed-starting",
+          "kicker": "Seed-starting supply",
+          "name": "Seed Starting Supply Kit B0BJXZ8WDH",
+          "bestFor": "Seed-starting accessories, plant propagation, and early indoor growing setup.",
+          "whyItFits": "Included as a supplied Amazon affiliate link for the seed-starting store section.",
+          "caution": "Check current Amazon price, package size, ingredients, seller, shipping, reviews, and whether the mix fits your plant or seed-starting method.",
+          "affiliateUrl": "https://www.amazon.com/dp/B0BJXZ8WDH?tag=athomegrower-20&linkCode=ll2",
+          "merchant": "Amazon"
+        }
+      ]
+    },
+    {
+      "id": "soil-amendments",
+      "label": "Soil & Amendments",
+      "title": "Soil and Amendment Store Picks",
+      "eyebrow": "Soil section",
+      "description": "Potting mixes, compost, perlite, coco coir, bark, biochar, worm castings, and soil-building amendments.",
+      "ctaLabel": "Open additives",
+      "ctaHref": "/organic-additives.html",
+      "pageUrl": "/store/soil-amendments.html",
+      "products": [
+        {
+          "id": "soil-amendments-1",
+          "categoryId": "soil-amendments",
+          "kicker": "Organic potting mix",
+          "name": "Burpee Premium Organic Potting Mix",
+          "bestFor": "Containers, herbs, vegetables, and potting up transplants.",
+          "whyItFits": "A general organic potting mix is one of the most useful repeat-purchase products for home gardeners.",
+          "caution": "Check current Amazon price, package size, ingredients, seller, shipping, reviews, and whether the mix fits your plant or seed-starting method.",
+          "affiliateUrl": "https://www.amazon.com/dp/B08MHMNLZ8?tag=athomegrower-20&linkCode=ll2",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "soil-amendments-2",
+          "categoryId": "soil-amendments",
+          "kicker": "Organic potting mix",
+          "name": "Organic Mechanics Premium Potting Mix",
+          "bestFor": "Indoor plants, container herbs, vegetables, and general repotting.",
+          "whyItFits": "A general potting mix option fits the houseplant, herb, and container garden audience.",
+          "caution": "Check current Amazon price, package size, ingredients, seller, shipping, reviews, and whether the mix fits your plant or seed-starting method.",
+          "affiliateUrl": "https://www.amazon.com/dp/B07D7HK5G7?tag=athomegrower-20&linkCode=ll2",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "soil-amendments-3",
+          "categoryId": "soil-amendments",
+          "kicker": "Organic compost",
+          "name": "Coast of Maine Organic Compost for Containers",
+          "bestFor": "Container refreshes, organic soil support, top-dressing, and mixing into outdoor containers.",
+          "whyItFits": "Compost bridges the soil/amendments section with organic plant nutrition and soil health content.",
+          "caution": "Check current Amazon price, package size, ingredients, seller, shipping, reviews, and whether the mix fits your plant or seed-starting method.",
+          "affiliateUrl": "https://www.amazon.com/dp/B097YSJH7H?tag=athomegrower-20&linkCode=ll2",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "soil-amendments-4",
+          "categoryId": "soil-amendments",
+          "kicker": "Organic starting mix",
+          "name": "Premier Horticulture Organic Starting Mix",
+          "bestFor": "Seed-starting, seedlings, and early transplant stages.",
+          "whyItFits": "This product also belongs in soil/amendments because starting mixes are a soil-media purchase category.",
+          "caution": "Check current Amazon price, package size, ingredients, seller, shipping, reviews, and whether the mix fits your plant or seed-starting method.",
+          "affiliateUrl": "https://www.amazon.com/dp/B018N7ZC8G?tag=athomegrower-20&linkCode=ll2",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "soil-amendments-5",
+          "categoryId": "soil-amendments",
+          "kicker": "Starting and potting mix",
+          "name": "Organic Mechanics Starting / Potting Mix",
+          "bestFor": "Seedlings, small containers, herbs, and general organic potting use.",
+          "whyItFits": "A hybrid starting/potting media option works for gardeners who want fewer bags and simpler setup.",
+          "caution": "Check current Amazon price, package size, ingredients, seller, shipping, reviews, and whether the mix fits your plant or seed-starting method.",
+          "affiliateUrl": "https://www.amazon.com/dp/B07GJLSSW6?tag=athomegrower-20&linkCode=ll2",
+          "merchant": "Amazon"
+        }
+      ]
+    },
+    {
+      "id": "organic-fertilizers",
+      "label": "Organic Fertilizers",
+      "title": "Organic Fertilizers & Inputs",
+      "eyebrow": "Organic fertilizer store",
+      "description": "Liquid plant foods, fish fertilizers, dry organic fertilizers, vegetable plant foods, neem meal, root-zone support, and container growing inputs.",
+      "ctaLabel": "Open deficiency guide",
+      "ctaHref": "/deficiencies.html",
+      "pageUrl": "/store/organic-fertilizers.html",
+      "products": [
+        {
+          "id": "organic-fertilizers-1",
+          "categoryId": "organic-fertilizers",
+          "kicker": "Pre-plant organic fertilizer",
+          "name": "True Organic Preplant Fertilizer Concentrate",
+          "bestFor": "Preparing containers, raised beds, and vegetable planting areas before transplanting.",
+          "whyItFits": "A pre-plant fertilizer fits gardeners who want to amend soil before vegetables or herbs go in.",
+          "caution": "Check current Amazon price, package size, label directions, ingredient details, OMRI/organic claims, seller, shipping, and whether it fits your crop, plant, container, and local rules.",
+          "affiliateUrl": "https://www.amazon.com/True-Organic-Preplant-Fertilizer-Concentrate/dp/B09JHJVX2R?crid=28Y6QHMBXJSHX&dib=eyJ2IjoiMSJ9.TgM4uRUvHZEQu8hWaNNHRw4D-THX1mV-u6X5fr9JSo7sJY5Gv2WVsG0rDRI_EV6GdutsFWYhaLm2aOi2Xg6JpziepUXDaQw-sE8oKRkkPODn3AP8MXGMGKjcpglMzuEUakX-XcWw2AyniGmR6BDxXa7MIv1CzAVlwHo1JwAdIyHOmjwMJMgSSGpzx-hfWEMzVal_NLEQWdV5WIEqDQ50oBasWNxBITC3hLJIjfK8VFxXuX6XdAfvz3TlqEuFunuU_teY83tUZ6CE5n5hoqQJBJvV3xmXFaZWxuPx5q6Df_A.Ew3Wlb1k32wnxJsRfYX3SjVRMlqxPkPDBpdf8MH_Md8&dib_tag=se&keywords=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri&qid=1780616991&sprefix=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri%2Caps%2C166&sr=8-3&th=1&linkCode=ll2&tag=athomegrower-20&linkId=50e8f8134ab12ecfede7c8b102330972&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-fertilizers-2",
+          "categoryId": "organic-fertilizers",
+          "kicker": "Organic plant revitalizer",
+          "name": "Farmer's Secret Plant Revitalizer",
+          "bestFor": "Container plants, tired plants, and gardeners comparing gentle liquid support products.",
+          "whyItFits": "A revitalizer-style product belongs in a plant recovery and input section, especially for potted plant owners.",
+          "caution": "Check current Amazon price, package size, label directions, ingredient details, OMRI/organic claims, seller, shipping, and whether it fits your crop, plant, container, and local rules.",
+          "affiliateUrl": "https://www.amazon.com/Farmers-Secret-Revitalizer-Plant-Friendly-Availability/dp/B09JDGBPND?crid=28Y6QHMBXJSHX&dib=eyJ2IjoiMSJ9.TgM4uRUvHZEQu8hWaNNHRw4D-THX1mV-u6X5fr9JSo7sJY5Gv2WVsG0rDRI_EV6GdutsFWYhaLm2aOi2Xg6JpziepUXDaQw-sE8oKRkkPODn3AP8MXGMGKjcpglMzuEUakX-XcWw2AyniGmR6BDxXa7MIv1CzAVlwHo1JwAdIyHOmjwMJMgSSGpzx-hfWEMzVal_NLEQWdV5WIEqDQ50oBasWNxBITC3hLJIjfK8VFxXuX6XdAfvz3TlqEuFunuU_teY83tUZ6CE5n5hoqQJBJvV3xmXFaZWxuPx5q6Df_A.Ew3Wlb1k32wnxJsRfYX3SjVRMlqxPkPDBpdf8MH_Md8&dib_tag=se&keywords=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri&qid=1780616991&sprefix=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri%2Caps%2C166&sr=8-5&th=1&linkCode=ll2&tag=athomegrower-20&linkId=731d7dd3f0a439e5280379ab311c2583&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-fertilizers-3",
+          "categoryId": "organic-fertilizers",
+          "kicker": "Liquid organic plant food",
+          "name": "TRUE Organic All Purpose Liquid Plant Food",
+          "bestFor": "General container plants, herbs, vegetables, and routine organic feeding.",
+          "whyItFits": "A liquid all-purpose plant food is easy for beginners to understand and fits container gardening well.",
+          "caution": "Check current Amazon price, package size, label directions, ingredient details, OMRI/organic claims, seller, shipping, and whether it fits your crop, plant, container, and local rules.",
+          "affiliateUrl": "https://www.amazon.com/TRUE-Organic-Purpose-Liquid-Gardening/dp/B08TYCZC9M?crid=28Y6QHMBXJSHX&dib=eyJ2IjoiMSJ9.TgM4uRUvHZEQu8hWaNNHRw4D-THX1mV-u6X5fr9JSo7sJY5Gv2WVsG0rDRI_EV6GdutsFWYhaLm2aOi2Xg6JpziepUXDaQw-sE8oKRkkPODn3AP8MXGMGKjcpglMzuEUakX-XcWw2AyniGmR6BDxXa7MIv1CzAVlwHo1JwAdIyHOmjwMJMgSSGpzx-hfWEMzVal_NLEQWdV5WIEqDQ50oBasWNxBITC3hLJIjfK8VFxXuX6XdAfvz3TlqEuFunuU_teY83tUZ6CE5n5hoqQJBJvV3xmXFaZWxuPx5q6Df_A.Ew3Wlb1k32wnxJsRfYX3SjVRMlqxPkPDBpdf8MH_Md8&dib_tag=se&keywords=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri&qid=1780616991&sprefix=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri%2Caps%2C166&sr=8-4&th=1&linkCode=ll2&tag=athomegrower-20&linkId=182368438fd57969947a0b96112fca44&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-fertilizers-4",
+          "categoryId": "organic-fertilizers",
+          "kicker": "Growth stimulant",
+          "name": "Garden Organic Growth Stimulant",
+          "bestFor": "Gardeners comparing root and growth support inputs for potted plants.",
+          "whyItFits": "Growth stimulants should be positioned as optional support, not a cure-all, which fits AtHomeGrower's cautious diagnosis style.",
+          "caution": "Check current Amazon price, package size, label directions, ingredient details, OMRI/organic claims, seller, shipping, and whether it fits your crop, plant, container, and local rules.",
+          "affiliateUrl": "https://www.amazon.com/Garden-Ounce-Organic-Growth-Stimulant/dp/B08D6W4DN6?crid=28Y6QHMBXJSHX&dib=eyJ2IjoiMSJ9.TgM4uRUvHZEQu8hWaNNHRw4D-THX1mV-u6X5fr9JSo7sJY5Gv2WVsG0rDRI_EV6GdutsFWYhaLm2aOi2Xg6JpziepUXDaQw-sE8oKRkkPODn3AP8MXGMGKjcpglMzuEUakX-XcWw2AyniGmR6BDxXa7MIv1CzAVlwHo1JwAdIyHOmjwMJMgSSGpzx-hfWEMzVal_NLEQWdV5WIEqDQ50oBasWNxBITC3hLJIjfK8VFxXuX6XdAfvz3TlqEuFunuU_teY83tUZ6CE5n5hoqQJBJvV3xmXFaZWxuPx5q6Df_A.Ew3Wlb1k32wnxJsRfYX3SjVRMlqxPkPDBpdf8MH_Md8&dib_tag=se&keywords=organic+inputs+for+potted+plants+omri&qid=1780616991&sprefix=organic+inputs+for+potted+plants+omri%2Caps%2C166&sr=8-6&linkCode=ll2&tag=athomegrower-20&linkId=4c56eed96e6172415e44ca0e718af201&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-fertilizers-5",
+          "categoryId": "organic-fertilizers",
+          "kicker": "Fish fertilizer",
+          "name": "Alaska Fish Fertilizer 5-1-1",
+          "bestFor": "Nitrogen-feeding support for vegetables, outdoor containers, and active growth stages.",
+          "whyItFits": "Fish fertilizer is a classic organic input, useful when a gardener understands smell, dilution, and plant timing.",
+          "caution": "Check current Amazon price, package size, label directions, ingredient details, OMRI/organic claims, seller, shipping, and whether it fits your crop, plant, container, and local rules.",
+          "affiliateUrl": "https://www.amazon.com/Alaska-Fish-Fertilizer-Listed-5-1-1/dp/B0DQ2LNX35?crid=28Y6QHMBXJSHX&dib=eyJ2IjoiMSJ9.TgM4uRUvHZEQu8hWaNNHRw4D-THX1mV-u6X5fr9JSo7sJY5Gv2WVsG0rDRI_EV6GdutsFWYhaLm2aOi2Xg6JpziepUXDaQw-sE8oKRkkPODn3AP8MXGMGKjcpglMzuEUakX-XcWw2AyniGmR6BDxXa7MIv1CzAVlwHo1JwAdIyHOmjwMJMgSSGpzx-hfWEMzVal_NLEQWdV5WIEqDQ50oBasWNxBITC3hLJIjfK8VFxXuX6XdAfvz3TlqEuFunuU_teY83tUZ6CE5n5hoqQJBJvV3xmXFaZWxuPx5q6Df_A.Ew3Wlb1k32wnxJsRfYX3SjVRMlqxPkPDBpdf8MH_Md8&dib_tag=se&keywords=organic+inputs+for+potted+plants+omri&qid=1780616991&sprefix=organic+inputs+for+potted+plants+omri%2Caps%2C166&sr=8-7&linkCode=ll2&tag=athomegrower-20&linkId=8f34eff0d8f88415a95731db7ea61f83&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-fertilizers-6",
+          "categoryId": "organic-fertilizers",
+          "kicker": "Root and microbial support",
+          "name": "Plant Success Soluble Nutrient / Mycorrhizal Support",
+          "bestFor": "Transplants, container resets, and root-zone support.",
+          "whyItFits": "Root-zone products pair well with transplanting, soil health, and container stress content.",
+          "caution": "Check current Amazon price, package size, label directions, ingredient details, OMRI/organic claims, seller, shipping, and whether it fits your crop, plant, container, and local rules.",
+          "affiliateUrl": "https://www.amazon.com/Plant-Success-PRPSOSOL04-Nutrient-Black/dp/B07JNTX4TW?crid=28Y6QHMBXJSHX&dib=eyJ2IjoiMSJ9.TgM4uRUvHZEQu8hWaNNHRw4D-THX1mV-u6X5fr9JSo7sJY5Gv2WVsG0rDRI_EV6GdutsFWYhaLm2aOi2Xg6JpziepUXDaQw-sE8oKRkkPODn3AP8MXGMGKjcpglMzuEUakX-XcWw2AyniGmR6BDxXa7MIv1CzAVlwHo1JwAdIyHOmjwMJMgSSGpzx-hfWEMzVal_NLEQWdV5WIEqDQ50oBasWNxBITC3hLJIjfK8VFxXuX6XdAfvz3TlqEuFunuU_teY83tUZ6CE5n5hoqQJBJvV3xmXFaZWxuPx5q6Df_A.Ew3Wlb1k32wnxJsRfYX3SjVRMlqxPkPDBpdf8MH_Md8&dib_tag=se&keywords=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri&qid=1780616991&sprefix=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri%2Caps%2C166&sr=8-11&th=1&linkCode=ll2&tag=athomegrower-20&linkId=dc046f3f289aa16772921b809b6a063a&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-fertilizers-7",
+          "categoryId": "organic-fertilizers",
+          "kicker": "Organic edible plant nutrition",
+          "name": "Miracle-Gro Performance Organics Edibles Plant Nutrition",
+          "bestFor": "Vegetables, herbs, and edible container gardens.",
+          "whyItFits": "Edible plant nutrition belongs in the store for gardeners growing food at home.",
+          "caution": "Check current Amazon price, package size, label directions, ingredient details, OMRI/organic claims, seller, shipping, and whether it fits your crop, plant, container, and local rules.",
+          "affiliateUrl": "https://www.amazon.com/Miracle-Gro-Performance-Organics-Edibles-Nutrition/dp/B07YM64CJS?crid=28Y6QHMBXJSHX&dib=eyJ2IjoiMSJ9.TgM4uRUvHZEQu8hWaNNHRw4D-THX1mV-u6X5fr9JSo7sJY5Gv2WVsG0rDRI_EV6GdutsFWYhaLm2aOi2Xg6JpziepUXDaQw-sE8oKRkkPODn3AP8MXGMGKjcpglMzuEUakX-XcWw2AyniGmR6BDxXa7MIv1CzAVlwHo1JwAdIyHOmjwMJMgSSGpzx-hfWEMzVal_NLEQWdV5WIEqDQ50oBasWNxBITC3hLJIjfK8VFxXuX6XdAfvz3TlqEuFunuU_teY83tUZ6CE5n5hoqQJBJvV3xmXFaZWxuPx5q6Df_A.Ew3Wlb1k32wnxJsRfYX3SjVRMlqxPkPDBpdf8MH_Md8&dib_tag=se&keywords=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri&qid=1780616991&sprefix=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri%2Caps%2C166&sr=8-21&th=1&linkCode=ll2&tag=athomegrower-20&linkId=761bc76463770ef532e7145165431449&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-fertilizers-8",
+          "categoryId": "organic-fertilizers",
+          "kicker": "Dry organic vegetable fertilizer",
+          "name": "Down to Earth Vegetable Garden Fertilizer",
+          "bestFor": "Vegetable beds, raised beds, and outdoor edible gardens.",
+          "whyItFits": "A vegetable-focused dry fertilizer belongs in the edible garden and soil input store path.",
+          "caution": "Check current Amazon price, package size, label directions, ingredient details, OMRI/organic claims, seller, shipping, and whether it fits your crop, plant, container, and local rules.",
+          "affiliateUrl": "https://www.amazon.com/Down-Earth-100532059-Vegetable-Fertilizer/dp/B07DXLD2ZM?crid=28Y6QHMBXJSHX&dib=eyJ2IjoiMSJ9.TgM4uRUvHZEQu8hWaNNHRw4D-THX1mV-u6X5fr9JSo7sJY5Gv2WVsG0rDRI_EV6GdutsFWYhaLm2aOi2Xg6JpziepUXDaQw-sE8oKRkkPODn3AP8MXGMGKjcpglMzuEUakX-XcWw2AyniGmR6BDxXa7MIv1CzAVlwHo1JwAdIyHOmjwMJMgSSGpzx-hfWEMzVal_NLEQWdV5WIEqDQ50oBasWNxBITC3hLJIjfK8VFxXuX6XdAfvz3TlqEuFunuU_teY83tUZ6CE5n5hoqQJBJvV3xmXFaZWxuPx5q6Df_A.Ew3Wlb1k32wnxJsRfYX3SjVRMlqxPkPDBpdf8MH_Md8&dib_tag=se&keywords=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri&qid=1780616991&sprefix=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri%2Caps%2C166&sr=8-22&th=1&linkCode=ll2&tag=athomegrower-20&linkId=147235a6d3798212b1c7ebd13ad7fb60&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-fertilizers-9",
+          "categoryId": "organic-fertilizers",
+          "kicker": "Organic vegetable fertilizer",
+          "name": "Whitney Farms Organic & Natural Vegetable Fertilizer",
+          "bestFor": "Vegetables, herbs, and outdoor edible gardens.",
+          "whyItFits": "This gives the store another vegetable-focused dry organic fertilizer option for edible gardeners.",
+          "caution": "Check current Amazon price, package size, label directions, ingredient details, OMRI/organic claims, seller, shipping, and whether it fits your crop, plant, container, and local rules.",
+          "affiliateUrl": "https://www.amazon.com/Whitney-Farms-Organic-Natural-Vegetable/dp/B0FK84HQVC?crid=28Y6QHMBXJSHX&dib=eyJ2IjoiMSJ9.TgM4uRUvHZEQu8hWaNNHRw4D-THX1mV-u6X5fr9JSo7sJY5Gv2WVsG0rDRI_EV6GdutsFWYhaLm2aOi2Xg6JpziepUXDaQw-sE8oKRkkPODn3AP8MXGMGKjcpglMzuEUakX-XcWw2AyniGmR6BDxXa7MIv1CzAVlwHo1JwAdIyHOmjwMJMgSSGpzx-hfWEMzVal_NLEQWdV5WIEqDQ50oBasWNxBITC3hLJIjfK8VFxXuX6XdAfvz3TlqEuFunuU_teY83tUZ6CE5n5hoqQJBJvV3xmXFaZWxuPx5q6Df_A.Ew3Wlb1k32wnxJsRfYX3SjVRMlqxPkPDBpdf8MH_Md8&dib_tag=se&keywords=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri&qid=1780616991&sprefix=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri%2Caps%2C166&sr=8-26&th=1&linkCode=ll2&tag=athomegrower-20&linkId=9ad3f82be581efcf8130073e107aeb34&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-fertilizers-10",
+          "categoryId": "organic-fertilizers",
+          "kicker": "Liquid organic fertilizer",
+          "name": "MARPHYL Organic Liquid Fertilizer",
+          "bestFor": "Container plants, houseplants, vegetables, and liquid-feeding routines.",
+          "whyItFits": "A liquid fertilizer option is useful for potted plant owners who prefer watering-in nutrients.",
+          "caution": "Check current Amazon price, package size, label directions, ingredient details, OMRI/organic claims, seller, shipping, and whether it fits your crop, plant, container, and local rules.",
+          "affiliateUrl": "https://www.amazon.com/MARPHYL-Organic-Liquid-Fertilizer-Nutrient-Rich/dp/B073DKK4XS?crid=28Y6QHMBXJSHX&dib=eyJ2IjoiMSJ9.TgM4uRUvHZEQu8hWaNNHRw4D-THX1mV-u6X5fr9JSo7sJY5Gv2WVsG0rDRI_EV6GdutsFWYhaLm2aOi2Xg6JpziepUXDaQw-sE8oKRkkPODn3AP8MXGMGKjcpglMzuEUakX-XcWw2AyniGmR6BDxXa7MIv1CzAVlwHo1JwAdIyHOmjwMJMgSSGpzx-hfWEMzVal_NLEQWdV5WIEqDQ50oBasWNxBITC3hLJIjfK8VFxXuX6XdAfvz3TlqEuFunuU_teY83tUZ6CE5n5hoqQJBJvV3xmXFaZWxuPx5q6Df_A.Ew3Wlb1k32wnxJsRfYX3SjVRMlqxPkPDBpdf8MH_Md8&dib_tag=se&keywords=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri&qid=1780616991&sprefix=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri%2Caps%2C166&sr=8-30&th=1&linkCode=ll2&tag=athomegrower-20&linkId=904d7064b2f0936bd13caaacad1975c7&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-fertilizers-11",
+          "categoryId": "organic-fertilizers",
+          "kicker": "Dry all-purpose organic fertilizer",
+          "name": "Down to Earth All Purpose Fertilizer",
+          "bestFor": "General garden beds, containers, vegetables, herbs, and ornamental plants.",
+          "whyItFits": "All-purpose dry fertilizer is a broad store item for gardeners who want one general input.",
+          "caution": "Check current Amazon price, package size, label directions, ingredient details, OMRI/organic claims, seller, shipping, and whether it fits your crop, plant, container, and local rules.",
+          "affiliateUrl": "https://www.amazon.com/Down-Earth-All-Purpose-Fertilizer/dp/B00VJN8PYU?crid=28Y6QHMBXJSHX&dib=eyJ2IjoiMSJ9.TgM4uRUvHZEQu8hWaNNHRw4D-THX1mV-u6X5fr9JSo7sJY5Gv2WVsG0rDRI_EV6GdutsFWYhaLm2aOi2Xg6JpziepUXDaQw-sE8oKRkkPODn3AP8MXGMGKjcpglMzuEUakX-XcWw2AyniGmR6BDxXa7MIv1CzAVlwHo1JwAdIyHOmjwMJMgSSGpzx-hfWEMzVal_NLEQWdV5WIEqDQ50oBasWNxBITC3hLJIjfK8VFxXuX6XdAfvz3TlqEuFunuU_teY83tUZ6CE5n5hoqQJBJvV3xmXFaZWxuPx5q6Df_A.Ew3Wlb1k32wnxJsRfYX3SjVRMlqxPkPDBpdf8MH_Md8&dib_tag=se&keywords=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri&qid=1780616991&sprefix=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri%2Caps%2C166&sr=8-31&th=1&linkCode=ll2&tag=athomegrower-20&linkId=880715ed9a744d033bae40863f100885&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-fertilizers-12",
+          "categoryId": "organic-fertilizers",
+          "kicker": "Organic soil input",
+          "name": "Neem Cake / Neem Seed Meal",
+          "bestFor": "Soil amendment routines and gardeners researching neem-based inputs.",
+          "whyItFits": "Neem meal/cake is often discussed as a soil input, so it belongs in the organic inputs category rather than pest spray cards.",
+          "caution": "Check current Amazon price, package size, label directions, ingredient details, OMRI/organic claims, seller, shipping, and whether it fits your crop, plant, container, and local rules.",
+          "affiliateUrl": "https://www.amazon.com/neem-cake-neem-seed-meal/dp/B0BR68RSR7?crid=28Y6QHMBXJSHX&dib=eyJ2IjoiMSJ9.TgM4uRUvHZEQu8hWaNNHRw4D-THX1mV-u6X5fr9JSo7sJY5Gv2WVsG0rDRI_EV6GdutsFWYhaLm2aOi2Xg6JpziepUXDaQw-sE8oKRkkPODn3AP8MXGMGKjcpglMzuEUakX-XcWw2AyniGmR6BDxXa7MIv1CzAVlwHo1JwAdIyHOmjwMJMgSSGpzx-hfWEMzVal_NLEQWdV5WIEqDQ50oBasWNxBITC3hLJIjfK8VFxXuX6XdAfvz3TlqEuFunuU_teY83tUZ6CE5n5hoqQJBJvV3xmXFaZWxuPx5q6Df_A.Ew3Wlb1k32wnxJsRfYX3SjVRMlqxPkPDBpdf8MH_Md8&dib_tag=se&keywords=organic+inputs+for+potted+plants+omri&qid=1780616991&sprefix=organic+inputs+for+potted+plants+omri%2Caps%2C166&sr=8-33&linkCode=ll2&tag=athomegrower-20&linkId=5a9c6ef333b6fc12c5bb3f06a0820784&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-fertilizers-13",
+          "categoryId": "organic-fertilizers",
+          "kicker": "Fertilizer spikes",
+          "name": "Jobe's Organics All Purpose Fertilizer Spikes",
+          "bestFor": "Potted plants and gardeners who want slow, simple feeding without mixing liquids.",
+          "whyItFits": "Fertilizer spikes are simple for beginner container gardeners, but still need label-following and careful dosing.",
+          "caution": "Check current Amazon price, package size, label directions, ingredient details, OMRI/organic claims, seller, shipping, and whether it fits your crop, plant, container, and local rules.",
+          "affiliateUrl": "https://www.amazon.com/Jobes-Organics-Purpose-Fertilizer-Spikes/dp/B00192ANSW?crid=28Y6QHMBXJSHX&dib=eyJ2IjoiMSJ9.TgM4uRUvHZEQu8hWaNNHRw4D-THX1mV-u6X5fr9JSo7sJY5Gv2WVsG0rDRI_EV6GdutsFWYhaLm2aOi2Xg6JpziepUXDaQw-sE8oKRkkPODn3AP8MXGMGKjcpglMzuEUakX-XcWw2AyniGmR6BDxXa7MIv1CzAVlwHo1JwAdIyHOmjwMJMgSSGpzx-hfWEMzVal_NLEQWdV5WIEqDQ50oBasWNxBITC3hLJIjfK8VFxXuX6XdAfvz3TlqEuFunuU_teY83tUZ6CE5n5hoqQJBJvV3xmXFaZWxuPx5q6Df_A.Ew3Wlb1k32wnxJsRfYX3SjVRMlqxPkPDBpdf8MH_Md8&dib_tag=se&keywords=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri&qid=1780616991&sprefix=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri%2Caps%2C166&sr=8-37&th=1&linkCode=ll2&tag=athomegrower-20&linkId=45c407144ff85b9ad4daf14bec892c91&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-fertilizers-14",
+          "categoryId": "organic-fertilizers",
+          "kicker": "Fish fertilizer",
+          "name": "Drammatic Organic Fish Fertilizer",
+          "bestFor": "Organic liquid feeding for garden plants and containers.",
+          "whyItFits": "Fish-based fertilizers are a common organic input for active growth stages.",
+          "caution": "Check current Amazon price, package size, label directions, ingredient details, OMRI/organic claims, seller, shipping, and whether it fits your crop, plant, container, and local rules.",
+          "affiliateUrl": "https://www.amazon.com/Drammatic-Organic-Original-Fertilizer-32oz/dp/B0BRYLFXRF?crid=28Y6QHMBXJSHX&dib=eyJ2IjoiMSJ9.TgM4uRUvHZEQu8hWaNNHRw4D-THX1mV-u6X5fr9JSo7sJY5Gv2WVsG0rDRI_EV6GdutsFWYhaLm2aOi2Xg6JpziepUXDaQw-sE8oKRkkPODn3AP8MXGMGKjcpglMzuEUakX-XcWw2AyniGmR6BDxXa7MIv1CzAVlwHo1JwAdIyHOmjwMJMgSSGpzx-hfWEMzVal_NLEQWdV5WIEqDQ50oBasWNxBITC3hLJIjfK8VFxXuX6XdAfvz3TlqEuFunuU_teY83tUZ6CE5n5hoqQJBJvV3xmXFaZWxuPx5q6Df_A.Ew3Wlb1k32wnxJsRfYX3SjVRMlqxPkPDBpdf8MH_Md8&dib_tag=se&keywords=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri&qid=1780616991&sprefix=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri%2Caps%2C166&sr=8-38&th=1&linkCode=ll2&tag=athomegrower-20&linkId=6b6749feb701f8e2c2093edc2273834a&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-fertilizers-15",
+          "categoryId": "organic-fertilizers",
+          "kicker": "Tomato and vegetable fertilizer",
+          "name": "True Organic Tomato & Vegetable Plant Food",
+          "bestFor": "Tomatoes, peppers, vegetables, raised beds, and edible containers.",
+          "whyItFits": "Tomato and vegetable plant food connects directly with AtHomeGrower vegetable and deficiency content.",
+          "caution": "Check current Amazon price, package size, label directions, ingredient details, OMRI/organic claims, seller, shipping, and whether it fits your crop, plant, container, and local rules.",
+          "affiliateUrl": "https://www.amazon.com/True-Organic-Tomato-Vegetable-Gardening/dp/B08VF67NFD?crid=28Y6QHMBXJSHX&dib=eyJ2IjoiMSJ9.TgM4uRUvHZEQu8hWaNNHRw4D-THX1mV-u6X5fr9JSo7sJY5Gv2WVsG0rDRI_EV6GdutsFWYhaLm2aOi2Xg6JpziepUXDaQw-sE8oKRkkPODn3AP8MXGMGKjcpglMzuEUakX-XcWw2AyniGmR6BDxXa7MIv1CzAVlwHo1JwAdIyHOmjwMJMgSSGpzx-hfWEMzVal_NLEQWdV5WIEqDQ50oBasWNxBITC3hLJIjfK8VFxXuX6XdAfvz3TlqEuFunuU_teY83tUZ6CE5n5hoqQJBJvV3xmXFaZWxuPx5q6Df_A.Ew3Wlb1k32wnxJsRfYX3SjVRMlqxPkPDBpdf8MH_Md8&dib_tag=se&keywords=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri&qid=1780616991&sprefix=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri%2Caps%2C166&sr=8-42&th=1&linkCode=ll2&tag=athomegrower-20&linkId=95e693eb77ff1cc22e7e8821ddc3cdf6&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-fertilizers-16",
+          "categoryId": "organic-fertilizers",
+          "kicker": "Organic container mix",
+          "name": "Coast of Maine Stonington Blend Container Mix",
+          "bestFor": "Container gardens, patio plants, tomatoes, and potted edible plants.",
+          "whyItFits": "Container mix belongs beside fertilizers because soil structure and feeding work together in potted gardens.",
+          "caution": "Check current Amazon price, package size, label directions, ingredient details, OMRI/organic claims, seller, shipping, and whether it fits your crop, plant, container, and local rules.",
+          "affiliateUrl": "https://www.amazon.com/Coast-Maine-Organic-Stonington-Container/dp/B098D3ND5L?crid=28Y6QHMBXJSHX&dib=eyJ2IjoiMSJ9.TgM4uRUvHZEQu8hWaNNHRw4D-THX1mV-u6X5fr9JSo7sJY5Gv2WVsG0rDRI_EV6GdutsFWYhaLm2aOi2Xg6JpziepUXDaQw-sE8oKRkkPODn3AP8MXGMGKjcpglMzuEUakX-XcWw2AyniGmR6BDxXa7MIv1CzAVlwHo1JwAdIyHOmjwMJMgSSGpzx-hfWEMzVal_NLEQWdV5WIEqDQ50oBasWNxBITC3hLJIjfK8VFxXuX6XdAfvz3TlqEuFunuU_teY83tUZ6CE5n5hoqQJBJvV3xmXFaZWxuPx5q6Df_A.Ew3Wlb1k32wnxJsRfYX3SjVRMlqxPkPDBpdf8MH_Md8&dib_tag=se&keywords=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri&qid=1780616991&sprefix=organic%2Binputs%2Bfor%2Bpotted%2Bplants%2Bomri%2Caps%2C166&sr=8-46&th=1&linkCode=ll2&tag=athomegrower-20&linkId=233d019a29b5fd99d68ca6cf47fe467c&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        }
+      ]
+    },
+    {
+      "id": "organic-pest-control",
+      "label": "Organic Pest Control",
+      "title": "Organic Pest Control Store Picks",
+      "eyebrow": "Pest control section",
+      "description": "Sticky traps, soap, oils, BTI, sprayers, pest inspection supplies, and organic-first control tools.",
+      "ctaLabel": "Open pest guide",
+      "ctaHref": "/pests.html",
+      "pageUrl": "/store/organic-pest-control.html",
+      "products": [
+        {
+          "id": "organic-pest-control-1",
+          "categoryId": "organic-pest-control",
+          "kicker": "Organic garden pesticide",
+          "name": "Bonide Organic Gardening Pest Control",
+          "bestFor": "Gardeners comparing broad organic pest-control options for outdoor plants.",
+          "whyItFits": "A broad pest-control card belongs in the store, but users should still identify the pest before spraying.",
+          "caution": "Identify the pest first, then check current Amazon price, product label, active ingredient, indoor/outdoor use, edible-crop use, pet/child precautions, re-entry timing, seller, shipping, and reviews.",
+          "affiliateUrl": "https://www.amazon.com/Bonide-BND022-Pesticide-Organic-Gardening/dp/B007CRG4CW?crid=3DKPM16CI0H75&dib=eyJ2IjoiMSJ9.Ftp-VbiEMe1LPRnLV8lQJvxErG9_22LFxln6LBd1wO-zAzDTpyk_cV7NmNSneMGZijjcS6YGwzECFKCsPID30rTAEK72uEEnx6zwxIqjCJjwxbb3zfHKDuy5kDiJNf_ECnoTLXjOkpELDjsz6yVC3pwfIHiovz_WCjgwXv90lBUaJsYdCJNsQvIK189dRobJs5HZCSJLPAO-6rDlhEY4dgYUig1fYAlTd-RdkqDbbV7Hk-nl6IVKhpCnhPdhQ1SXLiYhAYRT8jiew7XCzA6-i_jqwcwQp0txTSPwtU_fvuM.c1A6IkdRtpNWxLU99GUfjhqUDavj6i9zpcWXwkXEyvI&dib_tag=se&keywords=Organic%2Bpest%2Bcontrol&qid=1780619076&sprefix=organic%2Bpest%2Bcontrol%2Caps%2C167&sr=8-2&th=1&linkCode=ll2&tag=athomegrower-20&linkId=9239862f91a4b0bb8d94314cc9b9ebdc&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-pest-control-2",
+          "categoryId": "organic-pest-control",
+          "kicker": "Peppermint pest repellent",
+          "name": "Mighty Mint Peppermint Pest Control Spray",
+          "bestFor": "Home perimeter use, garages, patios, and gardeners comparing botanical repellents.",
+          "whyItFits": "Peppermint repellents fit pest-prevention content, but they should not be positioned as plant disease or nutrient fixes.",
+          "caution": "Identify the pest first, then check current Amazon price, product label, active ingredient, indoor/outdoor use, edible-crop use, pet/child precautions, re-entry timing, seller, shipping, and reviews.",
+          "affiliateUrl": "https://www.amazon.com/Mighty-Mint-Control-Peppermint-Natural/dp/B07JBRJH79?crid=3DKPM16CI0H75&dib=eyJ2IjoiMSJ9.Ftp-VbiEMe1LPRnLV8lQJvxErG9_22LFxln6LBd1wO-zAzDTpyk_cV7NmNSneMGZijjcS6YGwzECFKCsPID30rTAEK72uEEnx6zwxIqjCJjwxbb3zfHKDuy5kDiJNf_ECnoTLXjOkpELDjsz6yVC3pwfIHiovz_WCjgwXv90lBUaJsYdCJNsQvIK189dRobJs5HZCSJLPAO-6rDlhEY4dgYUig1fYAlTd-RdkqDbbV7Hk-nl6IVKhpCnhPdhQ1SXLiYhAYRT8jiew7XCzA6-i_jqwcwQp0txTSPwtU_fvuM.c1A6IkdRtpNWxLU99GUfjhqUDavj6i9zpcWXwkXEyvI&dib_tag=se&keywords=Organic%2Bpest%2Bcontrol&qid=1780619076&sprefix=organic%2Bpest%2Bcontrol%2Caps%2C167&sr=8-3&th=1&linkCode=ll2&tag=athomegrower-20&linkId=87eee03f0955d42de499c0f76fc045ae&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-pest-control-3",
+          "categoryId": "organic-pest-control",
+          "kicker": "Garden lime / pest-management input",
+          "name": "First Saturday Lime",
+          "bestFor": "Outdoor garden areas, coops, patios, and gardeners researching lime-based maintenance products.",
+          "whyItFits": "This product was pasted multiple times; it is included once so the store avoids duplicate cards.",
+          "caution": "Identify the pest first, then check current Amazon price, product label, active ingredient, indoor/outdoor use, edible-crop use, pet/child precautions, re-entry timing, seller, shipping, and reviews.",
+          "affiliateUrl": "https://www.amazon.com/First-Saturday-Lime-20lb/dp/B01MYAAB4K?crid=3DKPM16CI0H75&dib=eyJ2IjoiMSJ9.Ftp-VbiEMe1LPRnLV8lQJvxErG9_22LFxln6LBd1wO-zAzDTpyk_cV7NmNSneMGZijjcS6YGwzECFKCsPID30rTAEK72uEEnx6zwxIqjCJjwxbb3zfHKDuy5kDiJNf_ECnoTLXjOkpELDjsz6yVC3pwfIHiovz_WCjgwXv90lBUaJsYdCJNsQvIK189dRobJs5HZCSJLPAO-6rDlhEY4dgYUig1fYAlTd-RdkqDbbV7Hk-nl6IVKhpCnhPdhQ1SXLiYhAYRT8jiew7XCzA6-i_jqwcwQp0txTSPwtU_fvuM.c1A6IkdRtpNWxLU99GUfjhqUDavj6i9zpcWXwkXEyvI&dib_tag=se&keywords=Organic%2Bpest%2Bcontrol&qid=1780619076&sprefix=organic%2Bpest%2Bcontrol%2Caps%2C167&sr=8-4&th=1&linkCode=ll2&tag=athomegrower-20&linkId=284f9cdf523f70cf551c78158d6abad1&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-pest-control-4",
+          "categoryId": "organic-pest-control",
+          "kicker": "Organic disease / fungus control",
+          "name": "Bonide Copper Fungicide Ready-to-Use",
+          "bestFor": "Gardeners managing labeled fungal and bacterial plant-disease problems.",
+          "whyItFits": "Copper fungicide belongs in the organic pest-control area because many users shop pest and disease products together.",
+          "caution": "Identify the pest first, then check current Amazon price, product label, active ingredient, indoor/outdoor use, edible-crop use, pet/child precautions, re-entry timing, seller, shipping, and reviews.",
+          "affiliateUrl": "https://www.amazon.com/Bonide-Copper-Fungicide-Rtu-Natural/dp/B000UJVDXY?crid=3DKPM16CI0H75&dib=eyJ2IjoiMSJ9.Ftp-VbiEMe1LPRnLV8lQJvxErG9_22LFxln6LBd1wO-zAzDTpyk_cV7NmNSneMGZijjcS6YGwzECFKCsPID30rTAEK72uEEnx6zwxIqjCJjwxbb3zfHKDuy5kDiJNf_ECnoTLXjOkpELDjsz6yVC3pwfIHiovz_WCjgwXv90lBUaJsYdCJNsQvIK189dRobJs5HZCSJLPAO-6rDlhEY4dgYUig1fYAlTd-RdkqDbbV7Hk-nl6IVKhpCnhPdhQ1SXLiYhAYRT8jiew7XCzA6-i_jqwcwQp0txTSPwtU_fvuM.c1A6IkdRtpNWxLU99GUfjhqUDavj6i9zpcWXwkXEyvI&dib_tag=se&keywords=Organic%2Bpest%2Bcontrol&qid=1780619076&sprefix=organic%2Bpest%2Bcontrol%2Caps%2C167&sr=8-7&th=1&linkCode=ll2&tag=athomegrower-20&linkId=d6b26ca4c56c73a920132fe05a1fa7b5&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-pest-control-5",
+          "categoryId": "organic-pest-control",
+          "kicker": "Diatomaceous earth",
+          "name": "Garden Safe Diatomaceous Earth Crawling Insect Killer",
+          "bestFor": "Crawling insects in labeled use areas and dry pest-control situations.",
+          "whyItFits": "Diatomaceous earth is a common organic pest-control search item, but it must be used carefully and kept out of lungs.",
+          "caution": "Identify the pest first, then check current Amazon price, product label, active ingredient, indoor/outdoor use, edible-crop use, pet/child precautions, re-entry timing, seller, shipping, and reviews.",
+          "affiliateUrl": "https://www.amazon.com/Garden-Safe-Crawling-Containing-Diatomaceous/dp/B004Q0DM82?crid=3DKPM16CI0H75&dib=eyJ2IjoiMSJ9.Ftp-VbiEMe1LPRnLV8lQJvxErG9_22LFxln6LBd1wO-zAzDTpyk_cV7NmNSneMGZijjcS6YGwzECFKCsPID30rTAEK72uEEnx6zwxIqjCJjwxbb3zfHKDuy5kDiJNf_ECnoTLXjOkpELDjsz6yVC3pwfIHiovz_WCjgwXv90lBUaJsYdCJNsQvIK189dRobJs5HZCSJLPAO-6rDlhEY4dgYUig1fYAlTd-RdkqDbbV7Hk-nl6IVKhpCnhPdhQ1SXLiYhAYRT8jiew7XCzA6-i_jqwcwQp0txTSPwtU_fvuM.c1A6IkdRtpNWxLU99GUfjhqUDavj6i9zpcWXwkXEyvI&dib_tag=se&keywords=Organic%2Bpest%2Bcontrol&qid=1780619076&sprefix=organic%2Bpest%2Bcontrol%2Caps%2C167&sr=8-8&th=1&linkCode=ll2&tag=athomegrower-20&linkId=5eedf6e192bb4b18199e93a8380d52a0&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-pest-control-6",
+          "categoryId": "organic-pest-control",
+          "kicker": "BT caterpillar control",
+          "name": "Bonide Captain Jack's Bt Caterpillar Control",
+          "bestFor": "Caterpillars, cabbage worms, tomato hornworms, and labeled leaf-chewing larvae.",
+          "whyItFits": "BT products are more targeted than broad sprays, which fits the site's pest-identification-first approach.",
+          "caution": "Identify the pest first, then check current Amazon price, product label, active ingredient, indoor/outdoor use, edible-crop use, pet/child precautions, re-entry timing, seller, shipping, and reviews.",
+          "affiliateUrl": "https://www.amazon.com/Bonide-Captain-Bacillus-Thuringiensis-Caterpillar/dp/B01LYXXTZF?crid=3DKPM16CI0H75&dib=eyJ2IjoiMSJ9.Ftp-VbiEMe1LPRnLV8lQJvxErG9_22LFxln6LBd1wO-zAzDTpyk_cV7NmNSneMGZijjcS6YGwzECFKCsPID30rTAEK72uEEnx6zwxIqjCJjwxbb3zfHKDuy5kDiJNf_ECnoTLXjOkpELDjsz6yVC3pwfIHiovz_WCjgwXv90lBUaJsYdCJNsQvIK189dRobJs5HZCSJLPAO-6rDlhEY4dgYUig1fYAlTd-RdkqDbbV7Hk-nl6IVKhpCnhPdhQ1SXLiYhAYRT8jiew7XCzA6-i_jqwcwQp0txTSPwtU_fvuM.c1A6IkdRtpNWxLU99GUfjhqUDavj6i9zpcWXwkXEyvI&dib_tag=se&keywords=Organic%2Bpest%2Bcontrol&qid=1780619076&sprefix=organic%2Bpest%2Bcontrol%2Caps%2C167&sr=8-9&th=1&linkCode=ll2&tag=athomegrower-20&linkId=1174e193341fb78682fe49b0086c39ed&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-pest-control-7",
+          "categoryId": "organic-pest-control",
+          "kicker": "Organic insect control",
+          "name": "Bonide Captain Jack's Deadbug Brew Ready-to-Use",
+          "bestFor": "Gardeners comparing ready-to-use insect sprays for labeled pests.",
+          "whyItFits": "Ready-to-use sprays are popular because they avoid mixing, but the label still needs to match the pest and plant.",
+          "caution": "Identify the pest first, then check current Amazon price, product label, active ingredient, indoor/outdoor use, edible-crop use, pet/child precautions, re-entry timing, seller, shipping, and reviews.",
+          "affiliateUrl": "https://www.amazon.com/BONIDE-PRODUCTS-250-Ready-Captain/dp/B001VJ4FYQ?crid=3DKPM16CI0H75&dib=eyJ2IjoiMSJ9.Ftp-VbiEMe1LPRnLV8lQJvxErG9_22LFxln6LBd1wO-zAzDTpyk_cV7NmNSneMGZijjcS6YGwzECFKCsPID30rTAEK72uEEnx6zwxIqjCJjwxbb3zfHKDuy5kDiJNf_ECnoTLXjOkpELDjsz6yVC3pwfIHiovz_WCjgwXv90lBUaJsYdCJNsQvIK189dRobJs5HZCSJLPAO-6rDlhEY4dgYUig1fYAlTd-RdkqDbbV7Hk-nl6IVKhpCnhPdhQ1SXLiYhAYRT8jiew7XCzA6-i_jqwcwQp0txTSPwtU_fvuM.c1A6IkdRtpNWxLU99GUfjhqUDavj6i9zpcWXwkXEyvI&dib_tag=se&keywords=Organic+pest+control&qid=1780619076&sprefix=organic+pest+control%2Caps%2C167&sr=8-10&linkCode=ll2&tag=athomegrower-20&linkId=feef2d0f7bb54f2cc1336cef8790496d&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-pest-control-8",
+          "categoryId": "organic-pest-control",
+          "kicker": "Insecticidal soap",
+          "name": "Garden Safe Insecticidal Soap Ready-to-Use",
+          "bestFor": "Soft-bodied pests such as aphids, mites, and whiteflies when the label allows.",
+          "whyItFits": "Insecticidal soap is a core organic pest-control product for houseplants and garden plants.",
+          "caution": "Identify the pest first, then check current Amazon price, product label, active ingredient, indoor/outdoor use, edible-crop use, pet/child precautions, re-entry timing, seller, shipping, and reviews.",
+          "affiliateUrl": "https://www.amazon.com/Garden-Safe-Insecticidal-Soap-Ready/dp/B0BDVCCKKT?crid=3DKPM16CI0H75&dib=eyJ2IjoiMSJ9.Ftp-VbiEMe1LPRnLV8lQJvxErG9_22LFxln6LBd1wO-zAzDTpyk_cV7NmNSneMGZijjcS6YGwzECFKCsPID30rTAEK72uEEnx6zwxIqjCJjwxbb3zfHKDuy5kDiJNf_ECnoTLXjOkpELDjsz6yVC3pwfIHiovz_WCjgwXv90lBUaJsYdCJNsQvIK189dRobJs5HZCSJLPAO-6rDlhEY4dgYUig1fYAlTd-RdkqDbbV7Hk-nl6IVKhpCnhPdhQ1SXLiYhAYRT8jiew7XCzA6-i_jqwcwQp0txTSPwtU_fvuM.c1A6IkdRtpNWxLU99GUfjhqUDavj6i9zpcWXwkXEyvI&dib_tag=se&keywords=Organic%2Bpest%2Bcontrol&qid=1780619076&sprefix=organic%2Bpest%2Bcontrol%2Caps%2C167&sr=8-13&th=1&linkCode=ll2&tag=athomegrower-20&linkId=90244662ef0d2f00c53cccefb0f49d88&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-pest-control-9",
+          "categoryId": "organic-pest-control",
+          "kicker": "Slug and snail control",
+          "name": "Monterey Sluggo Slug & Snail Control",
+          "bestFor": "Slugs and snails around vegetable beds, ornamentals, and damp outdoor areas when label use fits.",
+          "whyItFits": "Slugs and snails are common garden pests, so this product connects directly to the pest library.",
+          "caution": "Identify the pest first, then check current Amazon price, product label, active ingredient, indoor/outdoor use, edible-crop use, pet/child precautions, re-entry timing, seller, shipping, and reviews.",
+          "affiliateUrl": "https://www.amazon.com/Monterey-Sluggo-Bundled-Measuring-Spoon/dp/B0DS2S5JY3?crid=3DKPM16CI0H75&dib=eyJ2IjoiMSJ9.Ftp-VbiEMe1LPRnLV8lQJvxErG9_22LFxln6LBd1wO-zAzDTpyk_cV7NmNSneMGZijjcS6YGwzECFKCsPID30rTAEK72uEEnx6zwxIqjCJjwxbb3zfHKDuy5kDiJNf_ECnoTLXjOkpELDjsz6yVC3pwfIHiovz_WCjgwXv90lBUaJsYdCJNsQvIK189dRobJs5HZCSJLPAO-6rDlhEY4dgYUig1fYAlTd-RdkqDbbV7Hk-nl6IVKhpCnhPdhQ1SXLiYhAYRT8jiew7XCzA6-i_jqwcwQp0txTSPwtU_fvuM.c1A6IkdRtpNWxLU99GUfjhqUDavj6i9zpcWXwkXEyvI&dib_tag=se&keywords=Organic+pest+control&qid=1780619076&sprefix=organic+pest+control%2Caps%2C167&sr=8-28&linkCode=ll2&tag=athomegrower-20&linkId=20d567321d813cf628ba07a47ee12cd1&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "organic-pest-control-10",
+          "categoryId": "organic-pest-control",
+          "kicker": "Outdoor animal repellent",
+          "name": "Natural Elements Mole and Vole Repellent",
+          "bestFor": "Outdoor yards and garden areas dealing with burrowing animal pressure.",
+          "whyItFits": "Animal repellents are a different use case than plant insect sprays, so the card separates it as outdoor-only pest pressure.",
+          "caution": "Identify the pest first, then check current Amazon price, product label, active ingredient, indoor/outdoor use, edible-crop use, pet/child precautions, re-entry timing, seller, shipping, and reviews.",
+          "affiliateUrl": "https://www.amazon.com/Natural-Elements-Repellent-Castor-Gallon/dp/B085HMNX76?crid=3DKPM16CI0H75&dib=eyJ2IjoiMSJ9.Ftp-VbiEMe1LPRnLV8lQJvxErG9_22LFxln6LBd1wO-zAzDTpyk_cV7NmNSneMGZijjcS6YGwzECFKCsPID30rTAEK72uEEnx6zwxIqjCJjwxbb3zfHKDuy5kDiJNf_ECnoTLXjOkpELDjsz6yVC3pwfIHiovz_WCjgwXv90lBUaJsYdCJNsQvIK189dRobJs5HZCSJLPAO-6rDlhEY4dgYUig1fYAlTd-RdkqDbbV7Hk-nl6IVKhpCnhPdhQ1SXLiYhAYRT8jiew7XCzA6-i_jqwcwQp0txTSPwtU_fvuM.c1A6IkdRtpNWxLU99GUfjhqUDavj6i9zpcWXwkXEyvI&dib_tag=se&keywords=Organic%2Bpest%2Bcontrol&qid=1780619076&sprefix=organic%2Bpest%2Bcontrol%2Caps%2C167&sr=8-36&th=1&linkCode=ll2&tag=athomegrower-20&linkId=410fb1916c39b352982ddec757e63b85&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        }
+      ]
+    },
+    {
+      "id": "watering-irrigation",
+      "label": "Watering & Irrigation",
+      "title": "Watering and Irrigation Store Picks",
+      "eyebrow": "Watering section",
+      "description": "Watering cans, nozzles, sprayers, moisture tools, drip parts, and practical irrigation helpers.",
+      "ctaLabel": "Open Fill Your Space",
+      "ctaHref": "/fill-your-space.html",
+      "pageUrl": "/store/watering-irrigation.html",
+      "products": [
+        {
+          "id": "watering-irrigation-1",
+          "categoryId": "watering-irrigation",
+          "kicker": "Smart watering refills",
+          "name": "SteadySpring Smart Watering Refills",
+          "bestFor": "Indoor/outdoor plants, trees, and gardeners trying slow-release watering support.",
+          "whyItFits": "A smart watering refill option fits busy gardeners who want a backup watering aid, but it should not replace checking soil moisture.",
+          "caution": "Check current Amazon price, capacity, pot compatibility, reservoir size, tubing length, power/battery needs, seller, shipping, reviews, and whether the product matches your plant's moisture needs.",
+          "affiliateUrl": "https://www.amazon.com/SteadySpring%C2%AE-Smart-Watering-Refills-Trees/dp/B0CYFH6LC5?crid=14JKGW0QV7KNY&dib=eyJ2IjoiMSJ9.-hX6ljVg--sqRKF88gs9dWH7QQWPzq6INTvHsKJ8gi9pYyI7db0u9lekFJzErLTgx2AJPH2KAZjSyv0JlkWhE4QLeYOX0bEUUMoMfziJDjptnfp2LVS_tS21IMcPgXJVx0_DTjkFlKUwfE4qJ-vG4VAjbHkoZhT-uZjiYwrAKTBtXZPSggtCe-_xpEnN6GNgVFgFen6AVdcAC-w-WKfayuI_fw5JVwu0NSP2wMeY_9O4gV0ZC3UnQ8hHZp9id1t9ttH86qoVd7LP2WmnTESa_sJFjmyaTpwWV4VFopRdxSY.GGLIjGXI7cvtuxAA4pln1HSe4fhFoE7tHAFkA8JQ8wA&dib_tag=se&keywords=Watering%2Bproducts%2Bfor%2Bindoor%2Bgarden&qid=1780617837&sprefix=watering%2Bproducts%2Bfor%2Bindoor%2Bgarden%2Caps%2C156&sr=8-10&th=1&linkCode=ll2&tag=athomegrower-20&linkId=7b492a89a20f4aa1bcb7e24e7de6387a&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "watering-irrigation-2",
+          "categoryId": "watering-irrigation",
+          "kicker": "Self-watering reservoir",
+          "name": "Spider Farmer Gravity-Fed Self-Watering Reservoir",
+          "bestFor": "Indoor grow setups, container plants, and gardeners wanting reservoir-based watering.",
+          "whyItFits": "A reservoir watering system belongs in the watering store for indoor gardeners and plant collectors.",
+          "caution": "Check current Amazon price, capacity, pot compatibility, reservoir size, tubing length, power/battery needs, seller, shipping, reviews, and whether the product matches your plant's moisture needs.",
+          "affiliateUrl": "https://www.amazon.com/Spider-Farmer-Gravity-Fed-Self-Watering-Reservoir/dp/B0DFYM875M?crid=14JKGW0QV7KNY&dib=eyJ2IjoiMSJ9.-hX6ljVg--sqRKF88gs9dWH7QQWPzq6INTvHsKJ8gi9pYyI7db0u9lekFJzErLTgx2AJPH2KAZjSyv0JlkWhE4QLeYOX0bEUUMoMfziJDjptnfp2LVS_tS21IMcPgXJVx0_DTjkFlKUwfE4qJ-vG4VAjbHkoZhT-uZjiYwrAKTBtXZPSggtCe-_xpEnN6GNgVFgFen6AVdcAC-w-WKfayuI_fw5JVwu0NSP2wMeY_9O4gV0ZC3UnQ8hHZp9id1t9ttH86qoVd7LP2WmnTESa_sJFjmyaTpwWV4VFopRdxSY.GGLIjGXI7cvtuxAA4pln1HSe4fhFoE7tHAFkA8JQ8wA&dib_tag=se&keywords=Watering+products+for+indoor+garden&qid=1780617837&sprefix=watering+products+for+indoor+garden%2Caps%2C156&sr=8-15&linkCode=ll2&tag=athomegrower-20&linkId=b32e2f84ade9f3ecf90415ef2d1d079a&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "watering-irrigation-3",
+          "categoryId": "watering-irrigation",
+          "kicker": "Automatic irrigation",
+          "name": "Automatic Plant Watering System with Detection",
+          "bestFor": "Indoor plant groups, vacations, and multi-pot watering routines.",
+          "whyItFits": "Automatic watering products can help busy plant owners, but they should be tested before leaving plants unattended.",
+          "caution": "Check current Amazon price, capacity, pot compatibility, reservoir size, tubing length, power/battery needs, seller, shipping, reviews, and whether the product matches your plant's moisture needs.",
+          "affiliateUrl": "https://www.amazon.com/Irrigation-TRJZWA-Automatic-Watering-Detection/dp/B0DR8XX113?crid=14JKGW0QV7KNY&dib=eyJ2IjoiMSJ9.-hX6ljVg--sqRKF88gs9dWH7QQWPzq6INTvHsKJ8gi9pYyI7db0u9lekFJzErLTgx2AJPH2KAZjSyv0JlkWhE4QLeYOX0bEUUMoMfziJDjptnfp2LVS_tS21IMcPgXJVx0_DTjkFlKUwfE4qJ-vG4VAjbHkoZhT-uZjiYwrAKTBtXZPSggtCe-_xpEnN6GNgVFgFen6AVdcAC-w-WKfayuI_fw5JVwu0NSP2wMeY_9O4gV0ZC3UnQ8hHZp9id1t9ttH86qoVd7LP2WmnTESa_sJFjmyaTpwWV4VFopRdxSY.GGLIjGXI7cvtuxAA4pln1HSe4fhFoE7tHAFkA8JQ8wA&dib_tag=se&keywords=Watering+products+for+indoor+garden&qid=1780617837&sprefix=watering+products+for+indoor+garden%2Caps%2C156&sr=8-36&linkCode=ll2&tag=athomegrower-20&linkId=40abbe6e0b3ed242a9fd7116cabebbb0&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "watering-irrigation-4",
+          "categoryId": "watering-irrigation",
+          "kicker": "Terracotta self-watering aid",
+          "name": "DoubleFill Terracotta Watering Planter",
+          "bestFor": "Indoor planters, outdoor containers, and steady moisture support.",
+          "whyItFits": "Terracotta watering products are useful for gardeners who prefer simple passive watering tools.",
+          "caution": "Check current Amazon price, capacity, pot compatibility, reservoir size, tubing length, power/battery needs, seller, shipping, reviews, and whether the product matches your plant's moisture needs.",
+          "affiliateUrl": "https://www.amazon.com/DoubleFill-Terracotta-Watering-Planter-Outdoor/dp/B0DWX6373G?crid=14JKGW0QV7KNY&dib=eyJ2IjoiMSJ9.-hX6ljVg--sqRKF88gs9dWH7QQWPzq6INTvHsKJ8gi9pYyI7db0u9lekFJzErLTgx2AJPH2KAZjSyv0JlkWhE4QLeYOX0bEUUMoMfziJDjptnfp2LVS_tS21IMcPgXJVx0_DTjkFlKUwfE4qJ-vG4VAjbHkoZhT-uZjiYwrAKTBtXZPSggtCe-_xpEnN6GNgVFgFen6AVdcAC-w-WKfayuI_fw5JVwu0NSP2wMeY_9O4gV0ZC3UnQ8hHZp9id1t9ttH86qoVd7LP2WmnTESa_sJFjmyaTpwWV4VFopRdxSY.GGLIjGXI7cvtuxAA4pln1HSe4fhFoE7tHAFkA8JQ8wA&dib_tag=se&keywords=Watering%2Bproducts%2Bfor%2Bindoor%2Bgarden&qid=1780617837&sprefix=watering%2Bproducts%2Bfor%2Bindoor%2Bgarden%2Caps%2C156&sr=8-38&th=1&linkCode=ll2&tag=athomegrower-20&linkId=d3f35adae3079f9f3327886307bfbc38&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "watering-irrigation-5",
+          "categoryId": "watering-irrigation",
+          "kicker": "Indoor watering product",
+          "name": "Indoor Watering Product B0GCJCH3KK",
+          "bestFor": "Indoor plant watering and small-space plant care.",
+          "whyItFits": "This supplied Amazon link is included in the watering section; confirm exact product details on Amazon before buying.",
+          "caution": "Check current Amazon price, capacity, pot compatibility, reservoir size, tubing length, power/battery needs, seller, shipping, reviews, and whether the product matches your plant's moisture needs.",
+          "affiliateUrl": "https://www.amazon.com/gp/aw/d/B0GCJCH3KK?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=1acce10edc055faf4e5848615c3dddbf&hsa_cr_id=0&qid=1780618015&sr=1-1-bb1dd90d-43d9-4889-9fa3-06ff69afcca4&pf_rd_p=426cce2b-1a46-4f73-98d0-97ab3ad4ed98&pf_rd_r=KJW88WX7DXBCAGM24XYC&pd_rd_wg=RMOet&pd_rd_w=pNRsj&content-id=amzn1.sym.426cce2b-1a46-4f73-98d0-97ab3ad4ed98%3Aamzn1.sym.426cce2b-1a46-4f73-98d0-97ab3ad4ed98&pd_rd_r=efb0702a-c1bc-4a00-9b9f-3b75af19a7d6&th=1&linkCode=ll2&tag=athomegrower-20&linkId=2b9a514524bda4f4390b293a2fa18e8a&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "watering-irrigation-6",
+          "categoryId": "watering-irrigation",
+          "kicker": "Indoor watering product",
+          "name": "Indoor Watering Product B0GCJNT8LK",
+          "bestFor": "Indoor plant watering, potted plants, and houseplant routines.",
+          "whyItFits": "This generic ASIN card preserves the supplied affiliate link while avoiding hardcoded details that may change.",
+          "caution": "Check current Amazon price, capacity, pot compatibility, reservoir size, tubing length, power/battery needs, seller, shipping, reviews, and whether the product matches your plant's moisture needs.",
+          "affiliateUrl": "https://www.amazon.com/gp/aw/d/B0GCJNT8LK?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=1acce10edc055faf4e5848615c3dddbf&hsa_cr_id=0&qid=1780618015&sr=1-2-bb1dd90d-43d9-4889-9fa3-06ff69afcca4&pf_rd_p=426cce2b-1a46-4f73-98d0-97ab3ad4ed98&pf_rd_r=KJW88WX7DXBCAGM24XYC&pd_rd_wg=RMOet&pd_rd_w=pNRsj&content-id=amzn1.sym.426cce2b-1a46-4f73-98d0-97ab3ad4ed98%3Aamzn1.sym.426cce2b-1a46-4f73-98d0-97ab3ad4ed98&pd_rd_r=efb0702a-c1bc-4a00-9b9f-3b75af19a7d6&th=1&linkCode=ll2&tag=athomegrower-20&linkId=7e49d41e02530d21ce8d44fafb3e2fff&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        },
+        {
+          "id": "watering-irrigation-7",
+          "categoryId": "watering-irrigation",
+          "kicker": "Indoor watering product",
+          "name": "Indoor Watering Product B0GCJRMS4G",
+          "bestFor": "Houseplants, potted plants, and indoor watering routines.",
+          "whyItFits": "This supplied Amazon link is included as an indoor watering product card; exact current details should be verified on Amazon.",
+          "caution": "Check current Amazon price, capacity, pot compatibility, reservoir size, tubing length, power/battery needs, seller, shipping, reviews, and whether the product matches your plant's moisture needs.",
+          "affiliateUrl": "https://www.amazon.com/gp/aw/d/B0GCJRMS4G?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=1acce10edc055faf4e5848615c3dddbf&hsa_cr_id=0&qid=1780618015&sr=1-3-bb1dd90d-43d9-4889-9fa3-06ff69afcca4&pf_rd_p=426cce2b-1a46-4f73-98d0-97ab3ad4ed98&pf_rd_r=KJW88WX7DXBCAGM24XYC&pd_rd_wg=RMOet&pd_rd_w=pNRsj&content-id=amzn1.sym.426cce2b-1a46-4f73-98d0-97ab3ad4ed98%3Aamzn1.sym.426cce2b-1a46-4f73-98d0-97ab3ad4ed98&pd_rd_r=efb0702a-c1bc-4a00-9b9f-3b75af19a7d6&th=1&linkCode=ll2&tag=athomegrower-20&linkId=18c762ddf620add27f5da64bd8a52b1a&language=en_US&ref_=as_li_ss_tl",
+          "merchant": "Amazon"
+        }
+      ]
+    }
+  ]
+}

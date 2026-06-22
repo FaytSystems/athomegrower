@@ -349,7 +349,7 @@ function cardTags(plant) {
   ];
 }
 
-function pageShell({ title, description, current = "", body, script = "/assets/app.js" }) {
+function pageShell({ title, description, current = "", body, script = "/assets/app.js", extraHead = "", extraScripts = "" }) {
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -358,6 +358,7 @@ function pageShell({ title, description, current = "", body, script = "/assets/a
   <title>${html(title)}</title>
   <meta name="description" content="${attr(description)}">
   <link rel="stylesheet" href="/assets/styles.css">
+  ${extraHead}
 </head>
 <body id="top" data-current-nav="${attr(current)}">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -367,6 +368,7 @@ ${body}
 </main>
 ${siteFooter()}
 <script src="${script}"></script>
+${extraScripts}
 </body>
 </html>
 `;
@@ -383,6 +385,8 @@ function siteHeader(current = "") {
     ["Additives", "/organic-additives.html", "additives"],
     ["How-To", "/how-to.html", "how-to"],
     ["Tools", "/tools.html", "tools"],
+    ["Store", "/store.html", "store"],
+    ["Advertise", "/advertise.html", "advertise"],
     ["Search", "/search.html", "search"],
   ];
   return `<header class="site-header">
@@ -402,9 +406,151 @@ function siteFooter() {
   return `<footer class="footer">
   <div class="footer-inner">
     <p>&copy; <span data-current-year></span> AtHomeGrower.com - Indoor/outdoor plant care for real homes.</p>
-    <p><a href="/about/editorial-policy.html">Editorial policy</a> - <a href="/image-credits.html">Image credits</a> - <a href="#top">Back to top</a></p>
+    <p><a href="/store.html">Store</a> - <a href="/affiliate-disclosure.html">Affiliate disclosure</a> - <a href="/advertise.html">Advertise</a> - <a href="/about/editorial-policy.html">Editorial policy</a> - <a href="/image-credits.html">Image credits</a> - <a href="#top">Back to top</a></p>
   </div>
 </footer>`;
+}
+
+let sponsorDataCache = null;
+let storeDataCache = null;
+let plantCreditCache = null;
+
+function readSponsorData() {
+  if (!sponsorDataCache) {
+    sponsorDataCache = readJson(path.join(publicDir, "data", "sponsor-products.json"), {
+      publishableKey: "",
+      products: [],
+    });
+  }
+  return sponsorDataCache;
+}
+
+function readStoreData() {
+  if (!storeDataCache) {
+    storeDataCache = readJson(path.join(publicDir, "data", "store-products.json"), {
+      disclosure: "As an Amazon Associate, AtHomeGrower may earn from qualifying purchases.",
+      categories: [],
+    });
+  }
+  return storeDataCache;
+}
+
+function readPlantCreditMap() {
+  if (plantCreditCache) return plantCreditCache;
+  const credits = readJson(path.join(publicDir, "data", "plant-image-credits.json"), { photos: [] });
+  plantCreditCache = new Map();
+  for (const photo of credits.photos || []) {
+    plantCreditCache.set(`${photo.category}:${photo.plantSlug}`, photo);
+  }
+  return plantCreditCache;
+}
+
+function sponsorProduct(id) {
+  return (readSponsorData().products || []).find((item) => Number(item.id) === Number(id)) || {};
+}
+
+function adSpace(productId, variant = "leaderboard", contextLabel = "Sponsor Opportunity") {
+  const item = sponsorProduct(productId);
+  const id = item.id || productId;
+  const name = item.name || "Sponsor Placement";
+  const price = item.priceText || "";
+  const trial = item.trialText || "Reserve sponsor placement";
+  const placement = item.placement || "Premium sponsor space on AtHomeGrower.";
+  const bestFor = item.bestFor || "Garden, home, plant care, and plant wellness brands.";
+  return `<aside class="ad-space ad-space-${attr(variant)}" data-ad-space="${attr(variant)}" data-sponsor-spot="${attr(id)}">
+  <div class="ad-space-mark" aria-hidden="true"><strong>#${html(id)}</strong><span>Claim Space Here</span></div>
+  <div class="ad-space-copy">
+    <p class="ad-space-eyebrow">${html(contextLabel)}</p>
+    <h2>Ad Space #${html(id)}: ${html(name)}</h2>
+    <p>${html(placement)}</p>
+    <div class="ad-space-metrics">
+      ${price ? `<span>${html(price)}</span>` : ""}
+      <span>${html(trial)}</span>
+      <span>${html(bestFor)}</span>
+    </div>
+  </div>
+  <a class="button secondary" href="/sponsor.html#ad-space-${attr(id)}">Reserve spot #${attr(id)}</a>
+</aside>`;
+}
+
+function imageExists(url) {
+  const file = publicFileFromUrl(url);
+  return Boolean(file && fs.existsSync(file));
+}
+
+function buildPlantPhotos(plant, creditMap) {
+  const photos = [];
+  const addPhoto = (photo) => {
+    if (!photo || !photo.src || photos.some((item) => item.src === photo.src)) return;
+    photos.push(photo);
+  };
+  const credit = creditMap.get(`${plant.plantTypeCategory}:${plant.slug}`);
+  if (credit && credit.localImage && imageExists(credit.localImage)) {
+    addPhoto({
+      src: credit.localImage,
+      alt: `Real photo of ${plant.name}`,
+      source: credit.source || "Wikimedia Commons",
+      license: credit.licenseShortName || "Open license",
+      creditUrl: "/image-credits.html",
+    });
+  }
+  if (plant.image && imageExists(plant.image)) {
+    addPhoto({
+      src: plant.image,
+      alt: plant.alt || `Photo of ${plant.name}`,
+      source: plant.image.includes("/commons-plants/") ? "Wikimedia Commons" : "AtHomeGrower visual asset",
+      license: plant.image.includes("/commons-plants/") ? "See image credits" : "Site-owned or generated reference",
+      creditUrl: plant.image.includes("/commons-plants/") ? "/image-credits.html" : "",
+    });
+  }
+  const generatedUrl = `/assets/images/generated-real/${plant.plantTypeCategory}-${plant.slug}.webp`;
+  if (imageExists(generatedUrl)) {
+    addPhoto({
+      src: generatedUrl,
+      alt: `Potted reference image of ${plant.name}`,
+      source: "AtHomeGrower generated potted reference",
+      license: "Site-owned generated image",
+      creditUrl: "",
+    });
+  }
+  if (!photos.length) {
+    const fallback = "/assets/images/generated-real/source-generic-potted-plant.png";
+    addPhoto({
+      src: fallback,
+      alt: `Potted plant reference image for ${plant.name}`,
+      source: "AtHomeGrower generated fallback",
+      license: "Site-owned generated image",
+      creditUrl: "",
+    });
+  }
+  return photos.slice(0, 4);
+}
+
+function plantPhotoList(plant) {
+  const photos = Array.isArray(plant.photos) && plant.photos.length
+    ? plant.photos
+    : [{ src: plant.image, alt: plant.alt || plant.name }];
+  return photos.filter((photo) => photo && photo.src).slice(0, 4);
+}
+
+function plantGalleryStatic(plant, options = {}) {
+  const photos = plantPhotoList(plant);
+  const linked = options.linked !== false;
+  const mediaClass = options.detail ? "plant-detail-media" : "plant-card-media";
+  const trackAttrs = `class="plant-gallery-track" data-gallery-track aria-label="${attr(`${plant.name} photo gallery`)}"`;
+  const images = photos.map((photo) => `<img src="${attr(photo.src)}" alt="${attr(photo.alt || plant.name)}" loading="lazy">`).join("");
+  const track = linked
+    ? `<a ${trackAttrs} href="${attr(plant.factsUrl)}">${images}</a>`
+    : `<div ${trackAttrs}>${images}</div>`;
+  const controls = photos.length > 1
+    ? `<button class="gallery-nav gallery-prev" type="button" data-gallery-prev aria-label="Previous ${attr(plant.name)} photo">&lsaquo;</button>
+       <button class="gallery-nav gallery-next" type="button" data-gallery-next aria-label="Next ${attr(plant.name)} photo">&rsaquo;</button>
+       <span class="gallery-count">${photos.length} photos</span>`
+    : "";
+  return `<div class="${mediaClass} plant-photo-gallery" data-photo-gallery>
+    ${track}
+    ${controls}
+  </div>`;
 }
 
 function plantCardStatic(plant) {
@@ -412,7 +558,7 @@ function plantCardStatic(plant) {
     .map((tag) => `<span class="card-tag ${attr(tag.kind)}">${html(tag.label)}</span>`)
     .join("");
   return `<article class="plant-card" data-search-card data-category="${attr(plant.plantTypeCategory)}">
-    <a class="plant-card-media" href="${attr(plant.factsUrl)}"><img src="${attr(plant.image)}" alt="${attr(plant.alt)}" loading="lazy"></a>
+    ${plantGalleryStatic(plant)}
     <div class="plant-card-body">
       <div class="card-tags">${tags}</div>
       <h3><a href="${attr(plant.factsUrl)}">${html(plant.name)}</a></h3>
@@ -464,10 +610,10 @@ function plantDetailPage(plant, allPlants) {
       <a class="button secondary" href="/plant-diagnoser.html?plant=${attr(plant.slug)}">Check what's wrong</a>
     </div>
   </div>
-  <div class="plant-detail-media">
-    <img src="${attr(plant.image)}" alt="${attr(plant.alt)}">
-  </div>
+  ${plantGalleryStatic(plant, { detail: true, linked: false })}
 </section>
+
+${adSpace(1, "inline", "Plant Profile Sponsor Space")}
 
 <section class="section">
   <div class="plant-facts-strip">
@@ -522,6 +668,8 @@ ${zoneTiming}
 </section>
 
 ${related.length ? `<section class="section"><div class="section-header"><div><h2>Related plants</h2><p>More ${html(plant.categoryLabel.toLowerCase())} profiles.</p></div></div><div class="grid three">${related.map(plantCardStatic).join("")}</div></section>` : ""}
+
+${adSpace(4, "footer", "Sitewide Sponsor Space")}
 
 ${sourceList ? `<section class="section"><div class="card"><div class="card-body"><h2>Sources</h2><ul>${sourceList}</ul></div></div></section>` : ""}`,
   });
@@ -689,6 +837,7 @@ function libraryPage(plants) {
   <h1>Hundreds of plants, one clean library.</h1>
   <p class="lede">Pet-friendly plants, toxic houseplants, herbs, vegetables, fruits, and cover crops with care cards and full profiles.</p>
 </section>
+${adSpace(4, "leaderboard", "Plant Library Sponsor Space")}
 <section class="section">
   <div class="stat-strip">
     <div><strong>${plants.length}</strong><span>Total profiles</span></div>
@@ -719,6 +868,7 @@ function fillSpacePage() {
   <h1>Find plants that fit the room, shelf, bed, or patio.</h1>
   <p class="lede">Search across pet-friendly plants, toxic display plants, herbs, vegetables, fruits, and cover crops with the same tagging system.</p>
 </section>
+${adSpace(2, "leaderboard", "Fill Your Space Tool Sponsor Space")}
 <section class="section split-tool" data-fill-space>
   <div class="tool-main">
     <div class="section-header">
@@ -749,6 +899,7 @@ function diagnoserPage() {
   <h1>Build a symptom pattern, then narrow the cause.</h1>
   <p class="lede">Search ailment terms like yellowing, brown tips, spots, webbing, sticky leaves, gnats, wet soil, and leggy growth.</p>
 </section>
+${adSpace(2, "leaderboard", "Diagnosis Tool Sponsor Space")}
 <section class="section diagnoser-layout" data-diagnoser>
   <div class="diagnoser-main">
     <div class="section-header">
@@ -775,6 +926,7 @@ function searchPage() {
   <h1>Search any plant.</h1>
   <p class="lede">Find care cards and open the full plant profile.</p>
 </section>
+${adSpace(4, "leaderboard", "Search Sponsor Space")}
 <section class="section" data-site-search>
   <div class="section-header">
     <div><h2>Plant search</h2><p>Search name, botanical name, light, water, soil, pet note, and category.</p></div>
@@ -796,6 +948,7 @@ function toolsPage() {
   <h1>Useful tools, not dead-end cards.</h1>
   <p class="lede">Open the plant finder, What's Wrong With My Plant, library search, and core care reference pages from one place.</p>
 </section>
+${adSpace(2, "leaderboard", "Tool Hub Sponsor Space")}
 <section class="section">
   <div class="grid three">
     ${[
@@ -819,6 +972,208 @@ function toolsPage() {
   });
 }
 
+function storeProductCard(product) {
+  return `<article class="card product-card" data-search-card>
+    <div class="card-body">
+      <span class="card-kicker">${html(product.kicker || product.merchant || "Store pick")}</span>
+      <h3>${html(product.name)}</h3>
+      <p><strong>Best for:</strong> ${html(product.bestFor)}</p>
+      <p><strong>Why it fits:</strong> ${html(product.whyItFits)}</p>
+      <p><strong>Before buying:</strong> ${html(product.caution)}</p>
+      <a class="button store-button" href="${attr(product.affiliateUrl)}" target="_blank" rel="sponsored nofollow noopener">View on ${html(product.merchant || "merchant")}</a>
+    </div>
+  </article>`;
+}
+
+function storeHomePage() {
+  const store = readStoreData();
+  const categories = store.categories || [];
+  const featured = categories.flatMap((category) => (category.products || []).slice(0, 2)).slice(0, 8);
+  return pageShell({
+    title: "AtHomeGrower Store | Curated gardening supplies",
+    description: "Curated affiliate store links for seeds, tools, soil, seed starting, fertilizers, pest control, and watering supplies.",
+    current: "store",
+    body: `<section class="page-hero">
+  <span class="eyebrow">Affiliate store</span>
+  <h1>Plant supplies with the hype stripped out.</h1>
+  <p class="lede">Recovered store sections are back: seeds, tools, seed starting, soil amendments, organic fertilizers, organic pest control, and watering supplies.</p>
+</section>
+
+${adSpace(3, "leaderboard", "Store Category Sponsor Space")}
+
+<section class="section">
+  <div class="notice"><strong>Affiliate disclosure:</strong> ${html(store.disclosure)}</div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <div><h2>Shop by need</h2><p>Each section keeps the recovered affiliate links and adds plain-language buying cautions.</p></div>
+    <a class="button secondary" href="/affiliate-disclosure.html">Disclosure</a>
+  </div>
+  <div class="grid three">
+    ${categories.map((category) => `<article class="card route-card"><div class="card-body">
+      <span class="card-kicker">${html((category.products || []).length)} picks</span>
+      <h3>${html(category.label)}</h3>
+      <p>${html(category.description)}</p>
+      <a class="text-link" href="${attr(category.pageUrl)}">Open ${html(category.label)}</a>
+    </div></article>`).join("")}
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <div><h2>Featured recovered picks</h2><p>A quick sample from the restored affiliate library.</p></div>
+    <input class="search-box" data-card-search type="search" placeholder="Search store picks..." aria-label="Search store picks">
+  </div>
+  <div class="grid two">
+    ${featured.map(storeProductCard).join("")}
+  </div>
+</section>
+
+${adSpace(4, "footer", "Sitewide Sponsor Space")}`,
+  });
+}
+
+function storeCategoryPage(category) {
+  const store = readStoreData();
+  return pageShell({
+    title: `${category.title} | AtHomeGrower Store`,
+    description: category.description,
+    current: "store",
+    body: `<section class="page-hero">
+  <span class="eyebrow">${html(category.eyebrow)}</span>
+  <h1>${html(category.title)}</h1>
+  <p class="lede">${html(category.description)}</p>
+  <div class="actions">
+    <a class="button" href="/store.html">Store hub</a>
+    <a class="button secondary" href="${attr(category.ctaHref)}">${html(category.ctaLabel)}</a>
+  </div>
+</section>
+
+${adSpace(3, "leaderboard", "Store Category Sponsor Space")}
+
+<section class="section">
+  <div class="notice"><strong>Affiliate disclosure:</strong> ${html(store.disclosure)} These links open in a new tab.</div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <div><h2>${html(category.label)} picks</h2><p>Use these as starting points, then verify label directions, seller, size, and current details before buying.</p></div>
+    <input class="search-box" data-card-search type="search" placeholder="Search ${attr(category.label.toLowerCase())}..." aria-label="Search ${attr(category.label)} products">
+  </div>
+  <div class="grid two">
+    ${(category.products || []).map(storeProductCard).join("")}
+  </div>
+</section>
+
+${adSpace(6, "footer", "Setup / Reservation Space")}`,
+  });
+}
+
+function writeStorePages() {
+  const store = readStoreData();
+  const storeDir = path.join(publicDir, "store");
+  ensureDir(storeDir);
+  fs.writeFileSync(path.join(publicDir, "store.html"), storeHomePage());
+  fs.writeFileSync(path.join(publicDir, "products.html"), storeHomePage());
+  for (const category of store.categories || []) {
+    fs.writeFileSync(path.join(storeDir, `${category.id}.html`), storeCategoryPage(category));
+  }
+}
+
+function sponsorCard(product, publishableKey) {
+  return `<article class="sponsor-card" id="ad-space-${attr(product.id)}">
+    <div class="sponsor-card-top">
+      <span>#${html(product.id)}</span>
+      <h2>Ad Space #${html(product.id)}</h2>
+      <p>${html(product.name)}</p>
+    </div>
+    <div class="sponsor-card-body">
+      <div class="ad-space-metrics">
+        <span>${html(product.priceText)}</span>
+        <span>${html(product.billing)}</span>
+        <span>${html(product.trialText)}</span>
+      </div>
+      <p><strong>Placement:</strong> ${html(product.placement)}</p>
+      <p><strong>Best for:</strong> ${html(product.bestFor)}</p>
+      <p>${html(product.description)}</p>
+      <div class="sponsor-buy">
+        <stripe-buy-button buy-button-id="${attr(product.stripeBuyButtonId)}" publishable-key="${attr(publishableKey)}"></stripe-buy-button>
+      </div>
+    </div>
+  </article>`;
+}
+
+function sponsorPage(current = "advertise") {
+  const sponsor = readSponsorData();
+  const products = sponsor.products || [];
+  return pageShell({
+    title: "Advertise on AtHomeGrower | Sponsor ad space",
+    description: "Reserve AtHomeGrower sponsor and ad-space placements with matched Stripe buy buttons.",
+    current,
+    body: `<section class="page-hero">
+  <span class="eyebrow">AtHomeGrower sponsors</span>
+  <h1>Reserve claim-space advertising.</h1>
+  <p class="lede">Ad Space #1 through #6 are placed around the site and matched to the correct Stripe checkout buttons.</p>
+</section>
+
+<section class="section">
+  <div class="callout">
+    <div>
+      <h2>Choose the placement that fits the campaign.</h2>
+      <p>Native cards, tool placements, category placements, sitewide placements, feature posts, and setup review are all available below.</p>
+    </div>
+    <a class="button" href="#ad-space-1">See options</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="grid three sponsor-grid">
+    ${products.map((product) => sponsorCard(product, sponsor.publishableKey)).join("")}
+  </div>
+</section>
+
+<section class="section">
+  <div class="notice"><strong>Checkout mapping:</strong> The displayed prices, trial text, and Stripe Buy Buttons all come from <code>/data/sponsor-products.json</code>.</div>
+</section>`,
+    extraScripts: `<script async src="https://js.stripe.com/v3/buy-button.js"></script>`,
+  });
+}
+
+function writeSponsorPages() {
+  fs.writeFileSync(path.join(publicDir, "sponsor.html"), sponsorPage("advertise"));
+  fs.writeFileSync(path.join(publicDir, "advertise.html"), sponsorPage("advertise"));
+  const sponsorDir = path.join(publicDir, "sponsor");
+  ensureDir(sponsorDir);
+  fs.writeFileSync(path.join(sponsorDir, "index.html"), sponsorPage("advertise"));
+}
+
+function affiliateDisclosurePage() {
+  return pageShell({
+    title: "Affiliate Disclosure | AtHomeGrower",
+    description: "AtHomeGrower affiliate disclosure for store links and sponsored placements.",
+    current: "store",
+    body: `<section class="page-hero">
+  <span class="eyebrow">Affiliate disclosure</span>
+  <h1>How product links work.</h1>
+  <p class="lede">Some store links are affiliate links. AtHomeGrower may earn a commission from qualifying purchases at no extra cost to you.</p>
+</section>
+<section class="section">
+  <div class="grid two">
+    <article class="card"><div class="card-body">
+      <h2>Amazon links</h2>
+      <p>As an Amazon Associate, AtHomeGrower may earn from qualifying purchases. Product prices, availability, ratings, shipping, seller details, and label directions can change after publication.</p>
+    </div></article>
+    <article class="card"><div class="card-body">
+      <h2>Editorial standard</h2>
+      <p>Product cards are written as buying starting points, not guarantees. Always verify the current product page, ingredients, safety directions, and fit for your plant, pets, home, and local rules before buying.</p>
+    </div></article>
+  </div>
+</section>
+${adSpace(6, "footer", "Sponsor Setup Space")}`,
+  });
+}
+
 function homePage(plants) {
   return pageShell({
     title: "AtHomeGrower.com | Complete Home Gardening Knowledge Base",
@@ -838,6 +1193,7 @@ function homePage(plants) {
     <img src="/assets/img/hero-garden.svg" alt="Illustrated indoor and outdoor growing space">
   </div>
 </section>
+${adSpace(4, "leaderboard", "Sitewide Sponsor Space")}
 <section class="section">
   <div class="section-header">
     <div><h2>Core plant tools</h2><p>The main tools are wired to the same plant database and detail pages.</p></div>
@@ -862,9 +1218,18 @@ function homePage(plants) {
 
 function writeSitemap(plants) {
   const urls = [];
-  const staticPages = fs.readdirSync(publicDir)
-    .filter((file) => file.endsWith(".html"))
-    .map((file) => `/${file}`);
+  const staticPages = [];
+  function walkHtml(dir) {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const filePath = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        walkHtml(filePath);
+      } else if (entry.name.endsWith(".html")) {
+        staticPages.push(`/${path.relative(publicDir, filePath).replace(/\\/g, "/")}`);
+      }
+    }
+  }
+  walkHtml(publicDir);
   urls.push(...staticPages);
   urls.push(...plants.map((plant) => plant.factsUrl));
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -921,6 +1286,10 @@ function main() {
       plant.alt = `Real photo of ${plant.name}`;
     }
   }
+  const plantCreditMap = readPlantCreditMap();
+  for (const plant of plants) {
+    plant.photos = buildPlantPhotos(plant, plantCreditMap);
+  }
 
   const ailments = buildAilments();
   const counts = Object.fromEntries(Object.keys(categoryMeta).map((key) => [key, plants.filter((plant) => plant.plantTypeCategory === key).length]));
@@ -940,6 +1309,9 @@ function main() {
   fs.writeFileSync(path.join(publicDir, "search.html"), searchPage());
   fs.writeFileSync(path.join(publicDir, "tools.html"), toolsPage());
   fs.writeFileSync(path.join(publicDir, "index.html"), homePage(plants));
+  writeStorePages();
+  writeSponsorPages();
+  fs.writeFileSync(path.join(publicDir, "affiliate-disclosure.html"), affiliateDisclosurePage());
   writeImageCreditsPage();
   writeSitemap(plants);
 

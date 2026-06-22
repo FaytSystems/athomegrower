@@ -1,0 +1,89 @@
+{
+  "version": "sponsor-products-corrected-buy-button-map-v3",
+  "generatedAt": "2026-06-09T17:07:46+00:00",
+  "publishableKey": "pk_live_51TdF41GJtywdCBcEVXcvUM8SB5O6Y34OCA0nrPqvlfa5RQfmSj5TroPhVQq8heMzbJZuEhxoOwVXC7sYrpSBybdk002vxsC9AC",
+  "pageUrl": "/sponsor.html",
+  "pricePolicy": "Displayed card prices now match the assigned Stripe Buy Button IDs.",
+  "products": [
+    {
+      "id": 1,
+      "name": "Native Sponsor Card",
+      "priceText": "$49/month",
+      "trialText": "3-day free trial, then $49/month",
+      "trialDays": 3,
+      "billing": "Monthly subscription",
+      "stripeBuyButtonId": "buy_btn_1TgSlwGJtywdCBcETdRfG8ZE",
+      "bestFor": "In-grid sponsor cards inside plant/category pages.",
+      "placement": "Native card inside plant results, category grids, Plant Facts libraries, and long card pages.",
+      "description": "A clean native sponsor card that blends into AtHomeGrower card grids without feeling spammy."
+    },
+    {
+      "id": 2,
+      "name": "Tool Sponsor Placement",
+      "priceText": "$99/month",
+      "trialText": "5-day free trial, then $99/month",
+      "trialDays": 5,
+      "billing": "Monthly subscription",
+      "stripeBuyButtonId": "buy_btn_1TgSlPGJtywdCBcE19wSogJj",
+      "bestFor": "Fill My Space, Plant Diagnoser, Companion Planting, and Zones.",
+      "placement": "Sponsor block near high-intent tools where users are actively choosing plants or diagnosing issues.",
+      "description": "Best for brands that sell plant care, soil, pots, grow lights, seeds, pest control, or gardening tools."
+    },
+    {
+      "id": 3,
+      "name": "Category Sponsor Placement",
+      "priceText": "$149/month",
+      "trialText": "7-day free trial, then $149/month",
+      "trialDays": 7,
+      "billing": "Monthly subscription",
+      "stripeBuyButtonId": "buy_btn_1TgSktGJtywdCBcEWm46M6AB",
+      "bestFor": "Plant Care, Plant Type, Fruits, Herbs, Vegetables, Cover Crops, and Store categories.",
+      "placement": "Category-level sponsor block on sections with focused garden shopping or learning intent.",
+      "description": "Good for a brand that wants ownership of a specific content category."
+    },
+    {
+      "id": 4,
+      "name": "Sitewide Sponsor Placement",
+      "priceText": "$299/month",
+      "trialText": "10-day free trial, then $299/month",
+      "trialDays": 10,
+      "billing": "Monthly subscription",
+      "stripeBuyButtonId": "buy_btn_1TgSkRGJtywdCBcEDK8SoPhL",
+      "bestFor": "Premium visibility across the main AtHomeGrower experience.",
+      "placement": "Top leaderboard-style sponsor space across major pages.",
+      "description": "The highest visibility placement for brands that want broad AtHomeGrower exposure."
+    },
+    {
+      "id": 5,
+      "name": "Sponsored Feature Post",
+      "priceText": "$149 one-time",
+      "trialText": "One-time sponsored feature, no free trial",
+      "trialDays": 0,
+      "billing": "One-off payment",
+      "stripeBuyButtonId": "buy_btn_1TgSjiGJtywdCBcEOKI4lTzY",
+      "bestFor": "One sponsored article, product spotlight, grow guide, or seasonal feature.",
+      "placement": "One dedicated sponsored feature page or post, reviewed before publishing.",
+      "description": "A one-time sponsored content option for brands that want a featured placement without a monthly plan."
+    },
+    {
+      "id": 6,
+      "name": "Ad Spot Setup / Creative Review",
+      "priceText": "$25 one-time",
+      "trialText": "One-time setup and creative review, no free trial",
+      "trialDays": 0,
+      "billing": "One-off payment",
+      "stripeBuyButtonId": "buy_btn_1TgSmGGJtywdCBcE0lZdGiTY",
+      "bestFor": "Reserving a sponsor spot while placement, creative, and fit are confirmed.",
+      "placement": "Reservation/setup option before a full monthly sponsorship is activated.",
+      "description": "A low-friction setup or reservation payment for brands that need review before choosing a monthly slot."
+    }
+  ],
+  "buttonMappingFix": {
+    "1": "uses $49 Native Sponsor Card button",
+    "2": "uses $99 Tool Sponsor Placement button",
+    "3": "unchanged $149/month Category Sponsor Placement button",
+    "4": "uses $299 Sitewide Sponsor Placement button",
+    "5": "uses $149 one-time Sponsored Feature Post button",
+    "6": "unchanged $25 one-time Ad Spot Setup / Creative Review button"
+  }
+}

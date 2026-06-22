@@ -1,6 +1,7 @@
 (() => {
   const plantDataUrl = "/data/plant-library-expanded.json";
   const ailmentDataUrl = "/data/ailment-diagnosis.json";
+  const sponsorDataUrl = "/data/sponsor-products.json";
 
   const navItems = [
     ["Home", "/index.html", "home"],
@@ -12,6 +13,8 @@
     ["Additives", "/organic-additives.html", "additives"],
     ["How-To", "/how-to.html", "how-to"],
     ["Tools", "/tools.html", "tools"],
+    ["Store", "/store.html", "store"],
+    ["Advertise", "/advertise.html", "advertise"],
     ["Search", "/search.html", "search"],
   ];
 
@@ -27,6 +30,7 @@
   const state = {
     plants: null,
     ailments: null,
+    sponsors: null,
   };
 
   const $ = (selector, root = document) => root.querySelector(selector);
@@ -81,6 +85,8 @@
     if (path.includes("plant-library") || path.includes("/plants/")) return "plant-library";
     if (path.includes("organic-additives")) return "additives";
     if (path.includes("tools")) return "tools";
+    if (path.includes("store") || path.includes("products") || path.includes("affiliate-disclosure")) return "store";
+    if (path.includes("advertise") || path.includes("sponsor")) return "advertise";
     if (path.includes("search")) return "search";
     if (path.includes("pests")) return "pests";
     if (path.includes("diseases")) return "diseases";
@@ -118,6 +124,17 @@
   async function loadAilments() {
     if (!state.ailments) state.ailments = await loadJson(ailmentDataUrl);
     return state.ailments;
+  }
+
+  async function loadSponsors() {
+    if (!state.sponsors) {
+      try {
+        state.sponsors = await loadJson(sponsorDataUrl);
+      } catch {
+        state.sponsors = { products: [] };
+      }
+    }
+    return state.sponsors;
   }
 
   function petLabel(status) {
@@ -161,6 +178,28 @@
       { kind: "light", label: lightTagLabel(plant.lightText) },
       { kind: "difficulty", label: careTagLabel(plant.careLevel) },
     ];
+  }
+
+  function plantPhotos(plant) {
+    const photos = Array.isArray(plant.photos) && plant.photos.length
+      ? plant.photos
+      : [{ src: plant.image, alt: plant.alt || plant.name }];
+    return photos.filter((photo) => photo && photo.src).slice(0, 4);
+  }
+
+  function plantGallery(plant) {
+    const photos = plantPhotos(plant);
+    const controls = photos.length > 1
+      ? `<button class="gallery-nav gallery-prev" type="button" data-gallery-prev aria-label="Previous ${escapeHtml(plant.name)} photo">&lsaquo;</button>
+         <button class="gallery-nav gallery-next" type="button" data-gallery-next aria-label="Next ${escapeHtml(plant.name)} photo">&rsaquo;</button>
+         <span class="gallery-count">${photos.length} photos</span>`
+      : "";
+    return `<div class="plant-card-media plant-photo-gallery" data-photo-gallery>
+      <a class="plant-gallery-track" data-gallery-track href="${escapeHtml(plant.factsUrl)}" aria-label="${escapeHtml(plant.name)} photo gallery">
+        ${photos.map((photo) => `<img src="${escapeHtml(photo.src)}" alt="${escapeHtml(photo.alt || plant.name)}" loading="lazy">`).join("")}
+      </a>
+      ${controls}
+    </div>`;
   }
 
   function plantFacet(plant, facet) {
@@ -218,9 +257,7 @@
     const tags = cardTags(plant);
 
     return `<article class="plant-card" data-plant-card>
-      <a class="plant-card-media" href="${plant.factsUrl}">
-        <img src="${plant.image}" alt="${escapeHtml(plant.alt || plant.name)}" loading="lazy">
-      </a>
+      ${plantGallery(plant)}
       <div class="plant-card-body">
         <div class="card-tags">${tags.map((tag) => `<span class="card-tag ${tag.kind}">${escapeHtml(tag.label)}</span>`).join("")}</div>
         <h3><a href="${plant.factsUrl}">${escapeHtml(plant.name)}</a></h3>
@@ -472,6 +509,7 @@
           ? visibleMatches.map(plantCard).join("")
           : `<div class="empty-state"><h3>No plant matches yet</h3><p>Try removing one filter or choosing a broader leaf/light category.</p></div>`;
       }
+      window.dispatchEvent(new CustomEvent("ahg:plantResultsRendered"));
     }
 
     function wireFilterButtons(plants) {
@@ -531,7 +569,10 @@
           ? `${matches.length} matches${matches.length > visibleMatches.length ? `, showing ${visibleMatches.length}` : ""}`
           : "Showing the first 24 profiles";
       }
-      if (results) results.innerHTML = visibleMatches.map(plantCard).join("");
+      if (results) {
+        results.innerHTML = visibleMatches.map(plantCard).join("");
+        window.dispatchEvent(new CustomEvent("ahg:plantResultsRendered"));
+      }
     }
 
     loadPlants().then((plants) => {
@@ -933,6 +974,90 @@
     render();
   }
 
+  function setupPhotoGalleries() {
+    document.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-gallery-prev], [data-gallery-next]");
+      if (!button) return;
+      const gallery = button.closest("[data-photo-gallery]");
+      const track = gallery?.querySelector("[data-gallery-track]");
+      if (!track) return;
+      event.preventDefault();
+      event.stopPropagation();
+      const direction = button.matches("[data-gallery-prev]") ? -1 : 1;
+      track.scrollBy({ left: direction * track.clientWidth, behavior: "smooth" });
+    });
+  }
+
+  function sponsorProduct(config, id) {
+    return (config.products || []).find((item) => Number(item.id) === Number(id)) || {};
+  }
+
+  function sponsorContext() {
+    const current = getCurrentKey();
+    if (current === "fill-your-space" || current === "plant-diagnoser" || current === "tools") {
+      return { id: 2, label: "Tool Sponsor Space" };
+    }
+    if (current === "store") return { id: 3, label: "Store Category Sponsor Space" };
+    if (window.location.pathname.includes("/plants/")) return { id: 1, label: "Plant Profile Sponsor Space" };
+    return { id: 4, label: "Sitewide Sponsor Space" };
+  }
+
+  function sponsorAdBlock(config, productId, variant, contextLabel) {
+    const item = sponsorProduct(config, productId);
+    const id = item.id || productId;
+    const name = item.name || "Sponsor Placement";
+    const price = item.priceText || "";
+    const trial = item.trialText || "Reserve sponsor placement";
+    const placement = item.placement || "Premium sponsor space on AtHomeGrower.";
+    const bestFor = item.bestFor || "Garden, home, plant care, and plant wellness brands.";
+    return `<aside class="ad-space ad-space-${escapeHtml(variant || "leaderboard")}" data-ad-space="${escapeHtml(variant || "leaderboard")}" data-sponsor-spot="${escapeHtml(id)}">
+      <div class="ad-space-mark" aria-hidden="true"><strong>#${escapeHtml(id)}</strong><span>Claim Space Here</span></div>
+      <div class="ad-space-copy">
+        <p class="ad-space-eyebrow">${escapeHtml(contextLabel || "Sponsor Opportunity")}</p>
+        <h2>Ad Space #${escapeHtml(id)}: ${escapeHtml(name)}</h2>
+        <p>${escapeHtml(placement)}</p>
+        <div class="ad-space-metrics">
+          ${price ? `<span>${escapeHtml(price)}</span>` : ""}
+          <span>${escapeHtml(trial)}</span>
+          <span>${escapeHtml(bestFor)}</span>
+        </div>
+      </div>
+      <a class="button secondary" href="/sponsor.html#ad-space-${escapeHtml(id)}">Reserve spot #${escapeHtml(id)}</a>
+    </aside>`;
+  }
+
+  function insertNativeSponsorCards(config) {
+    const grids = $$(".plant-grid, .grid.two, .grid.three").filter((grid) => !grid.classList.contains("sponsor-grid"));
+    grids.forEach((grid) => {
+      if (grid.dataset.sponsorNativeInjected === "true" && grid.querySelector("[data-ad-space]")) return;
+      if (grid.dataset.sponsorNativeInjected === "true") delete grid.dataset.sponsorNativeInjected;
+      const cards = Array.from(grid.children).filter((child) => child.nodeType === 1 && !child.matches("[data-ad-space]"));
+      if (cards.length < 6) return;
+      grid.dataset.sponsorNativeInjected = "true";
+      const wrapper = document.createElement("div");
+      wrapper.innerHTML = sponsorAdBlock(config, 1, "card", "Native Sponsor Space");
+      grid.insertBefore(wrapper.firstElementChild, cards[Math.min(6, cards.length - 1)]);
+    });
+  }
+
+  function setupSponsorAds() {
+    if (getCurrentKey() === "advertise") return;
+    loadSponsors().then((config) => {
+      const context = sponsorContext();
+      if (!document.querySelector('[data-ad-space="leaderboard"]')) {
+        const main = document.querySelector("main") || document.body;
+        const firstSection = main.querySelector("section");
+        const html = sponsorAdBlock(config, context.id, "leaderboard", context.label);
+        if (firstSection) firstSection.insertAdjacentHTML("afterend", html);
+        else main.insertAdjacentHTML("afterbegin", html);
+      }
+      insertNativeSponsorCards(config);
+      window.addEventListener("ahg:plantResultsRendered", () => {
+        insertNativeSponsorCards(config);
+      });
+    });
+  }
+
   function init() {
     enhanceNav();
     const yearTarget = document.querySelector("[data-current-year]");
@@ -951,6 +1076,8 @@
     if (diagnoser) setupDiagnoser(diagnoser);
 
     setupAdditiveSearch();
+    setupPhotoGalleries();
+    setupSponsorAds();
     keepLegacyCardSearch();
     keepLegacyFilters();
   }
