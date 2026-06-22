@@ -985,6 +985,46 @@ function storeProductCard(product) {
   </article>`;
 }
 
+function groupedStoreProducts(category) {
+  const products = category.products || [];
+  if (!category.grouped) {
+    return `<div class="grid two">
+    ${products.map(storeProductCard).join("")}
+  </div>`;
+  }
+
+  const groups = [];
+  const seen = new Set();
+  for (const name of category.groupOrder || []) {
+    if (!seen.has(name)) {
+      groups.push(name);
+      seen.add(name);
+    }
+  }
+  for (const product of products) {
+    const name = product.storeGroup || "More picks";
+    if (!seen.has(name)) {
+      groups.push(name);
+      seen.add(name);
+    }
+  }
+
+  return groups.map((group) => {
+    const groupProducts = products.filter((product) => (product.storeGroup || "More picks") === group);
+    if (!groupProducts.length) return "";
+    const description = groupProducts.find((product) => product.storeGroupDescription)?.storeGroupDescription || "";
+    return `<section class="store-product-group" id="${attr(slugify(group))}">
+      <div class="section-header compact">
+        <div><h3>${html(group)}</h3>${description ? `<p>${html(description)}</p>` : ""}</div>
+        <span class="status-chip should">${html(groupProducts.length)} picks</span>
+      </div>
+      <div class="grid two">
+        ${groupProducts.map(storeProductCard).join("")}
+      </div>
+    </section>`;
+  }).join("");
+}
+
 function storeHomePage() {
   const store = readStoreData();
   const categories = store.categories || [];
@@ -996,7 +1036,7 @@ function storeHomePage() {
     body: `<section class="page-hero">
   <span class="eyebrow">Affiliate store</span>
   <h1>Plant supplies with the hype stripped out.</h1>
-  <p class="lede">Recovered store sections are back: seeds, tools, seed starting, soil amendments, organic fertilizers, organic pest control, and watering supplies.</p>
+  <p class="lede">Recovered store sections are back, with a dedicated organic additives shop grouped by soil, nutrients, biology, and pest control.</p>
 </section>
 
 ${adSpace(3, "leaderboard", "Store Category Sponsor Space")}
@@ -1061,9 +1101,7 @@ ${adSpace(3, "leaderboard", "Store Category Sponsor Space")}
     <div><h2>${html(category.label)} picks</h2><p>Use these as starting points, then verify label directions, seller, size, and current details before buying.</p></div>
     <input class="search-box" data-card-search type="search" placeholder="Search ${attr(category.label.toLowerCase())}..." aria-label="Search ${attr(category.label)} products">
   </div>
-  <div class="grid two">
-    ${(category.products || []).map(storeProductCard).join("")}
-  </div>
+  ${groupedStoreProducts(category)}
 </section>
 
 ${adSpace(6, "footer", "Setup / Reservation Space")}`,

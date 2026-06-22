@@ -171,6 +171,17 @@ main { overflow: hidden; }
 .care-table { border-collapse: collapse; min-width: 760px; width: 100%; }
 .care-table th, .care-table td { border-bottom: 1px solid var(--line); padding: .9rem; text-align: left; vertical-align: top; }
 .care-table th { color: var(--leaf); font-size: .82rem; letter-spacing: 0; text-transform: uppercase; }
+.buy-cell { min-width: 8.5rem; }
+.buy-options { display: flex; flex-direction: column; gap: .45rem; }
+.buy-button {
+  box-shadow: none;
+  font-size: .82rem;
+  min-height: 2.2rem;
+  padding: .42rem .7rem;
+  white-space: nowrap;
+  width: fit-content;
+}
+.buy-empty { color: var(--muted); font-size: .82rem; font-weight: 800; }
 .page-hero { margin: 0 auto; max-width: var(--max); padding: 4rem 1rem 2rem; }
 .notice { background: rgba(187,107,61,.12); border: 1px solid rgba(187,107,61,.22); border-radius: var(--radius); color: #70411f; padding: 1rem; }
 .card-kicker {
@@ -315,6 +326,21 @@ main { overflow: hidden; }
 }
 .sponsor-buy {
   min-height: 76px;
+}
+.section-header.compact {
+  align-items: center;
+  margin: 0 0 1rem;
+}
+.section-header.compact h3 {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 1.25rem;
+}
+.store-product-group {
+  border-top: 1px solid var(--line);
+  padding-top: 1.35rem;
+}
+.store-product-group + .store-product-group {
+  margin-top: 2rem;
 }
 .source-note { font-size: .82rem; }
 .annotated-photo { background: #edf4e6; position: relative; overflow: hidden; }
