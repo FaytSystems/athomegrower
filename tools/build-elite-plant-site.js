@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const { supplementalPlants } = require("./plant-profile-expansion");
+const { writeImageCreditsPage } = require("./build-image-credits");
 
 const rootDir = path.resolve(__dirname, "..");
 const publicDir = path.join(rootDir, "public");
@@ -290,6 +291,10 @@ function publicFileFromUrl(url) {
 
 function ensurePlantImage(plant) {
   const incomingImage = plant.image || "";
+  const commonsDir = path.join(publicDir, "assets", "images", "commons-plants");
+  const commonsFileName = `${plant.plantTypeCategory}-${plant.slug}.webp`;
+  const commonsUrl = `/assets/images/commons-plants/${commonsFileName}`;
+  if (fs.existsSync(path.join(commonsDir, commonsFileName))) return commonsUrl;
   const existing = publicFileFromUrl(plant.image);
   if (existing && fs.existsSync(existing) && !/\.svg$/i.test(incomingImage)) return plant.image;
   const generatedRealDir = path.join(publicDir, "assets", "images", "generated-real");
@@ -912,6 +917,9 @@ function main() {
 
   for (const plant of plants) {
     plant.image = ensurePlantImage(plant);
+    if (plant.image.includes("/assets/images/commons-plants/")) {
+      plant.alt = `Real photo of ${plant.name}`;
+    }
   }
 
   const ailments = buildAilments();
@@ -932,6 +940,7 @@ function main() {
   fs.writeFileSync(path.join(publicDir, "search.html"), searchPage());
   fs.writeFileSync(path.join(publicDir, "tools.html"), toolsPage());
   fs.writeFileSync(path.join(publicDir, "index.html"), homePage(plants));
+  writeImageCreditsPage();
   writeSitemap(plants);
 
   console.log(JSON.stringify({ plants: plants.length, counts, ailmentTerms: Object.keys(ailments.symptoms).length, plantPages: plants.length }, null, 2));

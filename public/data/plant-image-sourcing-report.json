@@ -1,0 +1,779 @@
+{
+  "generatedAt": "2026-06-22T02:07:57.573Z",
+  "source": "AtHomeGrower coverage report from plant-image-credits.json",
+  "acceptedLicenses": [
+    "Public domain",
+    "CC0",
+    "CC BY",
+    "CC BY-SA"
+  ],
+  "plants": 1245,
+  "credited": 1137,
+  "needsManualPhoto": 108,
+  "needsManualPhotoByCategory": {
+    "pet-friendly": 22,
+    "toxic": 6,
+    "herbs": 7,
+    "vegetables": 15,
+    "fruits": 12,
+    "cover-crops": 46
+  },
+  "misses": [
+    {
+      "name": "Austral Gem Fern",
+      "botanicalName": "Asplenium dimorphum x difforme",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/generated-real/pet-friendly-austral-gem-fern.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Earth Star",
+      "botanicalName": "Cryptanthus bivittatus minor",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/pet-safe/plant-43-earth-star-card.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Echeveria Blue Atoll",
+      "botanicalName": "Echeveria 'Blue Atoll'",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/generated-real/pet-friendly-echeveria-blue-atoll.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Goldfish Plant",
+      "botanicalName": "Hypocyrta nummularia",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/pet-safe/plant-28-goldfish-plant-card.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Hindu Rope Plant",
+      "botanicalName": "Hoya carnosa \"Krinkle Kurl\"",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/pet-safe/plant-35-hindu-rope-plant-card.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Hoya Finlaysonii",
+      "botanicalName": "Hoya finlaysonii",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/generated-real/pet-friendly-hoya-finlaysonii.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Hoya Krohniana",
+      "botanicalName": "Hoya krohniana",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/generated-real/pet-friendly-hoya-krohniana.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Hoya Macrophylla",
+      "botanicalName": "Hoya latifolia",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/generated-real/pet-friendly-hoya-macrophylla.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Hoya Mathilde",
+      "botanicalName": "Hoya carnosa x serpens",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/generated-real/pet-friendly-hoya-mathilde.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Hoya Sunrise",
+      "botanicalName": "Hoya obscura hybrid",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/generated-real/pet-friendly-hoya-sunrise.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Lady Palm",
+      "botanicalName": "Rhapis flabelliformis",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/pet-safe/plant-39-lady-palm-card.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Lemon Button Fern",
+      "botanicalName": "Nephrolepis cordifolia \"Duffii\"",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/pet-safe/plant-48-lemon-button-fern-card.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Lipstick Plant",
+      "botanicalName": "Aeschynanthus humilis",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/pet-safe/plant-33-lipstick-plant-card.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Living Stones",
+      "botanicalName": "Lithops naureeniae",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/pet-safe/plant-54-living-stones-card.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Mosaic Plant",
+      "botanicalName": "Bertolonia mosaica",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/pet-safe/plant-53-mosaic-plant-card.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Pansy Orchid",
+      "botanicalName": "Miltonia roezlii alba",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/pet-safe/plant-62-pansy-orchid-card.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Peperomia Beetle",
+      "botanicalName": "Peperomia quadrangularis",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/generated-real/pet-friendly-peperomia-beetle.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Pilea Aquamarine",
+      "botanicalName": "Pilea glauca",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/generated-real/pet-friendly-pilea-aquamarine.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Pilea Silver Cloud",
+      "botanicalName": "Pilea pubescens",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/generated-real/pet-friendly-pilea-silver-cloud.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Plush Plant",
+      "botanicalName": "Echeveria pul-oliver",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/pet-safe/plant-55-plush-plant-card.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Silver Ribbon Fern",
+      "botanicalName": "Pteris cretica",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/generated-real/pet-friendly-silver-ribbon-fern.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Variegated Brake Fern",
+      "botanicalName": "Pteris cretica",
+      "category": "pet-friendly",
+      "currentImage": "/assets/images/generated-real/pet-friendly-variegated-brake-fern.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Alocasia Regal Shields",
+      "botanicalName": "Alocasia odora x reginula",
+      "category": "toxic",
+      "currentImage": "/assets/images/generated-real/toxic-alocasia-regal-shields.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Bird's Nest Sansevieria",
+      "botanicalName": "Dracaena trifasciata hahnii",
+      "category": "toxic",
+      "currentImage": "/assets/images/generated-real/toxic-bird-s-nest-sansevieria.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Chinese Evergreen Red Siam",
+      "botanicalName": "Aglaonema hybrid",
+      "category": "toxic",
+      "currentImage": "/assets/images/generated-real/toxic-chinese-evergreen-red-siam.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Monstera Peru",
+      "botanicalName": "Monstera karstenianum",
+      "category": "toxic",
+      "currentImage": "/assets/images/generated-real/toxic-monstera-peru.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "String of Dolphins",
+      "botanicalName": "Curio peregrinus",
+      "category": "toxic",
+      "currentImage": "/assets/images/generated-real/toxic-string-of-dolphins.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "String of Tears",
+      "botanicalName": "Curio herreianus",
+      "category": "toxic",
+      "currentImage": "/assets/images/generated-real/toxic-string-of-tears.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Caraway Thyme",
+      "botanicalName": "Thymus herba-barona",
+      "category": "herbs",
+      "currentImage": "/assets/images/generated-real/herbs-caraway-thyme.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "French Tarragon",
+      "botanicalName": "Artemisia dracunculus var. sativa",
+      "category": "herbs",
+      "currentImage": "/assets/images/herbs/herb-032-french-tarragon.jpg",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Lavender Grosso",
+      "botanicalName": "Lavandula x intermedia",
+      "category": "herbs",
+      "currentImage": "/assets/images/generated-real/herbs-lavender-grosso.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Mexican Oregano",
+      "botanicalName": "Lippia graveolens",
+      "category": "herbs",
+      "currentImage": "/assets/images/herbs/herb-064-mexican-oregano.jpg",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Pipicha",
+      "botanicalName": "Porophyllum tagetoides",
+      "category": "herbs",
+      "currentImage": "/assets/images/generated-real/herbs-pipicha.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Rau Om",
+      "botanicalName": "Limnophila aromatica",
+      "category": "herbs",
+      "currentImage": "/assets/images/generated-real/herbs-rau-om.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Thai Basil",
+      "botanicalName": "Ocimum basilicum var. thyrsiflora",
+      "category": "herbs",
+      "currentImage": "/assets/images/herbs/herb-002-thai-basil.jpg",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Broccolini",
+      "botanicalName": "Brassica oleracea x Brassica rapa",
+      "category": "vegetables",
+      "currentImage": "/assets/images/generated-real/vegetables-broccolini.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Corn",
+      "botanicalName": "Zea mays",
+      "category": "vegetables",
+      "currentImage": "/assets/images/generated-real/vegetables-corn.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Green Tatsoi",
+      "botanicalName": "Brassica rapa narinosa",
+      "category": "vegetables",
+      "currentImage": "/assets/images/generated-real/vegetables-green-tatsoi.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Hamburg Parsley",
+      "botanicalName": "Petroselinum crispum tuberosum",
+      "category": "vegetables",
+      "currentImage": "/assets/images/generated-real/vegetables-hamburg-parsley.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Kale Curly",
+      "botanicalName": "Brassica oleracea acephala",
+      "category": "vegetables",
+      "currentImage": "/assets/images/generated-real/vegetables-kale-curly.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Kale Lacinato",
+      "botanicalName": "Brassica oleracea acephala",
+      "category": "vegetables",
+      "currentImage": "/assets/images/generated-real/vegetables-kale-lacinato.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Komatsuna",
+      "botanicalName": "Brassica rapa perviridis",
+      "category": "vegetables",
+      "currentImage": "/assets/images/generated-real/vegetables-komatsuna.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Lettuce Crisphead",
+      "botanicalName": "Lactuca sativa",
+      "category": "vegetables",
+      "currentImage": "/assets/images/generated-real/vegetables-lettuce-crisphead.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Lettuce Oakleaf",
+      "botanicalName": "Lactuca sativa",
+      "category": "vegetables",
+      "currentImage": "/assets/images/generated-real/vegetables-lettuce-oakleaf.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Parsley Root",
+      "botanicalName": "Petroselinum crispum tuberosum",
+      "category": "vegetables",
+      "currentImage": "/assets/images/generated-real/vegetables-parsley-root.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Pea Shoots",
+      "botanicalName": "Pisum sativum",
+      "category": "vegetables",
+      "currentImage": "/assets/images/generated-real/vegetables-pea-shoots.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Purple Mizuna",
+      "botanicalName": "Brassica rapa nipposinica",
+      "category": "vegetables",
+      "currentImage": "/assets/images/generated-real/vegetables-purple-mizuna.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Shelling Pea",
+      "botanicalName": "Pisum sativum",
+      "category": "vegetables",
+      "currentImage": "/assets/images/generated-real/vegetables-shelling-pea.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Spigariello",
+      "botanicalName": "Brassica oleracea acephala",
+      "category": "vegetables",
+      "currentImage": "/assets/images/generated-real/vegetables-spigariello.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Walking Stick Kale",
+      "botanicalName": "Brassica oleracea longata",
+      "category": "vegetables",
+      "currentImage": "/assets/images/generated-real/vegetables-walking-stick-kale.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Asian Melon",
+      "botanicalName": "Cucumis melo",
+      "category": "fruits",
+      "currentImage": "/assets/images/generated-real/fruits-asian-melon.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Boysenberry",
+      "botanicalName": "Rubus ursinus x idaeus",
+      "category": "fruits",
+      "currentImage": "/assets/images/generated-real/fruits-boysenberry.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Canary Melon",
+      "botanicalName": "Cucumis melo",
+      "category": "fruits",
+      "currentImage": "/assets/images/generated-real/fruits-canary-melon.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Casaba Melon",
+      "botanicalName": "Cucumis melo",
+      "category": "fruits",
+      "currentImage": "/assets/images/generated-real/fruits-casaba-melon.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Crenshaw Melon",
+      "botanicalName": "Cucumis melo",
+      "category": "fruits",
+      "currentImage": "/assets/images/generated-real/fruits-crenshaw-melon.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Dwarf Lime",
+      "botanicalName": "Citrus aurantiifolia",
+      "category": "fruits",
+      "currentImage": "/assets/images/generated-real/fruits-dwarf-lime.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Dwarf Orange",
+      "botanicalName": "Citrus sinensis",
+      "category": "fruits",
+      "currentImage": "/assets/images/generated-real/fruits-dwarf-orange.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Moro Blood Orange",
+      "botanicalName": "Citrus sinensis",
+      "category": "fruits",
+      "currentImage": "/assets/images/generated-real/fruits-moro-blood-orange.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Pakistan Mulberry",
+      "botanicalName": "Morus macroura",
+      "category": "fruits",
+      "currentImage": "/assets/images/generated-real/fruits-pakistan-mulberry.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Plum Santa Rosa",
+      "botanicalName": "Prunus salicina",
+      "category": "fruits",
+      "currentImage": "/assets/images/generated-real/fruits-plum-santa-rosa.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Santa Claus Melon",
+      "botanicalName": "Cucumis melo",
+      "category": "fruits",
+      "currentImage": "/assets/images/generated-real/fruits-santa-claus-melon.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Ugli Fruit",
+      "botanicalName": "Citrus reticulata x paradisi",
+      "category": "fruits",
+      "currentImage": "/assets/images/generated-real/fruits-ugli-fruit.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Arugula Cover Crop",
+      "botanicalName": "Eruca sativa",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-arugula-cover-crop.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Balansa Clover",
+      "botanicalName": "Trifolium michelianum",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-balansa-clover.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Beneficial Insect Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-beneficial-insect-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Biofumigation Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-biofumigation-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Browntop Millet",
+      "botanicalName": "Urochloa ramosa",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-browntop-millet.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Clay Soil Breaker Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-clay-soil-breaker-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Container Soil Refresh Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-container-soil-refresh-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Cool Season Soil Builder Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-cool-season-soil-builder-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Corn Cover Crop",
+      "botanicalName": "Zea mays",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-corn-cover-crop.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Early Spring Nectar Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-early-spring-nectar-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Festulolium",
+      "botanicalName": "x Festulolium",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-festulolium.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Field Pea",
+      "botanicalName": "Pisum sativum",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-field-pea.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Fixation Balansa Clover",
+      "botanicalName": "Trifolium michelianum",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-fixation-balansa-clover.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Forage Pea",
+      "botanicalName": "Pisum sativum arvense",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-forage-pea.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Greenhouse Bench Cover Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-greenhouse-bench-cover-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Hybrid Ryegrass",
+      "botanicalName": "Lolium hybridum",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-hybrid-ryegrass.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Late Summer Gap Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-late-summer-gap-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Living Pathway Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-living-pathway-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Maple Pea",
+      "botanicalName": "Pisum sativum arvense",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-maple-pea.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Microgreen Soil Recovery Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-microgreen-soil-recovery-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Nitrogen Builder Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-nitrogen-builder-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "No-Till Garden Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-no-till-garden-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Orchard Floor Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-orchard-floor-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Orchard Pollinator Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-orchard-pollinator-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Perennial Alley Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-perennial-alley-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Pharaoh Pea",
+      "botanicalName": "Pisum sativum arvense",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-pharaoh-pea.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Pollinator Buckwheat Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-pollinator-buckwheat-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Pollinator Cover Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-pollinator-cover-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Pollinator Orchard Alley Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-pollinator-orchard-alley-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Quick Green Manure Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-quick-green-manure-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Quinoa Cover Crop",
+      "botanicalName": "Chenopodium quinoa",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-quinoa-cover-crop.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Raised Bed Summer Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-raised-bed-summer-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Raised Bed Winter Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-raised-bed-winter-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Safflower Cover Crop",
+      "botanicalName": "Carthamus tinctorius",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-safflower-cover-crop.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Sandy Soil Builder Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-sandy-soil-builder-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Sesbania",
+      "botanicalName": "Sesbania exaltata",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-sesbania.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Sorghum-Sudangrass",
+      "botanicalName": "Sorghum bicolor x S. bicolor var. sudanense",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-sorghum-sudangrass.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Sudangrass",
+      "botanicalName": "Sorghum sudanense",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-sudangrass.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Summer Smother Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-summer-smother-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Triticale",
+      "botanicalName": "x Triticosecale",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-triticale.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Vegetable Bed Rotation Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-vegetable-bed-rotation-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Warm Season Soil Builder Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-warm-season-soil-builder-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Winter Field Bean",
+      "botanicalName": "Vicia faba var. minor",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-winter-field-bean.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Winter Soil Builder Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-winter-soil-builder-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Winterkill Mulch Mix",
+      "botanicalName": "Mixed species planting",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-winterkill-mulch-mix.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    },
+    {
+      "name": "Woollypod Vetch",
+      "botanicalName": "Vicia villosa dasycarpa",
+      "category": "cover-crops",
+      "currentImage": "/assets/images/generated-real/cover-crops-woollypod-vetch.webp",
+      "reason": "No safe/confident Wikimedia Commons photo accepted automatically"
+    }
+  ]
+}
