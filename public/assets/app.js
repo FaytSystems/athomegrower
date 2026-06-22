@@ -767,6 +767,30 @@
     });
   }
 
+  function setupAdditiveSearch() {
+    const root = document.querySelector("[data-additive-library]");
+    if (!root) return;
+    const input = $("[data-additive-search]", root);
+    const rows = $$("[data-additive-row]", root);
+    const count = $("[data-additive-count]", root);
+    if (!input || !rows.length) return;
+
+    function render() {
+      const terms = input.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+      let visible = 0;
+      rows.forEach((row) => {
+        const text = row.textContent.toLowerCase();
+        const match = terms.every((term) => text.includes(term));
+        row.hidden = !match;
+        if (match) visible += 1;
+      });
+      if (count) count.textContent = `${visible} of ${rows.length} additives shown`;
+    }
+
+    input.addEventListener("input", render);
+    render();
+  }
+
   function init() {
     enhanceNav();
     const yearTarget = document.querySelector("[data-current-year]");
@@ -784,6 +808,7 @@
     const diagnoser = document.querySelector("[data-diagnoser]");
     if (diagnoser) setupDiagnoser(diagnoser);
 
+    setupAdditiveSearch();
     keepLegacyCardSearch();
     keepLegacyFilters();
   }
