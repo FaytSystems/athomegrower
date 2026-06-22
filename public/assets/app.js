@@ -6,7 +6,7 @@
     ["Home", "/index.html", "home"],
     ["Plant Library", "/plant-library.html", "plant-library"],
     ["Fill Your Space", "/fill-your-space.html", "fill-your-space"],
-    ["Diagnoser", "/plant-diagnoser.html", "plant-diagnoser"],
+    ["What's Wrong With My Plant", "/plant-diagnoser.html", "plant-diagnoser"],
     ["Pests", "/pests.html", "pests"],
     ["Diseases", "/diseases.html", "diseases"],
     ["Additives", "/organic-additives.html", "additives"],
@@ -557,6 +557,109 @@
     ];
   }
 
+  function diagnosisAdditives(issueId) {
+    const remedies = {
+      "overwatering-root-stress": [
+        ["Perlite", "Add aeration when repotting into a faster-draining mix."],
+        ["Pumice", "Use in long-lasting gritty mixes for plants that hate wet roots."],
+        ["Pine bark fines", "Adds chunky structure for aroids, citrus, and woody container plants."],
+        ["Beneficial bacteria inoculant", "Use after root cleanup to support the fresh root zone."],
+      ],
+      "underwatering-drought-stress": [
+        ["Coconut coir", "Improves moisture holding in mixes that dry too quickly."],
+        ["Leaf mold", "Builds gentle water retention in beds and larger containers."],
+        ["Finished compost", "Improves soil structure so water moves and holds better."],
+        ["Worm castings", "Adds gentle biology while recovering from dry stress."],
+      ],
+      "nitrogen-deficiency": [
+        ["Fish emulsion", "Fast organic nitrogen during active growth."],
+        ["Blood meal", "Strong nitrogen for outdoor leafy crops when clearly needed."],
+        ["Alfalfa meal / pellets", "Milder nitrogen and growth support."],
+        ["Finished compost", "Slow background fertility and soil biology."],
+      ],
+      "iron-chlorosis": [
+        ["Elemental sulfur", "Long-term pH lowering for acid-loving plants when soil is too alkaline."],
+        ["Humic acid / fulvic acid", "Supports nutrient availability in depleted media."],
+        ["Finished compost", "Improves root-zone chemistry and biology."],
+      ],
+      "magnesium-deficiency": [
+        ["Epsom salt", "Magnesium sulfate only when magnesium deficiency is likely."],
+        ["Dolomitic lime", "Raises pH while adding magnesium when acidic soil also needs lime."],
+        ["Langbeinite / sulfate of potash-magnesia", "Adds magnesium with potassium and sulfur for fruiting crops."],
+      ],
+      "potassium-deficiency": [
+        ["Langbeinite / sulfate of potash-magnesia", "Potassium support without chloride."],
+        ["Kelp meal / liquid seaweed", "Gentle potassium and trace support."],
+        ["Greensand", "Very slow long-term potassium and trace minerals."],
+      ],
+      "low-light-stress": [
+        ["Kelp meal / liquid seaweed", "Stress support after light is corrected."],
+        ["Worm castings", "Gentle refresh without forcing weak growth."],
+      ],
+      "sun-scorch": [
+        ["Kaolin clay", "Protective film for outdoor heat and sun pressure."],
+        ["Kelp meal / liquid seaweed", "Stress support while new leaves harden off."],
+      ],
+      rootbound: [
+        ["Pine bark fines", "Adds structure when moving into a fresh container mix."],
+        ["Perlite", "Improves oxygen in the new potting mix."],
+        ["Worm castings", "Gentle restart feed after repotting."],
+        ["Mycorrhizal inoculant", "Apply directly to compatible plant roots at transplant."],
+      ],
+      "fertilizer-burn-salt-buildup": [
+        ["Finished compost", "Use lightly after flushing to rebuild soil biology."],
+        ["Worm castings", "Gentle recovery feed once active growth returns."],
+        ["Biochar", "Use charged biochar in future mixes to buffer nutrients."],
+      ],
+      "spider-mites": [
+        ["Insecticidal soap", "Direct contact control for mites on leaf undersides."],
+        ["Neem oil", "Use carefully in shade as a repeated pest-management tool."],
+        ["Horticultural oil", "Smothers mites when the plant is not heat-stressed."],
+      ],
+      "fungus-gnats": [
+        ["BTI", "Targets larvae in damp potting mix."],
+        ["Beneficial nematodes", "Biological soil pest support when applied fresh to moist soil."],
+        ["Diatomaceous earth", "Dry barrier only when the soil surface can stay dry."],
+      ],
+      "powdery-mildew": [
+        ["Potassium bicarbonate", "Useful powdery mildew suppression."],
+        ["Sulfur fungicide", "Preventive disease tool for sulfur-tolerant plants."],
+        ["Neem oil", "Can help some mildew pressure when used carefully."],
+      ],
+      "leaf-spot-disease": [
+        ["Copper fungicide", "Preventive tool for some bacterial and fungal spots."],
+        ["Compost tea", "Use only as a fresh soil drench, not a late edible-leaf spray."],
+        ["Finished compost", "Builds healthier soil after sanitation and airflow fixes."],
+      ],
+      "cold-damage": [
+        ["Kelp meal / liquid seaweed", "Stress support after moving the plant to stable warmth."],
+        ["Worm castings", "Gentle recovery feed after new growth resumes."],
+      ],
+      "heat-stress": [
+        ["Kaolin clay", "Outdoor protective film during heat pressure."],
+        ["Leaf mold", "Improves moisture buffering in beds."],
+        ["Kelp meal / liquid seaweed", "Stress support while watering and shade are corrected."],
+      ],
+      "transplant-shock": [
+        ["Mycorrhizal inoculant", "Place on compatible roots at transplant time."],
+        ["Beneficial bacteria inoculant", "Supports the fresh root zone."],
+        ["Kelp meal / liquid seaweed", "Gentle stress support after transplanting."],
+      ],
+      "chewing-pests": [
+        ["BTK", "Targets caterpillars feeding on leaves."],
+        ["Spinosad", "Useful for several chewing larvae when used carefully."],
+        ["Pyrethrin", "Fast knockdown option for visible pests, used sparingly."],
+      ],
+      "sap-sucking-pests": [
+        ["Insecticidal soap", "Direct contact control for aphids, whiteflies, and mealybugs."],
+        ["Neem oil", "Repeated low-toxicity pest-management tool."],
+        ["Horticultural oil", "Smothers scale and soft-bodied pests with thorough coverage."],
+        ["Pyrethrin", "Short-residual knockdown when pressure is high."],
+      ],
+    };
+    return remedies[issueId] || [];
+  }
+
   function symptomButton(symptom) {
     return `<button class="symptom-card" type="button" data-symptom-id="${symptom.id}" data-keywords="${escapeHtml((symptom.keywords || []).join(" "))}">
       <img src="${symptom.image}" alt="${escapeHtml(symptom.label)} example">
@@ -683,6 +786,10 @@
           ${issue.hits.length ? `<p class="source-note">Matched: ${issue.hits.map((id) => escapeHtml(ailments.symptoms[id]?.label || id)).join(", ")}</p>` : ""}
           <h4>Cause</h4>
           <p>${escapeHtml(issue.summary)}</p>
+          ${diagnosisAdditives(issue.id).length ? `<h4>Helpful organic additives</h4>
+          <div class="tag-cloud remedy-links">
+            ${diagnosisAdditives(issue.id).map(([name, note]) => `<a href="/organic-additives.html?q=${encodeURIComponent(name)}" title="${escapeHtml(note)}">${escapeHtml(name)}</a>`).join("")}
+          </div>` : ""}
           <h4>How to cure</h4>
           <ul>${issue.nextSteps.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ul>
         </article>`).join("") : `<div class="notice">No strong cause matched this pattern yet.</div>`}
@@ -774,6 +881,9 @@
     const rows = $$("[data-additive-row]", root);
     const count = $("[data-additive-count]", root);
     if (!input || !rows.length) return;
+    const params = new URLSearchParams(window.location.search);
+    const query = params.get("q");
+    if (query) input.value = query;
 
     function render() {
       const terms = input.value.trim().toLowerCase().split(/\s+/).filter(Boolean);

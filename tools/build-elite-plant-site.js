@@ -370,7 +370,7 @@ function siteHeader(current = "") {
     ["Home", "/index.html", "home"],
     ["Plant Library", "/plant-library.html", "plant-library"],
     ["Fill Your Space", "/fill-your-space.html", "fill-your-space"],
-    ["Diagnoser", "/plant-diagnoser.html", "plant-diagnoser"],
+    ["What's Wrong With My Plant", "/plant-diagnoser.html", "plant-diagnoser"],
     ["Pests", "/pests.html", "pests"],
     ["Diseases", "/diseases.html", "diseases"],
     ["Additives", "/organic-additives.html", "additives"],
@@ -458,7 +458,7 @@ function plantDetailPage(plant, allPlants) {
     <p class="lede">${html(plant.description)}</p>
     <div class="actions">
       <a class="button" href="/fill-your-space.html?plant=${attr(plant.slug)}">Match in Fill Your Space</a>
-      <a class="button secondary" href="/plant-diagnoser.html?plant=${attr(plant.slug)}">Diagnose this plant</a>
+      <a class="button secondary" href="/plant-diagnoser.html?plant=${attr(plant.slug)}">Check what's wrong</a>
     </div>
   </div>
   <div class="plant-detail-media">
@@ -508,7 +508,7 @@ ${zoneTiming}
     <article class="card"><div class="card-body">
       <h2>Problems to watch</h2>
       <p>${html(plant.commonPestsDiseases)}</p>
-      <a class="text-link" href="/plant-diagnoser.html?plant=${attr(plant.slug)}">Open the plant diagnoser</a>
+      <a class="text-link" href="/plant-diagnoser.html?plant=${attr(plant.slug)}">Open What's Wrong With My Plant</a>
     </div></article>
     <article class="card"><div class="card-body">
       <h2>Placement notes</h2>
@@ -738,11 +738,11 @@ function fillSpacePage() {
 
 function diagnoserPage() {
   return pageShell({
-    title: "Plant Diagnoser | AtHomeGrower.com",
+    title: "What's Wrong With My Plant | AtHomeGrower.com",
     description: "Search and select plant symptoms, view example images, and get likely causes with organic-first cures.",
     current: "plant-diagnoser",
     body: `<section class="page-hero">
-  <span class="eyebrow">Plant diagnoser</span>
+  <span class="eyebrow">What's Wrong With My Plant</span>
   <h1>Build a symptom pattern, then narrow the cause.</h1>
   <p class="lede">Search ailment terms like yellowing, brown tips, spots, webbing, sticky leaves, gnats, wet soil, and leggy growth.</p>
 </section>
@@ -791,13 +791,13 @@ function toolsPage() {
     body: `<section class="page-hero">
   <span class="eyebrow">Tool hub</span>
   <h1>Useful tools, not dead-end cards.</h1>
-  <p class="lede">Open the plant finder, diagnoser, library search, and core care reference pages from one place.</p>
+  <p class="lede">Open the plant finder, What's Wrong With My Plant, library search, and core care reference pages from one place.</p>
 </section>
 <section class="section">
   <div class="grid three">
     ${[
       ["Fill Your Space", "/fill-your-space.html", "Match plants to light, pet needs, care level, water habits, soil, and indoor/outdoor placement.", "Must-have"],
-      ["Plant Diagnoser", "/plant-diagnoser.html", "Select multiple ailment terms and get likely causes with cure steps.", "Must-have"],
+      ["What's Wrong With My Plant", "/plant-diagnoser.html", "Select multiple ailment terms and get likely causes with cure steps.", "Must-have"],
       ["Plant Library", "/plant-library.html", "Search all plant profiles and open care detail pages.", "Must-have"],
       ["Search Any Plant", "/search.html", "Quickly find profiles across the whole plant database.", "Must-have"],
       ["Pest ID", "/pests.html", "Identify common pests and open organic-first response plans.", "Should-have"],
@@ -825,10 +825,10 @@ function homePage(plants) {
   <div>
     <span class="eyebrow">${plants.length}+ plant profiles</span>
     <h1>Plant care that works at home.</h1>
-    <p class="lede">A searchable plant library, Fill Your Space matcher, symptom diagnoser, pest and disease guides, organic additives, and seasonal care references in one Cloudflare-ready site.</p>
+    <p class="lede">A searchable plant library, Fill Your Space matcher, What's Wrong With My Plant, pest and disease guides, organic additives, and seasonal care references in one Cloudflare-ready site.</p>
     <div class="actions">
       <a class="button" href="/fill-your-space.html">Find plants</a>
-      <a class="button secondary" href="/plant-diagnoser.html">Diagnose a plant</a>
+      <a class="button secondary" href="/plant-diagnoser.html">What's Wrong With My Plant</a>
     </div>
   </div>
   <div class="hero-card">
@@ -841,7 +841,7 @@ function homePage(plants) {
   </div>
   <div class="grid three">
     <article class="card"><div class="card-body"><span class="status-chip must">Live tool</span><h3>Fill Your Space</h3><p>Filter the full plant database by room, garden use, pet note, light, care, water, and soil.</p><a class="text-link" href="/fill-your-space.html">Open finder</a></div></article>
-    <article class="card"><div class="card-body"><span class="status-chip must">Live tool</span><h3>Plant Diagnoser</h3><p>Pick multiple symptoms and get ranked causes with practical cure steps.</p><a class="text-link" href="/plant-diagnoser.html">Open diagnoser</a></div></article>
+    <article class="card"><div class="card-body"><span class="status-chip must">Live tool</span><h3>What's Wrong With My Plant</h3><p>Pick multiple symptoms and get ranked causes with practical cure steps.</p><a class="text-link" href="/plant-diagnoser.html">Open tool</a></div></article>
     <article class="card"><div class="card-body"><span class="status-chip must">Live library</span><h3>Plant Library</h3><p>Open care, soil, watering, light, pest, and placement profiles for every plant.</p><a class="text-link" href="/plant-library.html">Open library</a></div></article>
   </div>
 </section>

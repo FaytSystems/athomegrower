@@ -337,7 +337,8 @@ main { overflow: hidden; }
   margin-top: .85rem;
 }
 .tag-cloud span,
-.selected-symptoms span {
+.selected-symptoms span,
+.tag-cloud a {
   background: rgba(53,107,140,.12);
   border: 1px solid rgba(53,107,140,.18);
   border-radius: 999px;
@@ -345,7 +346,9 @@ main { overflow: hidden; }
   font-size: .82rem;
   font-weight: 850;
   padding: .35rem .55rem;
+  text-decoration: none;
 }
+.tag-cloud a:hover { background: rgba(53,107,140,.2); }
 .plant-detail-hero {
   align-items: center;
   display: grid;
