@@ -306,17 +306,24 @@ function ensurePlantImage(plant) {
   return genericRealUrl;
 }
 
-function petLabel(status) {
+function petStatusKey(status, category = "") {
   const key = slugify(status);
-  if (key.includes("pet-friendly")) return "Pet-friendly";
-  if (key.includes("toxic")) return "Toxic / keep away";
+  if (slugify(category) === "toxic" || ["toxic", "toxic-keep-away", "not-pet-friendly", "not-pet-safe"].includes(key)) return "toxic";
+  if (["pet-friendly", "pet-safe"].includes(key)) return "pet-friendly";
+  return "check-before-use";
+}
+
+function petLabel(status, category = "") {
+  const key = petStatusKey(status, category);
+  if (key === "toxic") return "Toxic / keep away";
+  if (key === "pet-friendly") return "Pet-friendly";
   return "Check pets";
 }
 
-function petTagKind(status) {
-  const key = slugify(status);
-  if (key.includes("pet-friendly")) return "pet-safe";
-  if (key.includes("toxic")) return "toxic";
+function petTagKind(status, category = "") {
+  const key = petStatusKey(status, category);
+  if (key === "toxic") return "toxic";
+  if (key === "pet-friendly") return "pet-safe";
   return "pet-check";
 }
 
@@ -343,7 +350,7 @@ function careTagLabel(value) {
 
 function cardTags(plant) {
   return [
-    { kind: petTagKind(plant.petStatus), label: petLabel(plant.petStatus) },
+    { kind: petTagKind(plant.petStatus, plant.plantTypeCategory), label: petLabel(plant.petStatus, plant.plantTypeCategory) },
     { kind: "light", label: lightTagLabel(plant.lightText) },
     { kind: "difficulty", label: careTagLabel(plant.careLevel) },
   ];
@@ -567,7 +574,7 @@ function plantCardStatic(plant) {
         <div><dt>Light</dt><dd>${html(plant.lightText)}</dd></div>
         <div><dt>Water</dt><dd>${html(plant.waterText)}</dd></div>
         <div><dt>Soil</dt><dd>${html(plant.soilText)}</dd></div>
-        <div><dt>Pet note</dt><dd>${html(petLabel(plant.petStatus))}</dd></div>
+        <div><dt>Pet note</dt><dd>${html(petLabel(plant.petStatus, plant.plantTypeCategory))}</dd></div>
       </dl>
       <a class="text-link" href="${attr(plant.factsUrl)}">Open plant profile</a>
     </div>
@@ -617,7 +624,7 @@ ${adSpace(1, "inline", "Plant Profile Sponsor Space")}
 
 <section class="section">
   <div class="plant-facts-strip">
-    <div><span>Pet status</span><strong>${html(petLabel(plant.petStatus))}</strong></div>
+    <div><span>Pet status</span><strong>${html(petLabel(plant.petStatus, plant.plantTypeCategory))}</strong></div>
     <div><span>Light</span><strong>${html(plant.lightText)}</strong></div>
     <div><span>Water</span><strong>${html(plant.waterText)}</strong></div>
     <div><span>Soil</span><strong>${html(plant.soilText)}</strong></div>
@@ -1220,10 +1227,10 @@ function homePage(plants) {
     body: `<section class="hero">
   <div>
     <span class="eyebrow">${plants.length}+ plant profiles</span>
-    <h1>Plant care that works at home.</h1>
-    <p class="lede">A searchable plant library, Fill Your Space matcher, What's Wrong With My Plant, pest and disease guides, organic additives, and seasonal care references in one Cloudflare-ready site.</p>
+    <h1>Find the right plant. Understand what it needs.</h1>
+    <p class="lede">Make room for plants that fit your life. Compare light, water, and soil needs, work through common symptoms, and choose supplies with a clearer plan.</p>
     <div class="actions">
-      <a class="button" href="/fill-your-space.html">Find plants</a>
+      <a class="button" href="/fill-your-space.html">Find plants for my space</a>
       <a class="button secondary" href="/plant-diagnoser.html">What's Wrong With My Plant</a>
     </div>
   </div>
@@ -1234,11 +1241,11 @@ function homePage(plants) {
 ${adSpace(4, "leaderboard", "Sitewide Sponsor Space")}
 <section class="section">
   <div class="section-header">
-    <div><h2>Core plant tools</h2><p>The main tools are wired to the same plant database and detail pages.</p></div>
+    <div><h2>A useful next step for every growing question</h2><p>Start with your space, a plant you already own, or a symptom you want to understand.</p></div>
   </div>
   <div class="grid three">
     <article class="card"><div class="card-body"><span class="status-chip must">Live tool</span><h3>Fill Your Space</h3><p>Filter the full plant database by room, garden use, pet note, light, care, water, and soil.</p><a class="text-link" href="/fill-your-space.html">Open finder</a></div></article>
-    <article class="card"><div class="card-body"><span class="status-chip must">Live tool</span><h3>What's Wrong With My Plant</h3><p>Pick multiple symptoms and get ranked causes with practical cure steps.</p><a class="text-link" href="/plant-diagnoser.html">Open tool</a></div></article>
+    <article class="card"><div class="card-body"><span class="status-chip must">Symptom tool</span><h3>What's Wrong With My Plant</h3><p>Compare several symptoms with watering, light, root, and pest clues to build a list of possible causes.</p><a class="text-link" href="/plant-diagnoser.html">Explore possible causes</a></div></article>
     <article class="card"><div class="card-body"><span class="status-chip must">Live library</span><h3>Plant Library</h3><p>Open care, soil, watering, light, pest, and placement profiles for every plant.</p><a class="text-link" href="/plant-library.html">Open library</a></div></article>
   </div>
 </section>
@@ -1357,3 +1364,4 @@ function main() {
 }
 
 main();
+require("./improve-seo.cjs");

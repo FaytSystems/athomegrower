@@ -20,17 +20,24 @@ function html(value) {
     .replace(/"/g, "&quot;");
 }
 
-function petLabel(status) {
+function petStatusKey(status, category = "") {
   const key = slug(status);
-  if (key.includes("pet-friendly")) return "Pet-friendly";
-  if (key.includes("toxic")) return "Toxic / keep away";
+  if (slug(category) === "toxic" || ["toxic", "toxic-keep-away", "not-pet-friendly", "not-pet-safe"].includes(key)) return "toxic";
+  if (["pet-friendly", "pet-safe"].includes(key)) return "pet-friendly";
+  return "check-before-use";
+}
+
+function petLabel(status, category = "") {
+  const key = petStatusKey(status, category);
+  if (key === "toxic") return "Toxic / keep away";
+  if (key === "pet-friendly") return "Pet-friendly";
   return "Check pets";
 }
 
-function petTagKind(status) {
-  const key = slug(status);
-  if (key.includes("pet-friendly")) return "pet-safe";
-  if (key.includes("toxic")) return "toxic";
+function petTagKind(status, category = "") {
+  const key = petStatusKey(status, category);
+  if (key === "toxic") return "toxic";
+  if (key === "pet-friendly") return "pet-safe";
   return "pet-check";
 }
 
@@ -57,7 +64,7 @@ function careTagLabel(value) {
 
 function cardTags(plant) {
   return [
-    { kind: petTagKind(plant.petStatus), label: petLabel(plant.petStatus) },
+    { kind: petTagKind(plant.petStatus, plant.plantTypeCategory), label: petLabel(plant.petStatus, plant.plantTypeCategory) },
     { kind: "light", label: lightTagLabel(plant.lightText) },
     { kind: "difficulty", label: careTagLabel(plant.careLevel) },
   ]

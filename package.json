@@ -4,6 +4,9 @@
   "private": true,
   "description": "Cloudflare Pages static website for AtHomeGrower.com with must-have and should-have gardening pages.",
   "scripts": {
+    "seo:build": "node tools/improve-seo.cjs",
+    "check:seo": "node tools/check-seo.cjs",
+    "check:pet-status": "node tools/check-pet-status.js",
     "preview": "python -m http.server 8787 -d public",
     "deploy": "npx wrangler pages deploy public --project-name athomegrower"
   },

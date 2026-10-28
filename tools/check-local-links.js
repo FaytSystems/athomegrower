@@ -36,7 +36,8 @@ for (const file of htmlFiles) {
     if (url.endsWith("/")) url += "index.html";
 
     const filePath = path.join(publicDir, ...url.replace(/^\//, "").split("/"));
-    if (!fs.existsSync(filePath)) {
+    const candidates = [filePath, `${filePath}.html`, path.join(filePath, "index.html")];
+    if (!candidates.some(candidate => fs.existsSync(candidate) && fs.statSync(candidate).isFile())) {
       missing.push({ file: path.relative(publicDir, file), url });
     }
   }
